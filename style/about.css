@@ -1,0 +1,121 @@
+@media screen and (max-width: 900px) {
+
+    .absolute_background {
+        background-position: 0% 100%; /* Adjust the background position for smaller screens */
+        width: 100%; /* Optionally adjust the width for smaller screens */
+    }
+
+    .absolute_background::before {
+        background-color: rgba(0, 0, 0, 1); /* Darken the overlay for smaller screens */
+    }
+
+    .hero-diagonal {
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .whoweare-header {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .whoweare-text {
+        font-size: 14px;
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .mission_vision-header {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .mission_vision-text {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .why_not-header {
+        font-size: 16px;
+    }
+
+    .why_not-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .why_not-grid_item-icon {
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    .why_not-group_text-content {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 40px 20px 40px 0px;
+    }
+
+    .why_not-subtext {
+        font-size: 14px;
+    }
+
+    .why_not-subtext__big {
+        font-size: 16px;
+    }
+
+    .container__about_cta {
+        padding: 50px 30px;
+    }
+
+    .container__about_cta > h2 {
+        font-size: 20px;
+    }
+
+    .container__about_cta > a {
+        font-size: 16px;
+    }
+
+    /* .container__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr; 
+    } */
+
+    .container__footer {
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .footer-links {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-img {
+        width: 120px;
+    }
+
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+       
+}

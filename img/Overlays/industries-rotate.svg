@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 1920 525" width="1920" height="525" transform="scale(-1, 1)">
+    <defs>
+        <path d="M1890.21 0L1384.56 525L523.94 525L1024.69 0L1890.21 0Z" id="a7jlaIHbJJ"></path>
+    </defs>
+    <g>
+        <g>
+            <g>
+                <use xlink:href="#a7jlaIHbJJ" opacity="1" fill="#1a8fca" fill-opacity="1"></use>
+                <g>
+                    <use xlink:href="#a7jlaIHbJJ" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="0" stroke-opacity="1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
