@@ -129,8 +129,6 @@
 
     /* Show mobile-svg on small screens */
     .mobile-svg {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
-
-
