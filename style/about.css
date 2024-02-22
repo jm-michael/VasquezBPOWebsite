@@ -1,12 +1,7 @@
 @media screen and (max-width: 900px) {
 
     .absolute_background {
-        background-position: 0% 100%; /* Adjust the background position for smaller screens */
-        width: 100%; /* Optionally adjust the width for smaller screens */
-    }
-
-    .absolute_background::before {
-        background-color: rgba(0, 0, 0, 1); /* Darken the overlay for smaller screens */
+        width: 100%; /* Adjust the width to fill the entire screen */
     }
 
     .hero-diagonal {
@@ -15,15 +10,25 @@
         opacity: 0.5;
     }
 
+    .hero-diagonal-whoweare {
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+
     .whoweare-header {
         font-size: 16px;
         margin-top: 15px;
+        font-weight: 600;
     }
 
     .whoweare-text {
         font-size: 14px;
         width: 90%;
         margin-top: 15px;
+        color: black;
+        font-weight:bold;
+        line-height: 25px;
     }
 
     .mission_vision-header {
