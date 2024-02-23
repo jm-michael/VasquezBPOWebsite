@@ -1,5 +1,4 @@
 @media screen and (max-width: 900px) {
-
     .absolute_background {
         width: 100%; /* Adjust the width to fill the entire screen */
     }
@@ -7,13 +6,11 @@
     .hero-diagonal {
         height: 100%;
         width: 100%;
-        opacity: 0.5;
     }
 
     .hero-diagonal-whoweare {
         height: 100%;
         width: 100%;
-        opacity: 0.5;
     }
 
     .whoweare-header {
@@ -24,11 +21,22 @@
 
     .whoweare-text {
         font-size: 14px;
-        width: 90%;
+        width: 40%;
         margin-top: 15px;
-        color: black;
-        font-weight:bold;
+        color: #fff;
         line-height: 25px;
+    }
+
+    .wt-1 {
+        width: 45%;
+    }
+
+    .wt-2 {
+        width: 55%;
+    }
+
+    .wt-3 {
+        width: 65%;
     }
 
     .mission_vision-header {
@@ -123,6 +131,123 @@
         font-size: 12px;
     } */
        
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero-diagonal-whoweare {
+        height: 100%;
+        width: 120%;
+    }
+
+    .whoweare-header {
+        font-size: 14px;
+    }
+
+    .whoweare-text {
+        font-size: 12px;
+        /* width: 40%; */
+        margin-top: 15px;
+        color: #fff;
+        line-height: 15px;
+    }
+
+    .wt-1 {
+        width: 60%;
+    }
+
+    .wt-2 {
+        width: 75%;
+    }
+
+    .wt-3 {
+        width: 78%;
+    }
+
+    .mission_vision-header {
+        font-size: 14px;
+    }
+
+    .mission_vision-text {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .mission_vision-text__left {
+        margin-right: 10px;
+    }
+
+    .why_not-group_text {
+        background-color: rgba(0, 255, 255, 0.058);
+        width: 100%;
+        position: relative;
+        left: -80px;
+        
+    }
+
+    .why_not-subtext {
+        /* position: relative; */
+        /* right: 50px; */
+        font-size: 12px;
+    }
+
+    .why_not-subtext__big {
+        font-size: 12px;
+    }
+
+    .why_not-group_text-content {
+        font-size: 12px;
+    }
+
+    .why_not-grid_item-icon {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .container__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    .container__footer {
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .footer-links {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-img {
+        width: 120px;
+    }
+
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
 }
 
 
