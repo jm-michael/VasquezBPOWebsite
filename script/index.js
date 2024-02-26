@@ -1,8 +1,14 @@
-function toggleNav() {
+function toggleNav(isShow) {
     var navLinks = document.getElementById('navbar-links');
     var burger = document.querySelector('.burger');
-    burger.classList.toggle('change');
-    navLinks.classList.toggle('active');
+    if (isShow) {
+        burger.classList.toggle('change');
+        navLinks.classList.toggle('active');
+    } else{
+        burger.classList.remove('change');
+        navLinks.classList.remove('active');
+    }
+    
 }
 
 // Get all the li elements
@@ -40,5 +46,6 @@ for (var i = 0; i < navLinks.length; i++) {
         e.currentTarget.classList.add('navbar-link__active');
         hideAllIframes();
         showIframe(iframeSrc);
+        toggleNav(false);
     });
 }
