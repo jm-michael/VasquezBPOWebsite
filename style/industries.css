@@ -1,134 +1,113 @@
+.industries_hero-header {
+  font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
+}
 
-.container {
-    display: flex;
+
+.new_container__industries {
+  display: flex;
+}
+
+.new_industries-card {
+  flex: 1;
+  /* border: 1px solid #c3c3c3; */
+  padding: 5%;
+  min-width: 300px;
+}
+
+.card-content {
+  background-color: rgba(255, 255, 255, 0.579);
+  /* font-size: clamp(1rem, 1.5vw, 2rem); */
+}
+
+.card-header {
+  font-size: clamp(0.625rem, 0.1422rem + 2.4138vw, 1.5rem);
+}
+
+.card-subheader {
+  font-size: clamp(0.625rem, 0.2112rem + 2.069vw, 1.375rem);
+}
+
+.card-text {
+  font-size: clamp(0.625rem, 0.4181rem + 1.0345vw, 1rem);
+}
+
+.card-list li {
+  font-size: clamp(0.625rem, 0.4181rem + 1.0345vw, 1rem) !important;
+
+   /*font-size: 12px !important; Adjust the font size as needed */
+}
+
+
+
+@media screen and (max-width: 520px) {
+  .new_container__industries {
+    flex-direction: row;
+    /* change flex direction to row */
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* allow items to wrap to the next row */
+  }
+
+  .new_industries-card {
+    flex-basis: 50%;
+    /* each card takes up 50% of the container width */
+    min-width: auto;
+    /* remove the minimum width constraint */
+  }
+
+  .footer-details {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container__footer {
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .footer-details {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .footer-links {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .footer-contact {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .footer-img {
+    width: 120px;
+  }
+
+  .footer-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
-.footer-links,
-.footer-contact {
-    width: 48%; /* Adjust the width based on your design needs */
-    margin-bottom: 20px;
+  
+
+  /* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        align-self: flex-start; /* Align logo to the left in mobile view */
-        margin-bottom: 30px; /* Adjust margin-bottom for mobile screens */
-    }
-
-    .footer-links,
-    .footer-contact {
-        width: 100%; /* Full width for smaller screens */
-    }
-
-    .container__industries_hero {
-        display: flex;
-        justify-content: center; /* Center the content horizontally */
-        align-items: flex-start; /* Align the content to the start (top) vertically */
-    }
-
-    .industries_hero-header {
-        text-align: center; /* Center the text within the header */
-        margin: 0; /* Remove any default margins */
-        font-family: 'attractive';
-        font-weight: normal;
-        font-size: 20px;
-        color: #fff;
-        z-index: 2;
-        padding-top: 20%;
-        padding-left: 9%;
-    }
-
-    .desktop-svg {
-        display: none;
-    }
-
-    .mobile-svg {
-        display: block;
-    }
-
-   
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
 }
 
-/* Display industries_hero-header only on normal screens */
-@media only screen and (min-width: 769px) {
-    .container__industries_hero {
-        display: flex;
-        justify-content: center; /* Center the content horizontally */
-        align-items: end; /* Center the content vertically */
-    }
-
-    .industries_hero-header {
-        text-align: center; /* Center the text within the header */
-        margin: 0; /* Remove any default margins */
-        padding-top: 17.2%;
-        padding-right: 10%;
-
-    }
-
-    .desktop-svg {
-        display: block;
-    }
-
-    .mobile-svg {
-        display: none;
-    }
-}
-/* Display industries_hero-header only on normal screens 1083*/
-
-@media only screen and (min-width: 800px) {
-    .container__industries_hero {
-        display: flex;
-        justify-content: center; /* Center the content horizontally */
-        align-items: end; /* Center the content vertically */
-    }
-
-    .industries_hero-header {
-        text-align: center; /* Center the text within the header */
-        margin: 0; /* Remove any default margins */
-        padding-top: 17.2%;
-        /* padding-right: 10%; */
-    }
-
-    .desktop-svg {
-        display: block;
-    }
-
-    .mobile-svg {
-        display: none;
-    }
-}
-
-.animated-rect {
-    animation: animateRect 3s forwards;
-}
-
-
-/* Initially hide both mobile-svg and desktop-svg */
-.mobile-svg,
-.desktop-svg {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.desktop-svg {
-    opacity: 1;
-}
-
-/* Media query for small screens (e.g., mobile devices) */
-@media (max-width: 767px) {
-    /* Hide desktop-svg on small screens */
-    .desktop-svg {
-        opacity: 0;
-    }
-
-    /* Show mobile-svg on small screens */
-    .mobile-svg {
-        opacity: 0.6;
-    }
+/* For Firefox */
+body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+  overflow-x: hidden;
 }

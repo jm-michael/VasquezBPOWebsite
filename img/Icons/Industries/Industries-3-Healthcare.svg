@@ -17,42 +17,42 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M145.77 302.44C146.316 302.399 146.859 302.555 147.3 302.88C147.76 303.136 148.144 303.508 148.414 303.959C148.684 304.41 148.831 304.924 148.84 305.45V403.91C148.84 405.37 149.2 406.49 149.84 406.85C150.48 407.21 151.6 406.93 152.84 406.23L233.45 359.69C237.17 357.53 240.45 351.84 240.45 347.53V249.09C240.438 248.547 240.575 248.01 240.844 247.538C241.114 247.066 241.506 246.676 241.98 246.41L327.24 197.17C330.99 195.04 334.24 189.32 334.24 185.03V91.9202C334.24 90.5502 333.87 89.4002 333.24 89.0702C332.61 88.7402 331.47 88.9102 330.24 89.6902L245 138.9C244.541 139.154 244.025 139.287 243.5 139.287C242.975 139.287 242.459 139.154 242 138.9C241.537 138.624 241.154 138.233 240.886 137.765C240.618 137.298 240.475 136.769 240.47 136.23V37.7702C240.47 36.3102 240.1 35.2702 239.47 34.9302C238.84 34.5902 237.73 34.7502 236.47 35.4502L155.85 82.0002C152.11 84.1602 148.85 89.8502 148.85 94.1702V192.63C148.855 193.17 148.715 193.7 148.444 194.167C148.173 194.633 147.781 195.018 147.31 195.28L62.0002 244.51C58.2602 246.67 55.0002 252.36 55.0002 256.65V349.76C55.0002 351.14 55.3902 352.28 56.0002 352.62C56.5061 352.773 57.0409 352.806 57.5618 352.716C58.0827 352.626 58.5753 352.415 59.0002 352.1L144.26 302.88C144.705 302.563 145.245 302.408 145.79 302.44H145.77ZM150.5 413C149.19 413.053 147.893 412.731 146.76 412.07C144.19 410.59 142.71 407.58 142.71 403.88V310.8L62.0002 357.34C58.8002 359.17 55.4802 359.43 52.9102 357.95C50.3402 356.47 48.9102 353.48 48.9102 349.76V256.65C48.9102 250.1 53.3302 242.51 58.9702 239.27L142.7 190.88V94.1602C142.7 87.6902 147.14 80.0202 152.8 76.7502L233.41 30.2102C236.63 28.3902 239.96 28.1202 242.51 29.5802C245.06 31.0402 246.51 34.0802 246.51 37.7702V131L327.19 84.3502C330.39 82.5402 333.72 82.2802 336.29 83.7602C338.86 85.2402 340.29 88.2302 340.29 91.9402V185C340.29 191.55 335.87 199.21 330.2 202.41L246.48 250.78V347.5C246.48 353.96 242.03 361.63 236.39 364.91L155.85 411.5C154.227 412.454 152.383 412.971 150.5 413V413Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear" x1="3.11035" y1="206.45" x2="334.79" y2="206.45" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="99048.2" y1="177788" x2="180444" y2="177788" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="15317" y1="69689.7" x2="17955.9" y2="69689.7" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="1169.58" y1="56116.7" x2="1179.95" y2="56116.7" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="1169.58" y1="56116.7" x2="1179.95" y2="56116.7" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint5_linear" x1="19813.9" y1="49935.9" x2="22345" y2="49935.9" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint6_linear" x1="20233.2" y1="78560.9" x2="22873.2" y2="78560.9" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint7_linear" x1="99048.2" y1="177788" x2="180444" y2="177788" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>

@@ -14,27 +14,27 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M145.54 148.21C131.67 148.21 113.54 161.63 101.74 182.09C96.4777 191.034 92.8859 200.861 91.1403 211.09L164.29 168.88C163.29 160.11 159.87 153.61 154.29 150.42C151.609 148.933 148.586 148.171 145.52 148.21H145.54ZM87.3302 220C86.7643 220.011 86.2078 219.854 85.7303 219.55C85.2484 219.252 84.8552 218.831 84.5914 218.33C84.3276 217.829 84.2029 217.266 84.2303 216.7C84.9503 204.7 89.2302 191.26 96.3602 178.93C113.13 149.82 140 134.93 157.36 144.93C165.22 149.43 169.9 158.48 170.62 170.34C170.659 170.915 170.537 171.49 170.269 172C170 172.51 169.596 172.936 169.1 173.23L88.8903 219.53C88.4172 219.814 87.8811 219.975 87.3302 220V220Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear" x1="20.6396" y1="218.05" x2="236.31" y2="218.05" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="33401" y1="25884.4" x2="37628.7" y2="25884.4" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="66649.1" y1="186587" x2="106200" y2="186587" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="19097.5" y1="20650.2" x2="20980.2" y2="20650.2" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="33721.8" y1="30833.3" x2="40155.4" y2="30833.3" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F1F4FE"/>
+<stop stop-color="#1a8fca"/>
 <stop offset="0.58" stop-color="#F7F9FE"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
