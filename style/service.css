@@ -1,3 +1,28 @@
+
+.tab-content-header {
+    font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
+}
+
+.tab-content-subheader{
+    font-size: clamp(0.625rem, 0.4181rem + 1.0345vw, 1rem) !important;
+}
+
+.tab-content-description{
+    font-size: clamp(0.625rem, 0.4181rem + 1.0345vw, 1rem);
+}
+
+.tab-content-accordion{
+    font-size: clamp(0.5rem, 0.2241rem + 1.3793vw, 1rem) !important;
+}
+
+.tab-content-panel{
+    font-size: clamp(0.625rem, 0.4181rem + 1.0345vw, 1rem) !important;
+}
+
+.services_hero-header {
+    font-size: clamp(0.9375rem, 0.4203rem + 2.5862vw, 1.875rem) !important;
+}
+
 @media only screen and (max-width: 767px) {
     /* Styles to apply when the screen width is 767 pixels or less (typical mobile size) */
     .tab-text {
@@ -19,24 +44,10 @@
     margin-top: 5px;
     cursor: pointer;
 }
-
-.tab-content-panel {
-    display: none; /* Hide panels by default on larger screens */
-}
-
 /* Styles for smaller screens (e.g., mobile) */
 @media only screen and (max-width: 600px) {
     .tab-content {
         width: 100%; /* Make the content take full width on smaller screens */
-    }
-
-    .tab-content-header {
-        font-size: 20px; /* Adjust the font size for better readability on smaller screens */
-    }
-
-    .tab-content-subheader,
-    .tab-content-description {
-        font-size: 14px; /* Adjust the font size for better readability on smaller screens */
     }
 
     .tab-content-accordion {
@@ -47,11 +58,6 @@
         padding: 10px;
         margin-top: 5px;
         cursor: pointer;
-    }
-
-    .tab-content-panel {
-        padding: 10px;
-        border: 1px solid #ddd;
     }
 }
 
@@ -116,20 +122,9 @@
         margin: 0; /* Remove any default margins */
         font-family: 'attractive';
         font-weight: normal;
-        font-size: 20px;
         color: #fff;
         z-index: 2;
     }
-
-    .desktop-svg {
-        display: none;
-    }
-
-    .mobile-svg {
-        display: block;
-    }
-
-   
 }
 
 /* Display services_hero-header only on normal screens */
@@ -143,14 +138,6 @@
     .services_hero-header {
         text-align: center; /* Center the text within the header */
         margin: 0; /* Remove any default margins */
-    }
-
-    .desktop-svg {
-        display: block;
-    }
-
-    .mobile-svg {
-        display: none;
     }
 }
 
@@ -166,8 +153,6 @@
         width: 600;
     }
 }
-
-
 
 
 
