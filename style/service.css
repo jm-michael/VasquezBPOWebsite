@@ -154,5 +154,24 @@
     }
 }
 
+@media (min-width: 100px) and (max-width: 420px) {
+    .services-tab {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+        scroll-snap-type: x mandatory; /* Snap scrolling horizontally */
+    }
+
+    .tab_service {
+        flex: 0 0 auto;
+        scroll-snap-align: start; /* Snap alignment for smooth scrolling */
+        border-bottom: none !important;
+    }
+
+    .tab-icon {
+        /* Further adjust width and height for even smaller screens */
+        width: 70%;
+    }
+}
+
 
 
