@@ -1611,63 +1611,63 @@ section#meet-the-team {
 }
 
 .team-grid_item-child#team-1 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/1.jpg");
+    background-image: url("../img/The Team/1.jpg");
 }
 
 .team-grid_item-child#team-2 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/2.jpg");
+    background-image: url("../img/The Team/2.jpg");
 }
 
 .team-grid_item-child#team-3 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/3.jpg");
+    background-image: url("../img/The Team/3.jpg");
 }
 
 .team-grid_item-child#team-4 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/4.jpg");
+    background-image: url("../img/The Team/4.jpg");
 }
 
 .team-grid_item-child#team-5 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/5.jpg");
+    background-image: url("../img/The Team/5.jpg");
 }
 
 .team-grid_item-child#team-6 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/6.jpg");
+    background-image: url("../img/The Team/6.jpg");
 }
 
 .team-grid_item-child#team-7 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/7.jpg");
+    background-image: url("../img/The Team/7.jpg");
 }
 
 .team-grid_item-child#team-8 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/8.jpg");
+    background-image: url("../img/The Team/8.jpg");
 }
 
 .team-grid_item-child#team-9 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/9.jpg");
+    background-image: url("../img/The Team/9.jpg");
 }
 
 .team-grid_item-child#team-10 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/10.jpg");
+    background-image: url("../img/The Team/10.jpg");
 }
 
 .team-grid_item-child#team-11 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/11.jpg");
+    background-image: url("../img/The Team/11.jpg");
 }
 
 .team-grid_item-child#team-12 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/12.jpg");
+    background-image: url("../img/The Team/12.jpg");
 }
 
 .team-grid_item-child#team-13 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/13.jpg");
+    background-image: url("../img/The Team/13.jpg");
 }
 
 .team-grid_item-child#team-14 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/14.jpg");
+    background-image: url("../img/The Team/14.jpg");
 }
 
 .team-grid_item-child#team-15 {
-    background-image: url("../img/05_Team/Meet\ the\ Team/15.jpg");
+    background-image: url("../img/The Team/15.jpg");
 }
 
 .container__team {
@@ -1694,8 +1694,8 @@ section#meet-the-team {
     z-index: 0;
 }
 
-.diag-background__why_join_us {
-    background-image: url("../img/05_Team/The\ Team_1_Why\ Join\ Us.jpg");
+.diag-background__why_join_us { 
+    background-image: url("../img/The Team/Us.jpg");
     margin-left: auto;
     right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
@@ -1745,21 +1745,21 @@ section#culture, section#career, section#compensation {
 }
 
 .diag-background__culture {
-    background-image: url("../img/05_Team/The\ Team_2_Company\ Culture.jpg");
+    background-image: url("../img/The Team/Culture.jpg");
     margin-right: auto;
     left: 0;
     clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
 }
 
 .diag-background__career {
-    background-image: url("../img/05_Team/The\ Team_3_Career\ Dev.jpg");
+    background-image: url("../img/The Team/Dev.jpg");
     margin-right: auto;
     right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
 }
 
 .diag-background__compensation {
-    background-image: url("../img/05_Team/The\ Team_4_Competitive\ Compensation.jpg");
+    background-image: url("../img/The Team/Compensation.jpg");
     margin-right: auto;
     left: 0;
     clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
