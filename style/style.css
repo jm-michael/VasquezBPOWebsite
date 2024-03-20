@@ -1709,6 +1709,7 @@ section#meet-the-team {
 
 .container__diag .left, .container__diag .right {
     flex: 1;
+    text-align: start;
 }
 
 .diag_header {
@@ -1729,15 +1730,15 @@ section#meet-the-team {
 }
 
 .diag_subheader__line-1 {
-    margin-left: 50px;
+    margin-left: 200px;
 }
 
 .diag_subheader__line-2 {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .diag_subheader__line-3 {
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 section#culture, section#career, section#compensation {
@@ -2469,6 +2470,11 @@ footer {
     .diag_header {
         font-size: 30px;
         margin-bottom: 12px;
+    }
+    .diag_header#head1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+        margin-left: 200px;
     }
 
     .diag_subheader {

@@ -85,9 +85,15 @@
   margin-left: 0px;
 }
 
-.container {
+.container#join1 {
   max-width: 1380px;
-  margin-top: 70px;
+  margin-top: 420px;
+  margin-bottom: 5px;
+}
+
+.container#join4 {
+  max-width: 1380px;
+  margin-bottom: 0px;
 }
 
 .card {
