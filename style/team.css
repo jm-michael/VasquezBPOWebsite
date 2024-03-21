@@ -41,6 +41,7 @@
 
 
 
+
   * {
   font-family: Nunito, sans-serif;
 }
@@ -83,12 +84,6 @@
   margin-right: 0px;
   margin-bottom: 50px;
   margin-left: 0px;
-}
-
-.container#join1 {
-  max-width: 1380px;
-  margin-top: 420px;
-  margin-bottom: 5px;
 }
 
 .container#join4 {
@@ -165,6 +160,8 @@
     margin-bottom: 25px;
     margin-left: 0px;
   }
+
+
 }
 
 
@@ -188,3 +185,154 @@ body {
 .circles li {
   background: #000621 !important;
 }
+
+/* @media only screen and (max-width: 1195px) {
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 650px;
+    margin-bottom: 5px;
+  }
+} */
+
+/* .container#join1 {
+  max-width: 1380px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+} */
+
+@media (min-width :1480px ) and (max-width : 1806px){
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 310px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width :1220px ) and (max-width : 1479px){
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 420px;
+    margin-bottom: 5px;
+  }
+  .diag_header {
+    margin-left: 0px;
+  }
+  
+}
+
+
+
+@media (min-width :906px ) and (max-width : 1205px){
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 660px;
+    margin-bottom: 5px;
+  }
+
+  .diag-background__why_join_us { 
+    clip-path: inset(18% 0 15% 0);
+}
+  .desktop-svg{
+    display: none;
+  }
+  .mobile-svg{
+    display: block;
+  }
+
+  .diag_header#head1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    margin-left: 50px;
+  }
+
+  .diag_header#head2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+  }
+
+  .diag_header#head3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+  }
+
+  
+  .diag_header#head4 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+  }
+
+  .diag_subheader__line-1 {
+    margin-left: 50px;
+  }
+
+  .diag_subheader__line-2 {
+    margin-left: 50px;
+  }
+
+  .diag_subheader__line-3 {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width :606px ) and (max-width : 905px){
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 1360px;
+    margin-bottom: 5px;
+  }
+
+    .diag_header#head1 {
+      font-size: 30px;
+      margin-bottom: 12px;
+      margin-left: 100px;
+    }
+
+    .diag_subheader__line-1 {
+      margin-left: 100px;
+    }
+
+    .diag_subheader__line-2 {
+      margin-left: 100px;
+    }
+
+    .diag_subheader__line-3 {
+      margin-left: 100px;
+    }
+}
+
+@media (min-width :320px ) and (max-width : 605px){
+  .container#join1 {
+    max-width: 1193px;
+    margin-top: 3440px;
+    margin-bottom: 5px;
+  }
+}
+
+.diag_header#head1 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_subheader__line-1 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_subheader__line-2 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_subheader__line-3 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+
+
+.diag_header#head2 {
+  font-size: clamp(1.5625rem, 0.6156rem + 1.6722vw, 1.875rem);
+}
+.diag_header#head3 {
+  font-size: clamp(1.5625rem, 0.6156rem + 1.6722vw, 1.875rem);
+}
+.diag_header#head4 {
+  font-size: clamp(1.5625rem, 0.6156rem + 1.6722vw, 1.875rem);
+}
+
+
