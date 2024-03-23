@@ -1,0 +1,432 @@
+
+/* Search */
+#careers-job-search {
+    position: relative;
+    margin-top: 150px;
+    height: 20%;
+    overflow: hidden;
+    /* top: 100px; */
+    /* transition: top 0.8s; */
+    z-index: 10;
+}
+
+#careers-job-search div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#careers-job-search div input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 30%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+#careers-job-search div button {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #37A5CC;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+}
+
+#careers-job-search .category div {
+    width: 200px;
+}
+
+select {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-appearance: menulist;
+    margin-right: 10px;
+}
+
+/* Data */
+/* #careers-job-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+}
+
+#careers-job-data .left ,#careers-job-data .right{
+    border: 1px solid #000;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+} */
+
+#careers-job-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 800px;
+}
+
+#careers-job-data .left, #careers-job-data .right {
+    /* border: 1px solid #000; */
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    /* display: flex; */
+    justify-content: center;
+    overflow: auto;
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}
+/* 
+#careers-job-data .right {
+
+    z-index: 1;
+    margin-left: auto;
+} */
+
+
+
+#careers-job-data .left .card {
+    border: 1px solid gray;
+    height: 60%;
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+
+#careers-job-data .right .card {
+    border: 1px solid gray;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#careers-job-data .left .card .urgent {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    color: blueviolet;
+    margin-bottom: 5px;
+}
+
+#careers-job-data .left .card .position {
+    font-family: 'nunitobold';
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#careers-job-data .left .card .company {
+    font-family: 'nunitobold';
+    font-size: 12px;
+}
+
+#careers-job-data .left .card .address {
+    font-family: 'nunito';
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+#careers-job-data .left .card .work {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#careers-job-data .left .card .work div {
+    border-radius: 3px;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+#careers-job-data .left .card .work div p {
+    font-size: 10px;
+    font-family: 'nunito';
+    color: black;
+}
+
+
+#careers-job-data .left .card .work div:nth-child(1){
+    margin-right: 5px;
+}
+
+#careers-job-data .left .card .easyapply {
+    font-family: 'nunitobold';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#careers-job-data .left .card .context {
+    font-family: 'nunito';
+    font-size: 14px;
+}
+
+/* #careers-job-data .left .card .footers {
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#careers-job-data .left .card .footers .active {
+    font-family: 'nunito';
+    font-size: 12px;
+    color: gray;
+ } */
+
+ #careers-job-data .left .card button {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #37A5CC;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+ }
+
+ #careers-job-data .right .card {
+    padding: 15px;
+ }
+
+ #careers-job-data .right .card .position {
+    font-family: 'nunitobold';
+    font-size: 18px;
+    margin-bottom: 10px;
+ }
+
+ #careers-job-data .right .card .company-address {
+    display: flex;
+    font-family: 'nunito';
+    font-size: 14px;
+    color: gray;
+ }
+
+ #careers-job-data .right .card .company-address .company {
+    margin-right: 5px;
+ }
+
+ #careers-job-data .right .card .company-address .address {
+    margin-left: 5px;
+ }
+
+ #careers-job-data .right .card button {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #37A5CC;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ /* #careers-job-data .right .card .job-details {
+
+ } */
+
+ #careers-job-data .right .card .job-details .detail {
+    font-family: 'nunitobold';
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ #careers-job-data .right .card .job-details .jtype {
+    font-family: 'nunitobold';
+    font-size: 14px;
+ }
+
+ #careers-job-data .right .card .job-details .type {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+ }
+
+ #careers-job-data .right .card .job-details .jsched {
+    font-family: 'nunitobold';
+    font-size: 14px;
+ }
+
+ #careers-job-data .right .card .job-details .shiftandSched {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+
+ .shift1 , .shift2,  .shift3 {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    color: gray;
+ }
+
+ #careers-job-data .right .card .job-details .loc-title {
+    font-family: 'nunitobold';
+    font-size: 14px;
+ }
+
+ #careers-job-data .right .card .job-details .location {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+ }
+
+ #careers-job-data .right .card .job-details .full-job {
+    font-family: 'nunitobold';
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ #careers-job-data .right .card .job-details .postion {
+    font-family: 'nunitobold';
+    font-size: 18px;
+ }
+
+
+ #careers-job-data .right .card .job-details .description {
+    font-family: 'nunito';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Apply Now */
+#careers-job-data .right .applynow {
+    overflow: auto;
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}
+
+#careers-job-data .right .applynow .Qualif {
+    font-family: 'nunitobold';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#careers-job-data .right .applynow .Qualif-card {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+#careers-job-data .right .applynow .Respo {
+    font-family: 'nunitobold';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#careers-job-data .right .applynow .Respo-card {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+#careers-job-data .right .applynow .title {
+    font-family: 'nunitobold';
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(213, 34, 34);
+}
+
+#careers-job-data .right .applynow .fields-card {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+#careers-job-data .right .applynow .fields-card .fields {
+    font-family: 'nunitobold';
+    font-size: 12px;
+}
+
+#careers-job-data .right .applynow .fields-card .fields input {
+    font-family: 'nunito';
+    font-size: 10px;
+    padding: 3px;
+}
+
+#careers-job-data .right .applynow .fields {
+    font-family: 'nunitobold';
+    font-size: 12px;
+}
+
+#careers-job-data .right .applynow .fields input {
+    font-family: 'nunitobold';
+}
+
+#careers-job-data .right .applynow button {
+    font-family: 'nunitobold';
+    font-size: 12px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #c92121;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}

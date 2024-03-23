@@ -71,8 +71,9 @@ section#careers-top {
     font-family: 'nunitobold';
 }
 
-#careers_menu div button {
+#careers_menu div a {
     font-family: 'nunitobold';
+    font-size: smaller;
     padding: 10px;
     width: 200px;
     border-radius: 20px;
@@ -80,6 +81,7 @@ section#careers-top {
     border: none;
     color: white;
     margin-left: 280px;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -240,6 +242,7 @@ section#careers-top {
     font-weight: 800;
     width: 500px;
     text-align: center; /* Center-align the buttons */
+
 }
 
 #careers-6th .careers-6th-buttons button {
@@ -251,11 +254,21 @@ section#careers-top {
     border: none;
     color: white;
     cursor: pointer;
-    margin: 10px auto; /* Center the buttons horizontally */
+    margin: 10px auto; 
 }
 
-#careers-6th .careers-6th-buttons .view-all-positions {
-    background-color: #37A5CC !important;
+#careers-6th .careers-6th-buttons div a {
+    font-family: 'nunitobold';
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    background-color: #37A5CC;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* 7th row */

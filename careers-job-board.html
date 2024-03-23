@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/aos.css">
+    <link rel="stylesheet" href="style/careers-job.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <title>Careers Job Board | Vasquez BPO, Inc.</title>
+</head>
+<body>
+
+    <!-- start for animate only -->
+    <div class="area"> <ul class="circles"> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> </ul> </div>
+    <!-- end for animate only -->
+
+    <section id="careers-job-search">
+        <div>
+            <input type="text" id="search" placeholder="Search..." name="search"><br><br>
+            <button>Search</button>
+        </div>
+
+        <div class="category">
+            <div>
+                <select name="position" id="position">
+                    <option selected value="All">All</option>
+                    <option value="Associate">Associate</option>
+                    <option value="Senior Associate">Senior Associate</option>
+                    <option value="Associate Manager">Associate Manager</option>
+                    <option value="Manager">Manager</option>
+                </select>
+            </div>
+
+            <div>
+                <select name="department" id="department">
+                    <option selected value="All">All</option>
+                    <option value="Audit">Audit</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="IT Audit">IT Audit</option>
+                    <option value="Tax">Tax</option>
+                    <option value="Business Operations">Business Operations</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers-job-data">
+        <div class="left">
+            <div id="cardContainer"></div>
+        </div>
+        <div class="right">
+            <div class="card">
+                <p class="position">Manager - Audit</p>
+                <div class="company-address">
+                    <p class="company">Vasquez BPO, Inc</p>
+                    <div>|</div>
+                    <p class="address">Quezon City</p>
+                </div>
+                <button class="applyRightCard">Apply Now</button>
+                <div class="job-details">
+                    <p class="detail">Job Details</p>
+                    <p class="jtype">Job Type</p>
+                    <p class="type">Full-time</p>
+                    <p class="jsched">Shift and Schedule</p>
+                    <div class="shiftandSched">
+                        <p class="shift1">8 Hours</p>
+                        <p class="shift2">Day Shift</p>
+                        <p class="shift3">Monday to Friday</p>
+                    </div>
+                    <p class="loc-title">Location</p>
+                    <p class="location">Quezon City</p>
+
+                    <p class="full-job">Full job description</p>
+                    <p class="postion">Manager - Audit</p>
+
+                    <p class="loc-title">Location</p>
+                    <p class="location">Quezon City</p>
+
+                    <p class="description">From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance.</p>
+                    <p class="description">From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance.</p>
+                </div>
+            </div>
+
+            <div class="card applynow hidden">
+                <p class="position">Manager - Audit</p>
+
+                <p class="Qualif">Qualifications</p>
+                <div class="Qualif-card">
+                    <ul>
+                        <li>Qualification 1</li>
+                        <li>Qualification 2</li>
+                        <li>Qualification 2</li>
+                    </ul>
+                </div>
+
+                <p class="Respo">Responsibilities</p>
+                <div class="Respo-card">
+                    <ul>
+                        <li>Responsibility 1</li>
+                        <li>Responsibility 2</li>
+                        <li>Responsibility 2</li>
+                    </ul>
+                </div>
+
+                <p class="title">SUBMIT YOUR APPLICATION</p>
+                <div class="fields-card">
+                    <div class="fields">
+                        <p>Resume/CV</p>
+                        <input type="text" id="Resume" placeholder="Resume" name="Resume"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Full Name</p>
+                        <input type="text" id="FullName" placeholder="Full Name" name="Full Name"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Email</p>
+                        <input type="text" id="Email" placeholder="Email" name="Email"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Phone No.</p>
+                        <input type="text" id="PhoneNo" placeholder="Phone No" name="Phone No"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Current location</p>
+                        <input type="text" id="Currentlocation" placeholder="Current location" name="Current location"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Current/Most recent company</p>
+                        <input type="text" id="CurrentMostrecentcompany" placeholder="Current-Most recent company" name="Current-Most recent company"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Current/Most recent job title</p>
+                        <input type="text" id="CurrentMostrecentjobtitle" placeholder="Current/Most recent job title" name="Current/Most recent job title"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>Expected salary</p>
+                        <input type="text" id="Expectedsalary" placeholder="Expected salary" name="Expected salary"><br><br>
+                    </div>
+                    <div class="fields">
+                        <p>How many years of professional experience do you have?</p>
+                        <input type="text" id="experiencedoyouhave" placeholder="How many years of professional experience do you have?" name="How many years of professional experience do you have?"><br><br>
+                    </div>
+                </div>
+                <div class="fields">
+                    <p>How many busy season experience do you have in public accounting?</p>
+                    <input type="text" id="publicaccounting" placeholder="" name="How many busy season experience do you have in public accounting?"><br><br>
+                </div>
+                <div class="fields">
+                    <p>What industries have you handled?</p>
+                    <input type="text" id="industrieshandled" placeholder="" name="What industries have you handled?"><br><br>
+                </div>
+                <div class="fields">
+                    <p>What is the earliest date you are available to start working?</p>
+                    <input type="text" id="earliestdate" placeholder="" name="What is the earliest date you are available to start working?"><br><br>
+                </div>
+
+                <button>SUBMIT APPLICATION</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container container__footer">
+            <div class="footer-logo">
+                <img class="footer-img" src="img/V_C Logo_White.png"></img>
+                <div class="footer-copyright">
+                    <a href="https://vasquezcpa.com" target="_blank">© 2020 VASQUEZ CPA. ALL RIGHTS RESERVED.</a>
+                </div>
+            </div>
+            <br>
+            <div class="footer-links">
+                <p class="footer_header">QUICK LINKS</p>
+                <ul>
+                    <li class="footer-link"><a href="about">About Us</a></li>
+                    <li class="footer-link"><a href="services">Services</a></li>
+                    <li class="footer-link"><a href="industries">Industries</a></li>
+                    <li class="footer-link"><a href="team">Meet The Team</a></li>
+                    <li class="footer-link"><a href="team#careers">Careers</a></li>
+                    <li class="footer-link"><a href="https://vasquezcpa.com" target="_blank">Vasquez & Co. LLP</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p class="footer_header">CONTACT US</p>
+                <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
+                <p class="footer-contact_info">
+                    (02) 7622 8779<br>
+                    +63 917 160 8779
+                </p>
+                <p class="footer-contact_header">Makati Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/yXQvNGMWJbKS3jTP7" target="_blank">29th Floor Rufino Pacific Tower, Ayala Avenue, Makati City, Metro Manila, Philippines 1226</a></p>
+                <p class="footer-contact_header">Ortigas Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/fu1198a7JTGHwT1RA" target="_blank">28th Floor, Robinsons Cyberscape Gamma, Topaz Rd, Ortigas Center, Pasig City, Metro Manila, Philippines</a></p>
+            </div>
+        </div>
+    </footer>
+    <div id="contact_modal-overlay"></div>
+    <img src="img/Icons/top.svg" class="gototop-image" onclick="topFunction()" alt="" srcset="">
+    <script src="script/aos.js"></script>
+    <!-- <script src="E:\Vasquez BPO project\Website\script\global.js"></script> -->
+    <script src="script/global.js"></script>
+    <script src="script/careers-job.js"></script>
+</body>
+</html>
