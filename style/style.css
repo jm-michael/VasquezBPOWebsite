@@ -1574,8 +1574,8 @@ a.button__card:hover {
 }
 
 section#meet-the-team {
-    height: 100%;
-    width: 100%;
+    height: 600px;
+    width: 50%;
 }
 
 .absolute_background__team {
@@ -1605,7 +1605,8 @@ section#meet-the-team {
     width: 100%;
     height: 100%;
     background-position: center top;
-    background-size: cover;
+    background-size: contain;
+    background-repeat:no-repeat;
     transition: 0.2s linear;
     transform: scale(1);
 }

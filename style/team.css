@@ -29,6 +29,45 @@
   display: none;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 10px; /* Adjust the gap between grid items */
+  height: 30%;
+}
+
+.grid-containerparent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 10px; /* Adjust the gap between grid items */
+  height: 1250px;
+  margin-bottom: 30px;
+}
+
+.grid-item {
+  /* background-color: #ccc; */
+  padding: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.titleteam {
+  text-align: start;
+  margin-bottom: 10px;
+  margin-top: 600px;
+  margin-left: 5vw;
+}
+
+.name1{
+  margin-top: 100px;
+  font-size: 12px;
+  color: rgb(7, 7, 7);
+  background-color: rgb(190, 202, 212);
+  border-radius: 5px;
+  max-width: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 @media screen and (max-width: 520px) {
 
@@ -142,10 +181,35 @@
 .diag_text__line-7#diag7 {
   font-size: clamp(0.625rem, 0.4526rem + 0.8621vw, 0.9375rem);
 }
+.titleteam {
+  font-size: clamp(1.875rem, 1.5302rem + 1.7241vw, 2.5rem);
+}
 
 
 @media screen and (max-width: 778px){
 
+  .titleteam {
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 1000px;
+  }
+
+  .grid-containerparent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+    height: 3880px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+    height: 30%;
+  }
+  
   .container__diag#join4{
     display: none;
   }
@@ -431,3 +495,75 @@
   }
 
 }
+
+@media screen and (max-width : 390px){
+
+  .name1{
+    margin-top: 100px;
+    font-size: 12px;
+    color: rgb(7, 7, 7);
+    background-color: rgb(190, 202, 212);
+    border-radius: 5px;
+    max-width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  section#meet-the-team {
+    height: 1700px;
+    width: 100%;
+  }
+
+  .titleteam{
+    display: none;
+  }
+
+  .grid-containerparent {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 3400px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+    height: 30%;
+  }
+  
+  .grid-item {
+    /* background-color: #ccc; */
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+/* THE TEAM PICTURE  */
+
+@media screen and (max-width: 500px) {
+  .titleteam{
+    display: none;
+  }
+
+  .grid-containerparent {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 3850px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .titleteam{
+    display: none;
+  }
+}
+
+
