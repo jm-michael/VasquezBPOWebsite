@@ -1491,7 +1491,7 @@ section#industries-hero {
     display: flex;
     /* justify-content: flex-end;
     align-items: flex-end; */
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     top: 40%;
     left: 30%;
@@ -1719,7 +1719,7 @@ section#meet-the-team {
     color: #424457;
     word-spacing: 0px;
     margin-bottom: 15px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
 .diag_subheader {
@@ -1731,15 +1731,15 @@ section#meet-the-team {
 }
 
 .diag_subheader__line-1 {
-    margin-left: 200px;
+    margin-left: 15vw;
 }
 
 .diag_subheader__line-2 {
-    margin-left: 200px;
+    margin-left: 15vw;
 }
 
 .diag_subheader__line-3 {
-    margin-left: 200px;
+    margin-left: 15vw;
 }
 
 section#culture, section#career, section#compensation {
@@ -2474,8 +2474,8 @@ footer {
     }
     .diag_header#head1 {
         font-size: 30px;
-        margin-bottom: 12px;
-        margin-left: 200px;
+        margin-bottom: 1px;
+        margin-left: 15vw;
     }
 
     .diag_subheader {
