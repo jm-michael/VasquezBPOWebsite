@@ -25,6 +25,10 @@
   display: none;
 }
 
+.buttom#submobileconpension {
+  display: none;
+}
+
 
 @media screen and (max-width: 520px) {
 
@@ -70,6 +74,15 @@
 
 /* Fontsize clamp join us  */
 .diag_header#head1 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_header#head2 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_header#head3 {
+  font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
+}
+.diag_header#head4 {
   font-size: clamp(1.25rem, -0.6438rem + 3.3445vw, 1.875rem);
 }
 .diag_subheader__line-1 {
@@ -133,6 +146,10 @@
 
 @media screen and (max-width: 778px){
 
+  .container__diag#join4{
+    display: none;
+  }
+
   .diag-background {
     /* Set a background image */
     background-image:  url("../img/The Team/Us.jpg");
@@ -178,6 +195,18 @@
     margin-bottom: 15vw;
     clip-path: inset(15% 0 13% 0);
   }
+
+
+  .diag-background__compensation {  /*career */
+    background-image: url("../img/The Team/Compensation.jpg");
+    margin-left: auto;
+    right: 0;
+    width: 100%;
+    margin-top:20vw;
+    margin-bottom: 15vw;
+    clip-path: inset(15% 0 13% 0);
+  }
+
   .container__diag#join1{ /*join us */
     display: none;
   }
@@ -198,6 +227,13 @@
   }
 
   .buttom#submobilecareer {
+    /*culture */
+    display: block;
+    padding: 0px 10px 0px 10px;
+    margin-top: 60vw;
+  }
+
+  .buttom#submobileconpension {
     /*culture */
     display: block;
     padding: 0px 10px 0px 10px;
@@ -298,6 +334,43 @@
 
 }
 
+@media screen and (max-width : 580px)and (min-width : 450px){
+  
+  .buttom#submobilecareer {
+    /*culture */
+    display: block;
+    padding: 0px 10px 0px 10px;
+    margin-top: 70vw;
+  }
+
+  .buttom#submobileconpension {
+    /*culture */
+    display: block;
+    padding: 0px 10px 0px 10px;
+    margin-top: 80vw;
+  }
+
+  .diag-background__career {  /*career */
+    background-image: url("../img/The Team/Dev.jpg");
+    margin-left: auto;
+    right: 0;
+    width: 100%;
+    margin-top:30vw;
+    margin-bottom: 15vw;
+    clip-path: inset(15% 0 13% 0);
+  }
+
+  .diag-background__compensation  {  /*career */
+    background-image: url("../img/The Team/Compensation.jpg");
+    margin-left: auto;
+    right: 0;
+    width: 100%;
+    margin-top:30vw;
+    margin-bottom: 15vw;
+    clip-path: inset(15% 0 13% 0);
+  }
+}
+
 @media screen and (max-width : 450px){
 
   .diag-background__culture {  /*culture */
@@ -320,6 +393,16 @@
     clip-path: inset(15% 0 13% 0);
   }
 
+  .diag-background__compensation  {  /*culture */
+    background-image: url("../img/The Team/Compensation.jpg");
+    margin-left: auto;
+    right: 0;
+    width: 100%;
+    margin-top:40vw;
+    margin-bottom:25vw;
+    clip-path: inset(15% 0 13% 0);
+  }
+
   section#why-join-us{
     margin-top: 1vw;
   }
@@ -334,6 +417,13 @@
   }
 
   .buttom#submobilecareer {
+    /*culture */
+    display: block;
+    padding: 0px 10px 0px 10px;
+    margin-top: 100vw;
+  }
+
+  .buttom#submobileconpension {
     /*culture */
     display: block;
     padding: 0px 10px 0px 10px;
