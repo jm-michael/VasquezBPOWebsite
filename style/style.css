@@ -1720,7 +1720,17 @@ section#meet-the-team {
     color: #424457;
     word-spacing: 0px;
     margin-bottom: 15px;
-    /* margin-left: 200px; */
+    /* margin-left: 15vw; */
+}
+
+.diag_header#head1 {
+    font-size: 34px;
+    font-weight: normal;
+    font-family: "nunitolight";
+    color: #424457;
+    word-spacing: 0px;
+    margin-bottom: 15px;
+    margin-left: 15vw;
 }
 
 .diag_subheader {
@@ -1769,7 +1779,7 @@ section#culture, section#career, section#compensation {
 }
 
 .left__career {
-    padding-right: 30px;
+    padding-right: 80px;
 }
 
 .diag_text {

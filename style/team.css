@@ -9,9 +9,7 @@
   border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
 }
 
-.container__footer {
-  margin-top: 100%;
-}
+
 
 .container__diag#join2{
   display: none;
@@ -40,7 +38,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
   grid-gap: 10px; /* Adjust the gap between grid items */
-  height: 1250px;
+  height: 1000px;
   margin-bottom: 30px;
 }
 
@@ -188,6 +186,10 @@
 
 @media screen and (max-width: 778px){
 
+  .container__footer {
+    margin-top: 450px;
+  }
+
   .titleteam {
     text-align: start;
     margin-bottom: 10px;
@@ -198,9 +200,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
     grid-gap: 10px; /* Adjust the gap between grid items */
-    height: 3880px;
+    height: 3150px;
     margin-bottom: 30px;
-    margin-left: 250px;
+    margin-left: 30vw;
   }
 
   .grid-container {
@@ -496,7 +498,7 @@
 
 }
 
-@media screen and (max-width : 390px){
+@media screen and (max-width: 390px){
 
   .name1{
     margin-top: 100px;
@@ -509,6 +511,15 @@
     margin-right: 40px;
   }
 
+  .grid-containerparent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    height: 3130px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
   section#meet-the-team {
     height: 1700px;
     width: 100%;
@@ -518,46 +529,20 @@
     display: none;
   }
 
-  .grid-containerparent {
-    display: block;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    height: 3400px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 10px; /* Adjust the gap between grid items */
-    height: 30%;
-  }
-  
-  .grid-item {
-    /* background-color: #ccc; */
-    padding: 50px;
-    text-align: center;
-    border-radius: 5px;
-  }
 }
 /* THE TEAM PICTURE  */
 
-@media screen and (max-width: 500px) {
+/* @media  screen and (max-width : ) {
+  
+} */
+
+@media screen and (max-width: 500px){
   .titleteam{
     display: none;
   }
 
-  .grid-containerparent {
-    display: block;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    height: 3850px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    margin-left: 150px;
-  }
+
 }
 
 @media screen and (max-width: 850px) {
