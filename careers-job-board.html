@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/animate.css">
     <title>Careers Job Board | Vasquez BPO, Inc.</title>
 </head>
-<body>
+<body data-page="careers-job-board">
 
     <!-- start for animate only -->
     <div class="area"> <ul class="circles"> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> </ul> </div>
@@ -23,7 +23,7 @@
 
         <div class="category">
             <div>
-                <select name="position" id="position">
+                <select name="position" id="position" onchange="displayMessage()">
                     <option selected value="All">All</option>
                     <option value="Associate">Associate</option>
                     <option value="Senior Associate">Senior Associate</option>
@@ -33,7 +33,7 @@
             </div>
 
             <div>
-                <select name="department" id="department">
+                <select name="department" id="department" onchange="displayMessage()">
                     <option selected value="All">All</option>
                     <option value="Audit">Audit</option>
                     <option value="Accounting">Accounting</option>
@@ -50,7 +50,7 @@
             <div id="cardContainer"></div>
         </div>
         <div class="right">
-            <div class="card">
+            <div class="card hidden">
                 <p class="position">Manager - Audit</p>
                 <div class="company-address">
                     <p class="company">Vasquez BPO, Inc</p>
@@ -107,7 +107,7 @@
                 <div class="fields-card">
                     <div class="fields">
                         <p>Resume/CV</p>
-                        <input type="text" id="Resume" placeholder="Resume" name="Resume"><br><br>
+                        <input type="file" id="Resume" placeholder="Resume" name="Resume"><br><br>
                     </div>
                     <div class="fields">
                         <p>Full Name</p>

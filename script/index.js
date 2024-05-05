@@ -26,9 +26,13 @@ function hideAllIframes() {
 function showIframe(iframeSrc) {
     var iframe = document.querySelector('iframe[src="' + iframeSrc + '"]');
     if (iframe) {
+        if (iframe.src.includes("careers.html")) {
+            iframe.src = "careers.html";//iframe.src; // This line forces the iframe to reload
+        }
         iframe.classList.remove('hidden');
     }
 }
+
 
 function removeSelected(){
     for (var i = 0; i < navLinks.length; i++) {
@@ -40,25 +44,9 @@ function removeSelected(){
 for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', function(e) {
         e.preventDefault();
-        // var link = this.querySelector('a');
+
         var iframeSrc = this.querySelector('a').getAttribute('href');
-        // if (link.textContent == "CAREERS") {
-        //     iframeSrc = "careers.html"
-        // }
-        // if (link.textContent == "ABOUT US") {
-        //     iframeSrc = "about.html"
-        // }
-        // if (link.textContent == "SERVICES") {
-        //     iframeSrc = "services.html"
-        // }
-        // if (link.textContent == "INDUSTRIES") {
-        //     iframeSrc = "industries.html"
-        // }
-        // if (link.textContent == "THE TEAM") {
-        //     iframeSrc = "team.html"
-        // }
-        // console.log(link.textContent);
-        // var iframeSrc = this.querySelector('a').getAttribute('href');
+
         removeSelected();
 
         e.currentTarget.classList.add('navbar-link__active');

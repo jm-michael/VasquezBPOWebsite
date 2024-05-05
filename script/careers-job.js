@@ -44,6 +44,7 @@ document.querySelector('button').addEventListener('click', function(event) {
 // On Load
 const data = localStorage.getItem('data');
 reloadCards("All", (data == "" ? "All" : data),"");
+displayMessage();
 
 //Load Cards Function
 function reloadCards(positionLevel,department,search){
@@ -54,7 +55,7 @@ function reloadCards(positionLevel,department,search){
         )
     const cardContainer = document.getElementById("cardContainer");
     cardContainer.innerHTML = "";
-    clickCard(newCards[0]?.id)
+    // clickCard(newCards[0]?.id)
     newCards.forEach(card => {
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
@@ -63,10 +64,11 @@ function reloadCards(positionLevel,department,search){
             var applynow = document.querySelector("#careers-job-data .right .applynow");
             
             if (!event.target.classList.contains("applyNowEvent")) {
-                rightCard.classList.remove("hidden");
-                applynow.classList.add("hidden");
+                // rightCard.classList.remove("hidden");
+                // applynow.classList.add("hidden");
+                applynow.classList.remove("hidden");
             }
-            clickCard(card.id);
+            // clickCard(card.id);
         });
     
         const urgentPara = document.createElement("p");
@@ -89,27 +91,27 @@ function reloadCards(positionLevel,department,search){
         addressPara.textContent = card.address;
         cardDiv.appendChild(addressPara);
     
-        const worksDiv = document.createElement("div");
-        worksDiv.classList.add("work");
-        card.works.forEach(work => {
-            const worksDiv0 = document.createElement("div");
-            const workPara = document.createElement("p");
-            workPara.classList.add("full");
-            workPara.textContent = work;
-            worksDiv.appendChild(worksDiv0);
-            worksDiv0.appendChild(workPara);
-        });
-        cardDiv.appendChild(worksDiv);
+        // const worksDiv = document.createElement("div");
+        // worksDiv.classList.add("work");
+        // card.works.forEach(work => {
+        //     const worksDiv0 = document.createElement("div");
+        //     const workPara = document.createElement("p");
+        //     workPara.classList.add("full");
+        //     workPara.textContent = work;
+        //     worksDiv.appendChild(worksDiv0);
+        //     worksDiv0.appendChild(workPara);
+        // });
+        // cardDiv.appendChild(worksDiv);
     
-        const easyApplyPara = document.createElement("p");
-        easyApplyPara.classList.add("easyapply");
-        easyApplyPara.textContent = card.easyapply;
-        cardDiv.appendChild(easyApplyPara);
+        // const easyApplyPara = document.createElement("p");
+        // easyApplyPara.classList.add("easyapply");
+        // easyApplyPara.textContent = card.easyapply;
+        // cardDiv.appendChild(easyApplyPara);
     
-        const contextPara = document.createElement("p");
-        contextPara.classList.add("context");
-        contextPara.textContent = card.context;
-        cardDiv.appendChild(contextPara);
+        // const contextPara = document.createElement("p");
+        // contextPara.classList.add("context");
+        // contextPara.textContent = card.context;
+        // cardDiv.appendChild(contextPara);
     
         const applyButton = document.createElement("button");
         applyButton.classList.add("applyNowEvent")
@@ -119,7 +121,15 @@ function reloadCards(positionLevel,department,search){
 
             var rightCard = document.querySelector("#careers-job-data .right .card");
             var applynow = document.querySelector("#careers-job-data .right .applynow");
-            rightCard.classList.add("hidden");
+
+            // comment temporary
+            // rightCard.classList.add("hidden");
+            // applynow.classList.remove("hidden");
+
+            // new added temporary
+            // rightCard.classList.remove("hidden");
+            // applynow.classList.add("hidden");
+
             applynow.classList.remove("hidden");
         });
     
@@ -133,8 +143,8 @@ document.addEventListener("click", function(event) {
     if (event.target.classList.contains("applyRightCard")) {
         var rightCard = document.querySelector("#careers-job-data .right .card");
         var applynow = document.querySelector("#careers-job-data .right .applynow");
-        rightCard.classList.add("hidden");
-        applynow.classList.remove("hidden");
+        // rightCard.classList.add("hidden");
+        // applynow.classList.remove("hidden");
     }
 });
 
@@ -150,4 +160,21 @@ function clickCard(id) {
     document.querySelector(".right .card .job-details .location").textContent = card.address
     document.querySelector(".right .card .job-details .postion").textContent = card.postion
     document.querySelector(".right .card .job-details .description").textContent = card.context
+}
+
+function displayMessage() {
+    var position = document.getElementById('position').value;
+    var department = document.getElementById('department').value;
+
+    if (position === 'All') {
+        document.getElementById('position').options[0].text = 'POSITION LEVEL';
+    } else {
+        document.getElementById('position').options[0].text = 'All';
+    }
+
+    if (department === 'All') {
+        document.getElementById('department').options[0].text = 'DEPARTMENT';
+    } else {
+        document.getElementById('department').options[0].text = 'All';
+    }
 }

@@ -105,14 +105,14 @@ select {
 #careers-job-data .left .card {
     border: 1px solid gray;
     height: 60%;
-    width: 70%;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 10px gray;
     margin: 10px;
     padding: 20px;
     position: relative;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */   /* comment temporary */ 
     cursor: pointer;
 }
 
@@ -207,7 +207,8 @@ select {
     cursor: pointer;
     height: 33px;
     position: absolute;
-    bottom: 15px;
+    /* bottom: 15px; */  /* commented; */
+    top: 50px;  /* new added; */
     right: 15px;
  }
 
@@ -339,7 +340,7 @@ select {
     font-size: 12px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #37A5CC;
     border-radius: 5px;
 }
 
@@ -354,7 +355,7 @@ select {
     font-size: 12px;
     margin-bottom: 40px;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: #6FA3C6;
     border-radius: 5px;
 }
 
@@ -386,11 +387,22 @@ select {
 #careers-job-data .right .applynow .fields {
     font-family: 'nunitobold';
     font-size: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#careers-job-data .right .applynow .fields p {
+    word-wrap: break-word;
+    flex: 1;
 }
 
 #careers-job-data .right .applynow .fields input {
     font-family: 'nunitobold';
+    width: 200px;
 }
+
 
 #careers-job-data .right .applynow button {
     font-family: 'nunitobold';

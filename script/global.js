@@ -61,3 +61,17 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+document.addEventListener('wheel', function(event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && (event.key === '-' || event.key === '=')) {
+        event.preventDefault();
+    }
+});
