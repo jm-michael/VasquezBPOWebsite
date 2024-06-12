@@ -562,7 +562,7 @@ section#why_us {
     background-image: url('../img/01_Home Page/Home Page_World Class Team.jpg');
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: 50% 100%;
+    background-position: 60% 20%;
 }
 
 .world_class_team-background_right {
@@ -2558,7 +2558,7 @@ footer {
 @media only screen and (max-width: 1450px) {
     
     .navbar-container {
-        max-width: 1000px; 
+        max-width: 1020px; 
     }
 
     .navbar-logo {
