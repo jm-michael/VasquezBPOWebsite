@@ -301,7 +301,7 @@ section#careers-top {
 /* 7th row */
 #careers-7th {
     position: relative;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -330,14 +330,14 @@ section#careers-top {
     position: absolute;
     font-family: 'nunitobold';
     font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
-    top: 50px;
+    top: 20px;
     left: 20%;
     width: 300px;
 }
 
 #careers-7th div .content {
     position: absolute;
-    top: 30%;
+    top: 15%;
     right: 22%;
     height: 100%;
     width: 13%;
@@ -401,8 +401,12 @@ body {
 }
 
 .slide {
-    min-width: 100%;
-    box-sizing: border-box;
+    min-width: 600px; /* or any width you need */
+    min-height: 500px; /* set to the desired height */
+    background-image: url('img/careers/IMG (482).JPG');
+    background-size: cover; /* options: contain, cover, auto */
+    background-position: center center; /* position the image within the container */
+    background-repeat: no-repeat; /* prevent the image from repeating */
 }
 
 img {
@@ -413,7 +417,7 @@ img {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -487,3 +491,4 @@ img {
     font-family: 'nunitobold';
     
 }
+
