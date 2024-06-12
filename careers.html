@@ -62,10 +62,10 @@
         <div class="careers_6th_overlay"></div>
         <div class="careers-6th-title">Shape your future with us.</div>
         <div class="careers-6th-buttons">
-            <button class="6th-Audit">Audit</button>
-            <button class="6th-ITAudit">IT Audit</button>
-            <button class="6th-Accounting">Accounting</button>
-            <button class="6th-Tax">Tax</button>
+            <button id="6th-Audit" class="6th-Audit ">Audit</button>
+            <button id="6th-ITAudit" class="6th-ITAudit">IT Audit</button>
+            <button id="6th-Accounting" class="6th-Accounting">Accounting</button>
+            <button id="6th-Tax" class="6th-Tax">Tax</button>
             <!-- <button class="view-all-positions">View all positions</button> -->
             <div class="6th-View-All"><a href="careers-job-board.html">View all positions</a></div>
         </div>
@@ -81,11 +81,38 @@
             <img class="red"  src="img/careers/image/notched right red.png" alt="notched right blue">
         </div>
 
-        <div class="image">
-            <img src="img/careers/Careers HP2.png" alt="HP2">
-            <img src="img/careers/Careers HP3.jpg" alt="HP3">
-            <img src="img/careers/Careers HP 1.png" alt="HP1">
-        </div>
+        <section id="glide" class="carousel">
+            <div class="slides">
+                <img src="img/careers/IMG  (115).JPG" alt="HP2"  class="slide">
+                <img src="img/careers/IMG  (292).JPG" alt="HP3"  class="slide">
+                <img src="img/careers/IMG  (395).JPG" alt="HP4"  class="slide">
+                <img src="img/careers/IMG  (404).JPG" alt="HP5"  class="slide">
+                <img src="img/careers/IMG  (482).JPG" alt="HP6"  class="slide">
+                <img src="img/careers/IMG  (561).JPG" alt="HP7"  class="slide">
+                <img src="img/careers/IMG  (650).JPG" alt="HP8"  class="slide">
+                <img src="img/careers/IMG  (681).JPG" alt="HP9"  class="slide">
+                <img src="img/careers/IMG  (765).JPG" alt="HP10" class="slide">
+                <img src="img/careers/IMG  (871).JPG" alt="HP11" class="slide">
+                <img src="img/careers/IMG_0945.jpg"   alt="HP12" class="slide">
+                <img src="img/careers//KIX_1919.jpg"   alt="HP1"  class="slide">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="bullets">
+                <span class="bullet" onclick="currentSlide(0)"></span>
+                <span class="bullet" onclick="currentSlide(1)"></span>
+                <span class="bullet" onclick="currentSlide(2)"></span>
+                <span class="bullet" onclick="currentSlide(3)"></span>
+                <span class="bullet" onclick="currentSlide(4)"></span>
+                <span class="bullet" onclick="currentSlide(5)"></span>
+                <span class="bullet" onclick="currentSlide(6)"></span>
+                <span class="bullet" onclick="currentSlide(7)"></span>
+                <span class="bullet" onclick="currentSlide(8)"></span>
+                <span class="bullet" onclick="currentSlide(9)"></span>
+                <span class="bullet" onclick="currentSlide(10)"></span>
+                <span class="bullet" onclick="currentSlide(11)"></span>
+            </div>
+        </section>
         
     </section>
 
