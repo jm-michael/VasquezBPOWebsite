@@ -1,48 +1,397 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.theme.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/aos.css">
-
-    <link rel="stylesheet" href="style/index.css">
-    <title>Vasquez BPO, Inc.</title>
+    <title>Home | Vasquez BPO, Inc.</title>
 </head>
-
-<body>
-    <!-- Header -->
+<body> 
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="index"><img class="navbar-logo" src="img/V_C Logo_White.png"></a>
-            <ul class="navbar-links" id="navbar-links">
-                <li class="navbar-link navbar-link__active"><a href="about.html">ABOUT US</a></li>
+            <img class="navbar-logo" src="img/V_C Logo_White.png"></img>
+            <ul class="navbar-links">
+                <li class="navbar-link"><a href="about.html">ABOUT US</a></li>
                 <li class="navbar-link"><a href="services.html">SERVICES</a></li>
                 <li class="navbar-link"><a href="industries.html">INDUSTRIES</a></li>
                 <li class="navbar-link"><a href="team.html">THE TEAM</a></li>
                 <li class="navbar-link"><a href="careers.html">CAREERS</a></li>
-                <button class="navbar-link navbar-link__round clickable" data-modal-target="#modal">WORK WITH
-                    US</button>
+                <button class="navbar-link navbar-link__round clickable" data-modal-target="#modal">WORK WITH US</li>
             </ul>
-            <div class="burger" onclick="toggleNav(true)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </div>
     </nav>
+    <section id="hero">
+        <div class="overlay">
+            <img src="img/Overlays/hero-diagonal.svg" class="hero-diagonal" alt="">
+        </div>
+        <div class="container container__hero">
+            <h1 class="hero-header" data-aos="fade" data-aos-duration="1000" delay="500" data-aos-once="true">
+                OPTIMIZING OPPORTUNITIES, GAINING ADVANTAGES THROUGH OUR SOLUTIONS.
+            </h1>
+            <div class="button-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
+                <button class="button button__filled clickable" data-modal-target="#modal">WORK WITH US</button>
+                <a class="button button__outline button__hover" href="about.html">WHO WE ARE</a>
+            </div>
+        </div>
+    </section>
+    <section id="solutions">
+        <div class="overlay">
+            <img src="img/Overlays/solutions-diagonal.svg" class="hero-diagonal" alt="">
+        </div>
+        <div class="container container__solutions" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <p class="solutions-subheader">WHAT WE CAN DO</p>
+            <h2 class="solutions-header">Best Possible Outsourced <span class="nunito__bold">Solutions</span></h2>
+            <div class="solutions-grid_container">
+                <a class="solutions-grid_item" href="services.html?id=Audit">
+                    <img src="img/Icons/Services/Home_Services-01-Audit.svg" alt="icon" class="solutions-grid_icon" srcset="">
+                    <div class="solutions-grid_item_right">EXTERNAL & INTERNAL AUDIT SUPPORT</div>
+                </a>
+                <a class="solutions-grid_item" href="services.html?id=Accounting">
+                    <img src="img/Icons/Services/Home_Services-02-Accounting.svg" alt="icon" class="solutions-grid_icon" srcset="">
+                    <div class="solutions-grid_item_right">ACCOUNTING & BOOKKEEPING</div>
+                </a>
+                <a class="solutions-grid_item" href="services.html?id=Controllership">
+                    <img src="img/Icons/Services/Home_Services-03-Controllership.svg" alt="icon" class="solutions-grid_icon" srcset="">
+                    <div class="solutions-grid_item_right">CONTROLLERSHIP & FINANCIAL MANAGEMENT</div>
+                </a>
+                <a class="solutions-grid_item solutions-grid_item__bottom" href="services.html?id=IT">
+                    <img src="img/Icons/Services/Home_Services-04-IT Risk.svg" alt="icon" class="solutions-grid_icon" srcset="">
+                    <div class="solutions-grid_item_right">IT RISK ADVISORY</div>
+                </a>
+                <a class="solutions-grid_item solutions-grid_item__bottom" href="services.html?id=Other">
+                    <img src="img/Icons/Services/Home_Services-06-Other Services.svg" alt="icon" class="solutions-grid_icon" srcset="">
+                    <div class="solutions-grid_item_right">OTHER PROFESSIONAL SERVICES</div>
+                </a>
+            </div>
+            <a class="button button__solution" href="services.html">SERVICES</a>
+        </div>
+    </section>
+    <section id="why_us">
+        <div class="overlay overlay__why_us">
+            <img src="img/Overlays/whyus-diagonal.svg" class="hero-diagonal" alt="">
+        </div>
+        <div class="why_us-background_container">
+            <div class="why_us-background_left"></div>
+            <div class="why_us-background_right">
+                <div class="why_us-overlay"></div>
+            </div>
+        </div>
+        <div class="container container__why_us">
+            <h2 class="why_us-header" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Why Us? <span class="nunito__bold">Why Not—</span></h2>  
+            <div class="glide glide-hero">
+                <div class="glide__track" data-glide-el="track" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when our help can boost your company's
+                                        productivity by reaching completion date earlier than usual</div>
+                                    <div class="text_right-subcontent">with <span class="text_right-subcontent__big">20%-30%</span> increase in productivty</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon" src="img/Icons/Why Us/Home_Why Us-08.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when all your skill set requirements are
+                                        met in our pool of competent and qualified professionals</div>
+                                    <div class="text_right-subcontent">We bring our solid background from the “Big 4” firms,
+                                        expertise on diverse industries, strong work ethics,
+                                        and experiences on different professional services.</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon" src="img/Icons/Why Us/Home_Why Us-09.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when delegating tasks can help you
+                                        focus more on your core operations without
+                                        compromising back-end functions</div>
+                                    <div class="text_right-subcontent">You will be able to prioritize your main operations
+                                        while we take charge of the rest.</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon" src="img/Icons/Why Us/Home_Why Us-10.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when our setup enables you to have more flexibility
+                                        in terms of staffing and task demand</div>
+                                    <div class="text_right-subcontent">You will be having more freedom in customizing contracts
+                                        according to what you need rather than hiring full-time position
+                                        for a short-term engagement.</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon" src="img/Icons/Why Us/Home_Why Us-11.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when we maintain constant communication
+                                        ensuring progress is tracked</div>
+                                    <div class="text_right-subcontent">We send daily updates and provide swift and relevant response.</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon why_us-group_icon__phone" src="img/Icons/Why Us/Home_Why Us-12.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">            
+                        <div class="why_us-group">
+                            <div class="why_us-group_text">
+                                <div class="why_us-group_text_left">—</div>
+                                <div class="why_us-group_text_right">
+                                    <div class="text_right-content">when significant amount and superior quality 
+                                        of output is achieved at less cost</div>
+                                    <div class="text_right-subcontent">Get <span class="text_right-subcontent__big">30%-50%</span> cost savings</div>
+                                </div>
+                            </div>
+                            <div class="why_us-group_image">
+                                <img class="why_us-group_icon" src="img/Icons/Why Us/Home_Why Us-07.svg"></img>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide glide-controls" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true">    
+                    <div class="glide-controls_left">
+                        <a href="about.html" class="button__why_us button__hover button__hover-about">ABOUT US</a>
+                    </div>
+                    <div class="glide-controls_right">
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=3"></button>
+                            <button class="glide__bullet" data-glide-dir="=4"></button>
+                            <button class="glide__bullet" data-glide-dir="=5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </section>
+    <section id="world_class_team">
+        <div class="world_class_team-background_container">
+            <div class="world_class_team-background_left"></div>
+            <div class="world_class_team-background_right">            
+                <div class="world_class_team-content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <h2 class="world_class_team-content-header"><span class="world_class_team-content-header__bold">World Class</span> Team</h2>
+                    <p class="world_class_team-content-text">Delivering the best result also means having the best workforce – competent,
+                        committed, and collaborative. That is exactly what our team is all about.</p>
+                    <p class="world_class_team-content-text margin-bottom">We value our employees and consider them our greatest assets. We put importance
+                        in employees’ satisfaction just as our clients and recognize that success ultimately
+                        comes from them. After all, the quality of the people that we have reflects
+                        in the work that we produce.</p>                
+                    <a href="team.html" class="button__world_class_team button__hover button__hover-whyjoinus">WHY JOIN US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="industries">
+        <div class="industries-background_container">
+            <div class="industries-background_left">
+                <div class="industries-container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <div class="industries-header">Industries</div>
+                    <div class="industries-grid_container">
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Non-profit.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">NON-PROFIT</div>
+                        </a>
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Government.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">GOVERNMENT</div>
+                        </a>
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Employee Benefit Plans.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">EMPLOYEE BENEFIT PLANS</div>
+                        </a>
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Healthcare.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">HEALTHCARE</div>
+                        </a>
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Financial Services.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">FINANCIAL SERVICES</div>
+                        </a>
+                        <a href="industries.html" class="industries-grid_item">
+                            <div class="icon-container">
+                                <img src="img/Icons/Industries/Private Companies.svg" class="industries-grid_item-icon" alt="icon" srcset="">
+                            </div>
+                            <div class="industries-grid_item-text">PRIVATE COMPANIES</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="industries-background_right"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container contact__container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <div class="contact-subheader">Do what’s best for your company.</div>
+            <div class="contact-header">Get ahead when you partner with us.</div>
+            <div class="contact-cta">SEND US A MESSAGE!</div>
 
-    <!-- Content -->
-    <iframe                src="about.html"        style="width: 100%; height: calc(100vh - 10px); border: none;"></iframe>
-    <iframe class="hidden" src="services.html"     style="width: 100%; height: calc(100vh - 10px); border: none;"></iframe>
-    <iframe class="hidden" src="industries.html"   style="width: 100%; height: calc(100vh - 10px); border: none;"></iframe>
-    <iframe class="hidden" src="team.html"         style="width: 100%; height: calc(100vh - 10px); border: none;"></iframe>
-    <iframe class="hidden" src="careers.html"      style="width: 100%; height: calc(100vh - 10px); border: none;"></iframe>
-    
-    <script src="script/index.js"></script>
+            <form class='form form__contact' method='POST' name='Contact'><input type='hidden' name='form-name' value='Contact' />
+                <div hidden aria-hidden="true">
+                    <label>
+                        Don’t fill this out if you're human: 
+                        <input name="bot-field" />
+                    </label>
+                </div>
+                <div class="contact-form_container">
+                    <div class="contact-form_row">
+                        <div class="contact-form_group contact-form_group_row">
+                            <div class="contact_label">NAME</div>
+                            <input type="text" class="contact_text" name="Name" id="name" required>
+                        </div>
+                        <div class="contact-form_group contact-form_group_row contact-form_group_row__right">
+                            <div class="contact_label">EMAIL</div>
+                            <input type="email" class="contact_text" name="Email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="contact-form_group">
+                        <div class="contact_label">MESSAGE</div>
+                        <input type="text" class="contact_text" name="Message" id="message" required>
+                    </div>
+                </div>
+                
+                <div class="contact_modal-buttonrow">
+                    <button class="button button__filled button__contact clickable" type="submit">SEND</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer> 
+        <div class="container container__footer">
+            <div class="footer-logo">
+                <img class="footer-img" src="img/V_C Logo_White.png"></img>
+                <div class="footer-copyright">
+                    <a href="https://vasquezcpa.com" target="_blank">© 2020 VASQUEZ CPA. ALL RIGHTS RESERVED.</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="footer_header">QUICK LINKS</p>
+                <ul>
+                    <li class="footer-link"><a href="about.html">About Us</a></li>
+                    <li class="footer-link"><a href="services.html">Services</a></li>
+                    <li class="footer-link"><a href="industries.html">Industries</a></li>
+                    <li class="footer-link"><a href="team.html">Meet The Team</a></li>
+                    <li class="footer-link"><a href="careers.html">Careers</a></li>
+                    <li class="footer-link"><a href="https://vasquezcpa.com" target="_blank">Vasquez & Co. LLP</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p class="footer_header">CONTACT US</p>
+                <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
+                <p class="footer-contact_info">
+                    (02) 7622 8779<br>
+                    +63 917 160 8779
+                </p>
+                <p class="footer-contact_header">Makati Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/yXQvNGMWJbKS3jTP7" target="_blank">29th Floor Rufino Pacific Tower, Ayala Avenue, Makati City, Metro Manila, Philippines 1226</a></p>
+                <p class="footer-contact_header">Ortigas Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/fu1198a7JTGHwT1RA" target="_blank">28th Floor, Robinsons Cyberscape Gamma, Topaz Rd, Ortigas Center, Pasig City, Metro Manila, Philippines</a></p>
+                <!-- <div class="footer-icons"> -->
+                    <!-- <a href=""><img src="img/Icons/Footer/Footer-Facebook.svg" alt="" class="footer-icon"></a> -->
+                    <!-- <a href=""><img src="img/Icons/Footer/Footer-LinkedIn.svg" alt="" class="footer-icon footer-icon__right"></a> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </footer>
+    <div class="contact_modal" id="modal">
+        <div class="container contact_modal__container">
+            <div class="contact_modal-subheader">Do what’s best for your company.</div>
+            <div class="contact_modal-header">Get ahead when you partner with us.</div>
+            <div class="contact_modal-cta">SEND US A MESSAGE!</div>
+
+            <form class='form form__contact' method='POST' name='Contact'><input type='hidden' name='form-name' value='Contact' />
+                <div hidden aria-hidden="true">
+                    <label>
+                        Don’t fill this out if you're human: 
+                        <input name="bot-field" />
+                    </label>
+                </div>
+                <div class="contact-form_container">
+                    <div class="contact-form_row">
+                        <div class="contact-form_group contact-form_group_row">
+                            <div class="contact_modal_label">NAME</div>
+                            <input type="text" class="contact_text" name="Name" id="name" required>
+                        </div>
+                        <div class="contact-form_group contact-form_group_row contact-form_group_row__right">
+                            <div class="contact_modal_label">EMAIL</div>
+                            <input type="email" class="contact_text" name="Email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="contact-form_group">
+                        <div class="contact_modal_label">MESSAGE</div>
+                        <input type="text" class="contact_text" name="Message" id="message" required>
+                    </div>
+                </div>
+                <div class="contact_modal-buttonrow">
+                    <button class="button button__filled button__contact clickable" type="submit">SEND</button>
+                    <div data-close-button class="button button__filled button__close clickable">CLOSE</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="contact_modal-overlay"></div>
+    <img src="img/Icons/top.svg" class="gototop-image" onclick="topFunction()" alt="" srcset="">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="script/global.js"></script>
+    <script>
+        var glideHero = new Glide('.glide', {
+            type: 'carousel',
+            animationDuration: 1000,
+            autoplay: 5000,
+            focusAt: '1',
+            startAt: 0,
+            perView: 1, 
+        });
+
+        glideHero.mount();
+    </script>
 </body>
-
 </html>

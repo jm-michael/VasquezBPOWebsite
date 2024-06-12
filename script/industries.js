@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
 
     // Call the function on page load
-    handleScreenSize();s
+    handleScreenSize();
 
     // Bind the function to the window resize event
     $(window).resize(handleScreenSize);

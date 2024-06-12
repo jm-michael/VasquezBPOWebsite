@@ -10,7 +10,26 @@
     <title>Careers Job Board | Vasquez BPO, Inc.</title>
 </head>
 <body data-page="careers-job-board">
-
+ <!-- Header -->
+ <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html"><img class="navbar-logo" src="img/V_C Logo_White.png"></a>
+        <ul class="navbar-links" id="navbar-links">
+            <li class="navbar-link"><a href="index.html">ABOUT US</a></li>
+            <li class="navbar-link"><a href="services.html">SERVICES</a></li>
+            <li class="navbar-link"><a href="industries.html">INDUSTRIES</a></li>
+            <li class="navbar-link"><a href="team.html">THE TEAM</a></li>
+            <li class="navbar-link navbar-link__active"><a href="careers.html">CAREERS</a></li>
+            <button class="navbar-link navbar-link__round clickable" data-modal-target="#modal">WORK WITH
+                US</button>
+        </ul>
+        <div class="burger" onclick="toggleNav(true)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+</nav>
     <!-- start for animate only -->
     <div class="area"> <ul class="circles"> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> </ul> </div>
     <!-- end for animate only -->
@@ -18,7 +37,7 @@
     <section id="careers-job-search">
         <div>
             <input type="text" id="search" placeholder="Search..." name="search"><br><br>
-            <button>Search</button>
+            <button  onclick="onClickSearch()">Search</button>
         </div>
 
         <div class="category">
@@ -85,25 +104,32 @@
             <div class="card applynow hidden">
                 <p class="position">Manager - Audit</p>
 
-                <p class="Qualif">Qualifications</p>
-                <div class="Qualif-card">
-                    <ul>
-                        <li>Qualification 1</li>
-                        <li>Qualification 2</li>
-                        <li>Qualification 2</li>
-                    </ul>
-                </div>
+                <div class="QnR">
+                    <p class="Qualif">Qualifications</p>
+                    <div class="Qualif-card">
+                        <ul>
+                            <li>Qualification 1</li>
+                            <li>Qualification 2</li>
+                            <li>Qualification 3</li>
+                        </ul>
+                    </div>
+    
+                    <p class="Respo">Responsibilities</p>
+                    <div class="Respo-card">
+                        <ul>
+                            <li>Responsibility 1</li>
+                            <li>Responsibility 2</li>
+                            <li>Responsibility 3</li>
+                        </ul>
+                    </div>
 
-                <p class="Respo">Responsibilities</p>
-                <div class="Respo-card">
-                    <ul>
-                        <li>Responsibility 1</li>
-                        <li>Responsibility 2</li>
-                        <li>Responsibility 2</li>
-                    </ul>
+                    <div class="btn-apply-now">
+                        <button onclick="onClickApplyNow(false)">Apply Now</button>
+                    </div>
                 </div>
-
-                <p class="title">SUBMIT YOUR APPLICATION</p>
+                
+                <div class="applynow hidden">
+                    <p class="title">SUBMIT YOUR APPLICATION</p>
                 <div class="fields-card">
                     <div class="fields">
                         <p>Resume/CV</p>
@@ -155,7 +181,10 @@
                     <input type="text" id="earliestdate" placeholder="" name="What is the earliest date you are available to start working?"><br><br>
                 </div>
 
-                <button>SUBMIT APPLICATION</button>
+                <button class="btn-submit-app">SUBMIT APPLICATION</button>
+                    
+                </div>
+                
             </div>
         </div>
     </section>
