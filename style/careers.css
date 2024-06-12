@@ -148,11 +148,10 @@ section#careers-top {
     color: white;
 }
 
-#careers-4th .left .title, #careers-4th .right .title {
+.title {
     font-family: 'nunitobold';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
     text-align: center;
-    margin-bottom: 10px;
 }
 
 #careers-4th .left .content, #careers-4th .right .content {
@@ -459,4 +458,32 @@ img {
 
 .bullet.active {
     background-color: #717171;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 15%;
+    font-size: 15px;
+    text-align: center;
+    height: 100%;
+    font-family: 'nunitobold';
+}
+
+.grid-item#Rblue {
+    background-color: rgba(29, 179, 206, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 15%;
+    font-size: 15px;
+    text-align: center;
+    height: 100%;
+    font-family: 'nunitobold';
+    
 }
