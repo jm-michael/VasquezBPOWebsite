@@ -12,11 +12,11 @@ document.addEventListener("click", function(event) {
     } 
     
     else if (event.target.classList.contains("6th-ITAudit")) {
-        localStorage.setItem('data',"IT AUDIT");
+        localStorage.setItem('data',"IT Audit");
     } 
     
     else if (event.target.classList.contains("6th-Tax")) {
-        localStorage.setItem('data',"TAX");
+        localStorage.setItem('data',"Tax");
     } 
     
     else if (event.target.classList.contains("6th-View-All")){
