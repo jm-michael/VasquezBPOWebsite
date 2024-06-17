@@ -1116,7 +1116,7 @@ section#mission_vision {
     display:flex;
     height: 100%;
     position: relative;
-    left: -50px;
+    text-align: center;
 }
 
 .why_not-group_text-content {

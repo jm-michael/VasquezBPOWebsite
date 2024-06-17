@@ -1,0 +1,190 @@
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}
+
+section {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.vasquez_top_bg {
+    background-image: url('../img/vasquez-life/1st page.jpg');
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0% 50%;
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    z-index: 0;
+}
+
+.vasquez_top_overlay {
+    background-image: url('../img/vasquez-life/svg/1st page.svg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0% 0%;
+    position: absolute;
+    z-index: 1;
+}
+
+#vasquez-top .vasquez-title {
+    position: absolute;
+    top: 300px;
+    right: 150px;
+    z-index: 2;
+    color: white;
+    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+    font-family: 'nunitobold';
+}
+
+/* 2nd page */
+.vasquez-2nd {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.v2nd-title {
+    font-size: clamp(2.125rem, -0.2188rem + 7.5vw, 4rem);
+    font-family: 'nunitobold';
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #4AADD9;
+}
+
+
+/* Image CSS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust gap between items as needed */
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+    padding-top: 55%; /* Adjust this value to get the desired aspect ratio */
+}
+
+.grid-item img {
+    position: absolute;
+    top: -45%; /* Adjust this value to cut more or less from the top */
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-item {
+        padding-top: 80%;
+    }
+
+    .grid-item img {
+        top: -30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+}
+
+/* 3nd page */
+#vasquez-3nd {
+    background-image: url('../img/vasquez-life/page 3/page 3 bg.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.v3nd-context {
+    position: absolute;
+    font-weight: 600;
+    font-size: 34px;
+    left: 5%;
+    top: 35%;
+    width: 40%;
+}
+
+.v3nd-people {
+    background-image: url('../img/vasquez-life/page 3/page 3 persons.png');
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 45%;
+    z-index: 1;
+}
+
+/* 4nd page */
+.v4nd-title {
+    font-size: clamp(2.125rem, -0.2188rem + 7.5vw, 4rem);
+    font-family: 'nunitobold';
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.parent {
+    display: flex;
+    gap: 0px;
+}
+
+.parent div {
+    height: 500px;
+    width: 100%;
+    /* clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%); */
+    /* border: 1px solid gray; */
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+}
+
+.parent .tax {
+    background-image: url('../img/vasquez-life/page 4/Tax.jpg');
+    background-size:cover;
+    background-position: 45%;
+}
+
+.parent .aud {
+    background-image: url('../img/vasquez-life/page 4/Audit.jpg');
+    background-size:cover;
+    background-position: 45%;
+}
+
+.parent .acc {
+    background-image: url('../img/vasquez-life/page 4/Accounting.jpg');
+    background-size:cover;
+    background-position: 45%;
+}
+
+.parent .bop {
+    background-image: url('../img/vasquez-life/page 4/Business Operations.jpg');
+    background-size:cover;
+    background-position: 45%;
+}
