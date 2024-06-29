@@ -132,7 +132,7 @@ section#careers-top {
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     position: relative;
-    height: 300px;
+    height: 50%;
 }
 
 #careers-4th .left ,#careers-4th .right {
@@ -141,6 +141,7 @@ section#careers-top {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    padding-top: 75px;
 }
 
 #careers-4th .right {
@@ -162,6 +163,7 @@ section#careers-top {
     font-family: 'nunito';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
     text-align: justify;
+    padding-top: 20px;
 }
 
 /* 5th row */
@@ -170,7 +172,7 @@ section#careers-top {
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     position: relative;
-    height: 300px;
+    height: 50%;
 }
 
 #careers-5th .left ,#careers-5th .right {
@@ -180,6 +182,7 @@ section#careers-top {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    padding-top: 75px;
 }
 
 #careers-5th .left {
@@ -199,7 +202,7 @@ section#careers-top {
 
 #careers-5th .right .title {
     font-family: 'nunitobold';
-    font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
     text-align: center;
     margin-bottom: 10px;
     line-height: 38px;
@@ -209,6 +212,7 @@ section#careers-top {
     font-family: 'nunito';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
     text-align: justify;
+    padding-top: 20px;
 }
 
 /* 6th row */
@@ -346,14 +350,14 @@ section#careers-top {
     position: absolute;
     font-family: 'nunitobold';
     font-size: clamp(2rem, 0.0938rem + 2.5vw, 1.5rem);
-    top: 10%;
-    left: 20%;
+    top: 30%;
+    left: 15%;
     width: 500px;
 }
 
 #careers-7th div .content {
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: 20%;
     height: 100%;
     width: 15%;

@@ -152,9 +152,27 @@ section {
     margin-top: 10px;
 }
 
+.v4nd-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.482);
+    z-index: 2;
+}
+
+.tax .v4nd-overlay {
+    background-color: rgba(37, 86, 190, 0.482);
+}
+
+.acc .v4nd-overlay {
+    background-color: rgba(37, 86, 190, 0.482);
+}
+
 .parent {
     display: flex;
     gap: 0px;
+    margin-top: 20px;
+
 }
 
 .parent div {
@@ -163,6 +181,25 @@ section {
     /* clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%); */
     /* border: 1px solid gray; */
     clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.parent div h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    color: white;
+    font-weight: bold;
+    z-index: 4;
+}
+
+.parent .acc h2 {
+    right: 70px;
+}
+
+.parent .bop h2 {
+    right: 15px;
 }
 
 .parent .tax {
@@ -187,4 +224,118 @@ section {
     background-image: url('../img/vasquez-life/page 4/Business Operations.jpg');
     background-size:cover;
     background-position: 45%;
+}
+
+/* 3nd page */
+#vasquez-5nd {
+    background-image: url('../img/vasquez-life/page 5/page 5 bg.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: 100px;
+    z-index: 1;
+}
+
+.v5nd-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.482);
+    z-index: 2;
+}
+
+.v5nd-1 {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    width: 40%;
+    z-index: 3;
+}
+
+.v5nd-1 .title {
+    width: 60%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #37A5CC;
+    color: white;
+    font-size: 26px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.v5nd-1 .context {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 40px;
+    color: white;
+    font-size: 26px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #37A5CC);
+}
+
+
+.v5nd-2 {
+    position: absolute;
+    top: 210px;
+    left: 360px;
+    width: 40%;
+    z-index: 3;
+}
+
+.v5nd-2 .title {
+    width: 60%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #EE2E24;
+    color: white;
+    font-size: 26px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.v5nd-2 .context {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 40px;
+    color: white;
+    font-size: 26px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #EE2E24);
+}
+
+
+.v5nd-3 {
+    position: absolute;
+    top: 380px;
+    left: 570px;
+    width: 40%;
+    z-index: 3;
+}
+
+.v5nd-3 .title {
+    width: 60%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #37A5CC;
+    color: white;
+    font-size: 26px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.v5nd-3 .context {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 40px;
+    color: white;
+    font-size: 26px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #37A5CC);
 }
