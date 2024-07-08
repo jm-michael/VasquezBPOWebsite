@@ -1,0 +1,445 @@
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}
+
+
+section {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#event .event-title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+    z-index: 3;
+}
+
+
+#event .event-bg-left {
+    background-image: url('../img/vasquez-event/page 1/left.jpg');
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 150%;
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    z-index: 1;
+    /* clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%); */
+    clip-path: polygon(0 0, 93% 0, 70% 100%, 0% 100%);
+}
+
+
+#event .event-bg-left div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.482);
+    z-index: 2;
+}
+
+#event .event-bg-right {
+    background-image: url('../img/vasquez-event/page 1/right.JPG');
+    width: 60%;
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    position: absolute;
+    margin-left: auto;
+    right: 0;
+    z-index: 0;
+}
+
+/* page 2 */
+#event-p2 {
+    background-color: #424457;
+    position: relative;
+}
+
+
+#event-p2 .event-title {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 72px;
+    font-weight:bolder;
+    color: white;
+}
+
+/* // card main */
+.card {
+    position: absolute;
+    height: 70%;
+    width: 40%;
+    top: 20%;
+    left: 50px;
+}
+
+.card .event-m-img {
+    background-image: url('../img/vasquez-event/page 2/2024/Team Building 2024.jpg');
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+}
+
+.card h4 {
+    color: #379CC1;
+    font-size: 26px;
+}
+
+.card p {
+    color: white;
+    font-size: 16px;
+}
+
+.card .read {
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* // card Left top */
+.card-lt {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 5%;
+    right: 0;
+    display: flex;
+}
+
+.card-lt .event-lt-img {
+    background-image: url('../img/vasquez-event/page 2/2024/Leadership Training 2024.png');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+.card-context h4 {
+    color: #379CC1;
+    font-size: 24px;
+}
+
+.card-context p {
+    color: white;
+    font-size: 16px;
+}
+
+.card-context .read {
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* // card left mid */
+.card-md {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 35%;
+    right: 0;
+    display: flex;
+}
+
+.card-md .event-md-img {
+    background-image: url('../img/vasquez-event/page 2/2024/EBP 2024.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+
+
+/* // card left bot */
+.card-bot {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 65%;
+    right: 0;
+    display: flex;
+}
+
+.card-bot .event-bot-img {
+    background-image: url('../img/vasquez-event/page 2/2024/Breaking Barriers 2024.jpg');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+/* page 3 */
+#event-p3 {
+    position: relative;
+}
+
+#event-p3 .event-title {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 72px;
+    font-weight:bolder;
+    color: #424457;
+}
+
+#event-p3 .card p {
+    color: #424457;
+}
+
+#event-p3 .card .read {
+    color: #424457;
+}
+
+#event-p3 .card-context h4 {
+    color: #379CC1;
+    width: 350px;
+}
+
+#event-p3 .card-context p {
+    color: #424457;
+}
+
+#event-p3 .card-context .read {
+    color: #424457;
+}
+
+#event-p3 .card .event-m-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Town Hall 2023.jpg');
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+}
+
+#event-p3 .card-lt .event-lt-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Leadership Training 2023.png');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+
+#event-p3 .card-md .event-md-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Moonlit Magic 2023.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+#event-p3 .card-bot .event-bot-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Performance Feedback 2023.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+/* page 4 */
+#event-p4 {
+    position: relative;
+}
+
+/* #event-p4 .event-title {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 72px;
+    font-weight:bolder;
+    color: #424457;
+} */
+
+/* #event-p4 .card p {
+    color: #424457;
+}
+
+#event-p4 .card .read {
+    color: #424457;
+} */
+
+#event-p4 .card-context h4 {
+    color: #379CC1;
+    width: 350px;
+}
+
+#event-p4 .card-context p {
+    color: #424457;
+}
+
+#event-p4 .card-context .read {
+    color: #424457;
+}
+
+/* #event-p4 .card .event-m-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Town Hall 2023.jpg');
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+} */
+
+#event-p4 .card-lt .event-lt-img {
+    background-image: url('../img/vasquez-event/page 2/2023/EBP 2023.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+
+#event-p4 .card-md .event-md-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Govt Training 2023.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+#event-p4 .card-bot .event-bot-img {
+    background-image: url('../img/vasquez-event/page 2/2023/Team Building 2023.png');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+/* page 5 */
+#event-p5 {
+    position: relative;
+    background-color: #424457;
+}
+
+#event-p5 .event-title {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 72px;
+    font-weight:bolder;
+    color: white;
+}
+
+#event-p5 .card p {
+    color: white;
+}
+
+#event-p5 .card .read {
+    color: white;
+}
+
+#event-p5 .card-context h4 {
+    color: #379CC1;
+    width: 350px;
+}
+
+#event-p5 .card-context p {
+    color: white;
+}
+
+#event-p5 .card-context .read {
+    color: white;
+}
+
+#event-p5 .card .event-m-img {
+    background-image: url('../img/vasquez-event/page 2/2022/Onto the Mission 2022.jpg');
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+#event-p5 .card-lt .event-lt-img {
+    background-image: url('../img/vasquez-event/page 2/2022/Christmas Around the World 2022.jpg');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+
+#event-p5 .card-md .event-md-img {
+    background-image: url('../img/vasquez-event/page 2/2022/Govt Training 2022.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
+
+#event-p5 .card-bot .event-bot-img {
+    background-image: url('../img/vasquez-event/page 2/2022/Team Building 2022.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
