@@ -185,20 +185,21 @@ section {
     z-index: 1;
 }
 
-.parent div h2 {
+.parent div a {
     position: absolute;
     bottom: 20px;
     right: 120px;
     color: white;
     font-weight: bold;
+    font-size: 24px;
     z-index: 4;
 }
 
-.parent .acc h2 {
+.parent .acc a {
     right: 70px;
 }
 
-.parent .bop h2 {
+.parent .bop a {
     right: 15px;
 }
 

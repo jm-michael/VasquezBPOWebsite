@@ -303,3 +303,80 @@ input:nth-of-type(8):checked~main#carousel div.item:nth-of-type(8) {
     z-index: 9;
     color: rgba(0, 0, 0, 0.834);
 }
+
+/* Page 3 */
+
+#proud-p3 .p3-title {
+    position: absolute;
+    height: 100px;
+    left: 0;
+    font-size: 62px;
+    background-color: #37A5CC;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    padding-right: 50px;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+.p3-card {
+    position: absolute;
+    width: 250px;
+    height: 370px;
+    top: 150px;
+    left: 100px;
+}
+
+.p3-img {
+    background-image: url('../img/vasquez-proud/page 3/emp1.jpg');
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+}
+
+.p3-name {
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: #EE2E24;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.p3-context {
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    height: 65%;
+    width: 70%;
+}
+
+.p3-context p {
+    font-size: larger;
+    text-align: justify;
+}
+
+.p3-context .p1 {
+    margin-bottom: 30px;
+}
+
+.p3-context .p2 {
+    margin-bottom: 30px;
+}
+
+.p3-context p strong {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    background-color: rgba(135, 207, 235, 0.687);
+}
+/* 
+.p3-context .p3 {
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    background-color: skyblue;
+} */
