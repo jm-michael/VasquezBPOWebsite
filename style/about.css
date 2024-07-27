@@ -1,7 +1,6 @@
 @media screen and (max-width: 900px) {
     .absolute_background {
-        width: 100%;
-        /* Adjust the width to fill the entire screen */
+        width: 100%; /* Adjust the width to fill the entire screen */
     }
 
     .hero-diagonal {
@@ -16,7 +15,7 @@
 
     .whoweare-header {
         font-size: 16px;
-        margin-top: 200px;
+        margin-top: 400px;
         font-weight: 600;
     }
 
@@ -82,11 +81,11 @@
         padding: 50px 30px;
     }
 
-    .container__about_cta>h2 {
+    .container__about_cta > h2 {
         font-size: 20px;
     }
 
-    .container__about_cta>a {
+    .container__about_cta > a {
         font-size: 16px;
     }
 
@@ -131,21 +130,20 @@
         margin-top: 10px;
         font-size: 12px;
     } */
-
+       
 }
 
 @media screen and (max-width: 800px) {
     body {
         overflow-x: hidden;
     }
-
     .hero-diagonal-whoweare {
         height: 100%;
-        width: 125%;
     }
 
     .whoweare-header {
         font-size: 14px;
+        margin-top: 650px;
     }
 
     .whoweare-text {
@@ -185,8 +183,8 @@
         background-color: rgba(0, 255, 255, 0.058);
         width: 100%;
         position: relative;
-        /* left: -80px; */
-
+        left: -80px;
+        
     }
 
     .why_not-subtext {
@@ -215,7 +213,7 @@
 
     .footer-details {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .container__footer {
@@ -229,7 +227,7 @@
         display: flex;
         flex-direction: row;
     }
-
+    
 
     .footer-links {
         margin-top: 20px;
@@ -255,29 +253,59 @@
 
 /* For Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 7px;
-    /* width of the entire scrollbar */
+    width: 7px; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(95, 95, 97);
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 1px solid rgb(255, 255, 255);
-    /* creates padding around scroll thumb */
+    background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
 }
 
 /* For Firefox */
 body {
-    scrollbar-width: thin;
-    /* "auto" or "thin" */
-    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255);
-    /* scroll thumb and track */
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
 }
 
 .circles li {
     background: #000621 !important;
+}
+
+@media screen and (max-width: 320px) {
+    .absolute_background {
+        background-image: url('../img/02_About Us/AboutUsWhoWeAre.png');
+        height: 100%;
+        background-size: cover;
+        background-position: 0% 50%;
+        position: absolute;
+        margin-left: auto;
+        /* right: -30px; */
+        z-index: 0;
+        display: block;
+        max-width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 900px) {
+    .container__whoweare {
+        padding: 150px 30px;
+        min-height: 1080px;
+    }
+
+    .absolute_background {
+        width: 70%;
+        height: 100%;
+        background-size: cover;
+        background-position: 0% 50%;
+        position: absolute;
+        margin-left: auto;
+        right: 0px;
+        z-index: 0;
+    }
 }
 
 
@@ -317,9 +345,7 @@ body {
         margin-top: 10px;
     }
 
-    .line1,
-    .line2,
-    .line3 {
+    .line1, .line2, .line3 {
         width: 25px;
         height: 3px;
         background-color: #fff;
@@ -341,11 +367,11 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-
-
+  
     .navbar-link {
         padding: 15px;
         text-align: center;
         font-size: small;
     }
 }
+

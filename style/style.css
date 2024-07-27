@@ -562,7 +562,7 @@ section#why_us {
     background-image: url('../img/01_Home Page/Home Page_World Class Team.jpg');
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: 60% 20%;
+    background-position: 50% 100%;
 }
 
 .world_class_team-background_right {
@@ -1004,7 +1004,7 @@ section#who-we-are {
 
 .absolute_background {
     background-image: url('../img/02_About Us/AboutUsWhoWeAre.png');
-    width: 60%;
+    width: 65%;
     height: 100%;
     background-size: cover;
     background-position: 0% 50%;
@@ -1039,6 +1039,7 @@ section#mission_vision {
     z-index: 1;
     color: #424457;
     text-align: left;
+    margin-top: 140px;
 }
 
 .mission {
@@ -1046,6 +1047,7 @@ section#mission_vision {
     z-index: 1;
     color: #FEFEFC;
     text-align: right;
+    margin-top: -100px;
 }
 
 .mission_vision-header {
@@ -1116,7 +1118,7 @@ section#mission_vision {
     display:flex;
     height: 100%;
     position: relative;
-    text-align: center;
+    left: -50px;
 }
 
 .why_not-group_text-content {
@@ -2021,13 +2023,7 @@ footer {
     } */
     
     section#hero {
-        background-image: url('../img/01_Home Page/Home Page_Hero.jpg');
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: 0% 70%;
-        /* background-position: 0% 50%; */
+        background-position: 0% 50%;
     }
 
     .container__hero {
@@ -2240,7 +2236,7 @@ footer {
 
     .container__whoweare {
         padding: 150px 30px;
-        min-height: 700px;
+        min-height: 1000px;
     }
 
     .whoweare-header {
@@ -2564,7 +2560,7 @@ footer {
 @media only screen and (max-width: 1450px) {
     
     .navbar-container {
-        max-width: 1020px; 
+        max-width: 1000px; 
     }
 
     .navbar-logo {
@@ -3181,6 +3177,10 @@ footer {
         padding: 12px 30px;
     }
 
+    .container {
+        max-width: 950px;
+    }
+
 
     /* .container__hero {
         min-height: 700px;
@@ -3390,11 +3390,12 @@ footer {
 
     .whoweare-header {
         font-size: 30px;
-        margin-top: 80px;
+        margin-top: 400px;
     }
 
     .whoweare-text {
         font-size: 16px;
+        width: 50%;
         margin-top: 60px;
     }
 
