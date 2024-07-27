@@ -186,7 +186,7 @@ section#hero {
 
 .hero-diagonal-whoweare {
     height: 100%;
-    width: 80%;
+    width: 86%;
 }
 
 .container {
@@ -2803,7 +2803,7 @@ footer {
 
     .whoweare-header {
         font-size: 30px;
-        margin-top: 80px;
+        margin-top: 130px;
     }
 
     .whoweare-text {
@@ -3181,9 +3181,6 @@ footer {
         padding: 12px 30px;
     }
 
-    .container {
-        max-width: 950px;
-    }
 
     /* .container__hero {
         min-height: 700px;
@@ -3398,7 +3395,6 @@ footer {
 
     .whoweare-text {
         font-size: 16px;
-        width: 50%;
         margin-top: 60px;
     }
 
