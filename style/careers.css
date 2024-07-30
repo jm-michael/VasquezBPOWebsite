@@ -514,3 +514,19 @@ body {
     
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+    #careers-job-search div button {
+        font-family: 'nunitobold';
+        font-size: 12px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: #e50b0b;
+        border: none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        height: 33px;
+    }
+}
+
+
