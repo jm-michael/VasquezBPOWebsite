@@ -125,11 +125,17 @@ section {
 
 .v3nd-context {
     position: absolute;
-    font-weight: 600;
-    font-size: 34px;
-    left: 5%;
+    font-weight: 400;
+    font-size: 20px;
+    left: 10%;
     top: 35%;
-    width: 40%;
+    width: 30%;
+    text-align: justify;
+}
+
+.v3nd-context strong {
+    color: #3DA5CA;
+    font-size: 26px;
 }
 
 .v3nd-people {
@@ -272,7 +278,7 @@ section {
     right: 10px;
     padding: 40px;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 30px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), #37A5CC);
 }
@@ -304,7 +310,7 @@ section {
     right: 10px;
     padding: 40px;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 30px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), #EE2E24);
 }
@@ -336,7 +342,7 @@ section {
     right: 10px;
     padding: 40px;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     border-radius: 30px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), #37A5CC);
 }
