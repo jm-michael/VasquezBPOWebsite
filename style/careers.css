@@ -243,7 +243,7 @@ section#careers-top {
 }
 
 /* 6th row */
-#careers-6th {
+section#careers-6th {
     position: relative;
     height: 100%;
     overflow: hidden;
@@ -258,6 +258,7 @@ section#careers-top {
     position: absolute;
     left: 0;
     z-index: 1;
+    display: block;
 }
 
 @font-face {
@@ -280,16 +281,16 @@ section#careers-top {
 }
 
 .careers_6th_bg {
-    background-image: url('../img/careers/Careers HP4-1.jpg');
+    background-image: url('../img/careers/Shapeyourfuturewithus.jpg');
     width: 100%;
     height: 100%;
     background-size: cover;
-    /* Cover the entire area without distortion */
-    background-position-x: center;
-    /* Center horizontally */
-    background-position-y: top;
-    /* Move the background image to the top */
+    background-position: 0% 50%;
     position: absolute;
+    margin-left: auto;
+    right: 0;
+    z-index: 0;
+    display: block;
 }
 
 /* .careers_3rd_bg {
@@ -880,9 +881,9 @@ img {
         text-align: center;
     } */
 
-    #careers-6th {
+    section#careers-6th {
         position: relative;
-        height: 120%;
+        height: 50%;
         overflow: hidden;
     }
 
