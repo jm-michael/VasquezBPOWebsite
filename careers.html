@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/aos.css">
+    <link rel="stylesheet" href="style/navbarglobal.css">
     <link rel="stylesheet" href="style/careers.css">
     <link rel="stylesheet" href="style/animate.css">
     <title>Careers | Vasquez BPO, Inc.</title>
@@ -37,7 +38,9 @@
     <section id="careers-top">
         <div class="careers_top_overlay"></div>
         <div class="careers-title">Careers</div>
-        <div class="careers_top_bg"></div>
+        <img src="/img/careers/Careers HP5.jpg" alt="">
+
+        <!-- <div class="careers_top_bg"></div> -->
         
     </section>
     <section id="careers_menu">
@@ -48,34 +51,41 @@
         <div><a href="careers-job-board.html">View all positions</a></div>
     </section>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const careersMenu = document.getElementById('careers_menu');
+          let startX, scrollLeft;
+    
+          careersMenu.addEventListener('mousedown', (e) => {
+            startX = e.pageX - careersMenu.offsetLeft;
+            scrollLeft = careersMenu.scrollLeft;
+            careersMenu.style.cursor = 'grabbing';
+          });
+    
+          careersMenu.addEventListener('mouseleave', () => {
+            careersMenu.style.cursor = 'default';
+          });
+    
+          careersMenu.addEventListener('mouseup', () => {
+            careersMenu.style.cursor = 'default';
+          });
+    
+          careersMenu.addEventListener('mousemove', (e) => {
+            if (!startX) return;
+            const x = e.pageX - careersMenu.offsetLeft;
+            const walk = (x - startX) * 1; // scroll-fast
+            careersMenu.scrollLeft = scrollLeft - walk;
+          });
+        });
+      </script>
+
    
     <section id="careers-3rd">
         <div class="careers_3rd_overlay"></div>
-        <div class="careers-3rd-title">We're no different, we're just how a company should be.</div>
-        <div class="careers_3rd_bg"></div>
+            <img src="/img/careers/Careers HP6.jpg" alt="">
+            <div class="careers-3rd-title">We're no different, we're just how a company should be.</div>
+        <!-- <div class="careers_3rd_bg"></div> -->
     </section>
-
-
-    <!-- <section id="careers-3rd">
-        <div class="grid-container">
-            <div class="grid-item">
-                <p class="title">Work-Life Flexibility</p><br>
-                <p class="content">We understand the modern employee's need for work-life balance. We empower our employees to achieve a harmonious integration of their personal and professional lives through our work-from-home arrangement.</p>
-            </div>
-            <div id="Rblue" class="grid-item">
-                <p class="title">US VISA Sponsorship</p><br>
-                <p class="content">We provide US Visa sponsorship to qualified employees who wish to work in our US office located in Los Angeles, California.</p></div>
-            <div id="Rblue" class="grid-item">
-                <p class="title">Compensation & Benefits</p><br>
-                <p class="content">We align our compensation with the market and industry, as well as internal equity and performance-related factors. We take a holistic approach to rewarding our employees including competitive base pay, benefits, variable pay, and other incentives.</p>
-            </div>  
-            <div class="grid-item">
-                <p class="title">Career Development and Opportunities</p><br>
-                <p class="content">We create career-building opportunities through the different stages of the employee’s career at Vasquez, delivered through extensive onboarding and challenging work experience, various training, and comprehensive development programs.</p>
-            </div>
-        </div>
-    </section> -->
-    
 
     <section id="careers-4th">
         <div class="left">
@@ -100,37 +110,48 @@
     </section>
 
     <section id="careers-6th">
-        <div class="careers_6th_overlay"></div>
+        <img src="/img/careers/Shapeyourfuturewithus.jpg" alt="">
+
+        <!-- <div class="careers_6th_overlay"></div> -->
         <div class="careers-6th-title">Shape your future with us.</div>
         <div class="careers-6th-buttons">
             <button id="6th-Audit" class="6th-Audit ">Audit</button>
             <button id="6th-ITAudit" class="6th-ITAudit">IT Audit</button>
             <button id="6th-Accounting" class="6th-Accounting">Accounting</button>
             <button id="6th-Tax" class="6th-Tax">Tax</button>
-            <!-- <button class="view-all-positions">View all positions</button> -->
-            <div class="6th-View-All"><a href="careers-job-board.html">View all positions</a></div>
+            <div class="view-all"><a href="careers-job-board.html">View all positions</a></div>
         </div>
-        <div class="careers_6th_bg"></div>
+
+        <!-- <div class="careers_6th_bg"></div> -->
     </section>
 
-    <section id="careers-7th">
+    <!-- <section id="careers-7th"> -->
 
-        <div>
+        <!-- <div class="scrollable-div">
             <p class="title">VBPO champions your success and rewards your contributions.</p>
             <p class="content">I want to experience the Vasquez Life.</p>
             <img class="blue" src="img/careers/image/notched right blue.png" alt="notched right blue">
             <img class="red"  src="img/careers/image/notched right red.png" alt="notched right blue">
-        </div>
+        </div> -->
+
+        <!-- <div class="scrollable-div">
+            <p class="title">VBPO champions your success and rewards your contributions.</p>
+            <p class="content">I want to experience the Vasquez Life.</p>
+                <img class="blue" src="img/careers/image/notched right blue.png" alt="notched right blue">
+                <img class="red"  src="img/careers/image/notched right red.png" alt="notched right blue">
+        </div> -->
+
         
-        <div class="image">
+        <!-- <div class="image">
             <img src="img/careers/IMG  (115).JPG" alt="HP2"  >
             <img src="img/careers/IMG  (292).JPG" alt="HP3"  >
             <img src="img/careers/IMG  (395).JPG" alt="HP4"  >
             <img src="img/careers/IMG  (404).JPG" alt="HP5"  >
             <img src="img/careers/KIK_4055.JPG" alt="HP6"  >
             <img src="img/careers/IMG  (561).JPG" alt="HP7"  >
-        </div>
-        <div class="image">
+        </div> -->
+
+        <!-- <div class="image">
            
             <img src="img/careers/IMG  (650).JPG" alt="HP8"  >
             <img src="img/careers/IMG  (681).JPG" alt="HP9"  >
@@ -138,7 +159,7 @@
             <img src="img/careers/IMG  (871).JPG" alt="HP11" >
             <img src="img/careers/IMG_0945.jpg"   alt="HP12" >
             <img src="img/careers//KIX_1919.jpg"   alt="HP1" >
-        </div>
+        </div> -->
 
         <!-- <section id="glide" class="carousel">
             <div class="slides ">
@@ -173,7 +194,7 @@
             </div>
         </section> -->
         
-    </section><br><br>
+    <!-- </section><br><br> -->
 
     <!-- Footer -->
     <footer> 
