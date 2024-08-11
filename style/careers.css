@@ -836,6 +836,16 @@ img {
 
 }
 
+
+@media screen and (max-width: 800px) {
+  
+    .navbar-link {
+        padding: 15px;
+        text-align: center;
+        font-size: small;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .careers_3rd_overlay {
         display: none;
