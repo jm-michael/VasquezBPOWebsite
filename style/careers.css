@@ -999,7 +999,7 @@ img {
         top: 20px;
         /* right: -295px; */
         /* width: 600px; */
-        left: 8%;
+        left: 4%;
         z-index: 2;
         color: rgb(0, 0, 0);
         font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
