@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/aos.css">
+    <link rel="stylesheet" href="style/vasquez-advantage.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <title>Vasquez Advantage | Vasquez BPO, Inc.</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html"><img class="navbar-logo" src="img/V_C Logo_White.png"></a>
+            <ul class="navbar-links" id="navbar-links">
+                <li class="navbar-link"><a href="about.html">ABOUT US</a></li>
+                <li class="navbar-link"><a href="services.html">SERVICES</a></li>
+                <li class="navbar-link"><a href="industries.html">INDUSTRIES</a></li>
+                <li class="navbar-link"><a href="vasquez-life.html">VASQUEZ LIFE</a></li>
+                <li class="navbar-link"><a href="careers.html">CAREERS</a></li>
+            </ul>
+            <div class="burger" onclick="toggleNav(true)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- start for animate only -->
+    <div class="area"> <ul class="circles"> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> </ul> </div>
+    <!-- end for animate only -->
+
+
+    <section id="advantage">
+        <div class="advantage-title">VASQUEZ ADVANTAGE</div>
+        <div class="advantage-bg-left">
+            <div></div>
+        </div>
+        <div class="advantage-bg-right"></div>
+    </section>
+
+    <section id="advantage-p2">
+        <div class="grid-container">
+            <div class="grid-item image-item" onclick="isVideo(true,true,'img/vasquez-advantage/page 2/This is Life at Vasquez (2nd page).mp4')">
+                <img src="img/vasquez-advantage/page 2/1O3B6652.jpg" alt="Life at Vasquez">
+                <div class="overlay">
+                    <p>This is Life at Vasquez</p>
+                </div>
+            </div>
+            <div class="grid-item text-item">
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text This is life at Vasquez</p>
+            </div>
+            <div class="grid-item text-item">
+                <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text WHat makes Vasquez an Advantage</p>
+            </div>
+            <div class="grid-item image-item" onclick="isVideo(true,false,'img/vasquez-advantage/page 2/What makes Vasquez an advantage (2nd page).mp4')">
+                <img src="img/vasquez-advantage/page 2/_SM17048.jpg" alt="Vasquez Advantage">
+                <div class="overlay">
+                    <p>What makes Vasquez an Advantage?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantage-p3">
+
+        <div class="container">
+        <h1>How does Vasquez empower its people?</h1>
+            <div class="carousel">
+              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.mp4')"><span></span></div>
+              <div class="carousel__face"><span></span></div>
+              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By prioritizing employee wellbeing.mp4')"><span></span></div>
+              <div class="carousel__face"><span></span></div>
+              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By providing opportunities to work in the United States.mp4')"><span></span></div>
+              <div class="carousel__face"><span></span></div>
+              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/Through compassionate and mindful leadership.mp4')"><span></span></div>
+              <div class="carousel__face"><span></span></div>
+              <div class="carousel__face"><span></span></div>
+            </div>
+          </div>
+
+    </section>
+
+    <div class="video-container hidden" id="videoContainer">
+        <iframe id="iframee" class="hidden" src="https://drive.google.com/file/d/1K3-cixQ9tCjw2BqT6qKqrbKDEm1g3pjr/preview" width="100%" height="400" allow="autoplay"></iframe>
+        <video id="videoPlayer" controls>
+            <source id="videoSource" src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="control-buttons">
+            <button class="icon-btn" id="minimizeBtn" title="Minimize"><i class="fas fa-window-minimize"></i></button>
+            <button class="icon-btn" id="restoreBtn" title="Restore" style="display:none;"><i class="fas fa-window-maximize"></i></button>
+            <button class="icon-btn" id="closeBtn" title="Close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer> 
+        <div class="container container__footer">
+            <div class="footer-logo">
+                <img class="footer-img" src="img/V_C Logo_White.png"></img>
+                <div class="footer-copyright">
+                    <a href="https://vasquezcpa.com" target="_blank">© 2020 VASQUEZ CPA. ALL RIGHTS RESERVED.</a>
+                </div>
+            </div>
+            <br>
+            <div class="footer-links">
+                <p class="footer_header">QUICK LINKS</p>
+                <ul>
+                    <li class="footer-link"><a href="about">About Us</a></li>
+                    <li class="footer-link"><a href="services">Services</a></li>
+                    <li class="footer-link"><a href="industries">Industries</a></li>
+                    <li class="footer-link"><a href="team">advantage The Team</a></li>
+                    <li class="footer-link"><a href="team#careers">Careers</a></li>
+                    <li class="footer-link"><a href="https://vasquezcpa.com" target="_blank">Vasquez & Co. LLP</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p class="footer_header">CONTACT US</p>
+                <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
+                <p class="footer-contact_info">
+                    (02) 7622 8779<br>
+                    +63 917 160 8779
+                </p>
+                <p class="footer-contact_header">Makati Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/yXQvNGMWJbKS3jTP7" target="_blank">29th Floor Rufino Pacific Tower, Ayala Avenue, Makati City, Metro Manila, Philippines 1226</a></p>
+                <p class="footer-contact_header">Ortigas Office</p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/fu1198a7JTGHwT1RA" target="_blank">28th Floor, Robinsons Cyberscape Gamma, Topaz Rd, Ortigas Center, Pasig City, Metro Manila, Philippines</a></p>
+            </div>
+        </div>
+    </footer>
+    <div id="contact_modal-overlay"></div>
+    <img src="img/Icons/top.svg" class="gototop-image" onclick="topFunction()" alt="" srcset="">
+    <script src="script/aos.js"></script>
+    <!-- <script src="E:\Vasquez BPO project\Website\script\global.js"></script> -->
+    <script src="script/global.js"></script>
+    <script src="script/vasquez-advantage.js"></script>
+</body>
+</html>

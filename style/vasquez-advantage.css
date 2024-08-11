@@ -1,0 +1,277 @@
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 97); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
+}
+
+
+section {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#advantage .advantage-title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 66px;
+    color: white;
+    z-index: 3;
+    width: 500px;
+}
+
+
+#advantage .advantage-bg-left {
+    background-image: url('../img/vasquez-advantage/page 1/left-img.jpg');
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 150%;
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    z-index: 1;
+    /* clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%); */
+    clip-path: polygon(0 0, 93% 0, 70% 100%, 0% 100%);
+}
+
+
+#advantage .advantage-bg-left div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 195, 255, 0.537);
+    z-index: 2;
+}
+
+#advantage .advantage-bg-right {
+    background-image: url('../img/vasquez-advantage/page 1/right-img.jpg');
+    width: 60%;
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    position: absolute;
+    margin-left: auto;
+    right: 0;
+    z-index: 0;
+}
+
+.advantage_top_overlay {
+    background-image: url('../img/vasquez-advantage/page 2/bg.svg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+}
+
+/* Page 2 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    padding: 20px;
+    height: 100%;
+}
+
+.grid-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;  
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.text-item {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-item img {
+        height: auto;
+    }
+}
+
+/* video Player */
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Set width as desired */
+    max-width: 700px; /* Optional: Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #000; /* Optional: Video player background */
+}
+
+.control-buttons {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+
+.icon-btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.icon-btn i {
+    font-size: 1em;
+    color: #333;
+}
+
+.icon-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Optional: Hide the video container when closed */
+.hidden {
+    display: none;
+}
+
+/* Page 3 */
+.container {
+    position: relative;
+    width: 320px;
+    margin-top: 300px;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel__face {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+    background-image: url("../img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.JPG");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("../img/vasquez-advantage/page 3/By prioritizing employee wellbeing.jpg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+    background-image: url("../img/vasquez-advantage/page 3/By providing opportunities to work in the United States.png");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+    background-image: url("../img/vasquez-advantage/page 3/Through compassionate and mindful leadership.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+  
