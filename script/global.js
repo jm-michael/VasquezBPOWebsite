@@ -8,6 +8,7 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const overlay = document.getElementById('contact_modal-overlay')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
+
 function scrollFunction() { 
     // debugger
     // if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {  

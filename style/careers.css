@@ -249,6 +249,7 @@ section#careers-6th {
     overflow: hidden;
 }
 
+
 .careers_6th_overlay {
     background-image: url('../img/careers/Shapeyourfuturewithus.jpg');
     width: 100%;
@@ -275,6 +276,18 @@ section#careers-6th {
     width: 600px;
     z-index: 2;
     color: white;
+    font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
+    font-family: 'Agrandir', sans-serif;
+    font-weight: 800;
+}
+
+#careers-6ths .careers-6th-titles {
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    width: 600px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
     font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
     font-family: 'Agrandir', sans-serif;
     font-weight: 800;
@@ -316,7 +329,34 @@ section#careers-6th {
     text-align: center;
 }
 
+#careers-6ths .careers-6th-buttons {
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    z-index: 2;
+    color: white;
+    font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+    font-family: 'agrandir';
+    font-weight: 800;
+    width: 600px;
+    text-align: center;
+}
+
 #careers-6th .careers-6th-buttons button {
+    font-family: 'nunitobold';
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: #ed0000;
+    border: solid;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+}
+
+#careers-6ths .careers-6th-buttonss button {
     font-family: 'nunitobold';
     padding: 10px;
     width: 250px;
@@ -332,6 +372,24 @@ section#careers-6th {
 
 #careers-6th .careers-6th-buttons button:hover {
     background-color: red;
+}
+
+#careers-6ths .careers-6th-buttonss button:hover {
+    background-color: red;
+}
+
+#careers-6ths .careers-6th-buttons div a {
+    font-family: 'nunitobold';
+    font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    background-color: #37A5CC;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
 }
 
 #careers-6th .careers-6th-buttons div a {
@@ -451,25 +509,6 @@ body {
     max-width: 600px;
     margin: auto;
     overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 600px;
-    /* or any width you need */
-    min-height: 500px;
-    /* set to the desired height */
-    background-image: url('img/careers/IMG (482).JPG');
-    background-size: cover;
-    /* options: contain, cover, auto */
-    background-position: center center;
-    /* position the image within the container */
-    background-repeat: no-repeat;
-    /* prevent the image from repeating */
 }
 
 img {
@@ -769,6 +808,34 @@ img {
 
 }
 
+@media screen and (min-width: 478px) {
+    section#careers-6th{
+        display: block;
+    }
+
+    section#careers-6ths {
+        display: none 
+    }
+
+    .scrollable-divs{
+        display: none;
+    }
+
+    .scrollable-div{
+        display: block;
+    }
+
+    .divider{
+        display: none;
+    }
+
+    #careers-7ths .images{
+        display: none;
+    }
+    
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .careers_3rd_overlay {
         display: none;
@@ -779,6 +846,10 @@ img {
         position: absolute;
         left: 0;
         z-index: 1;
+    }
+
+    .scrollable-div{
+        display: none;
     }
 
     .careers_top_overlay {
@@ -831,13 +902,17 @@ img {
     #careers-3rd .careers-3rd-title,
     #careers-3rd .careers-4rd-title {
         position: absolute;
-        left: 20px;
+        left: 10px;
         z-index: 2;
-        color: black;
+        color: white;
         font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
         font-family: 'nunitobold';
         width: 200px;
         top: 100px;
+    }
+
+    .divider{
+        margin-bottom: 5%;
     }
 
     #careers_menu {
@@ -867,6 +942,7 @@ img {
         font-family: 'Agrandir', sans-serif;
         font-weight: 800;
         /* justify-items: center; */
+        display: none;
     }
 
     /* #careers-6th .careers-6th-buttons {
@@ -887,9 +963,50 @@ img {
         overflow: hidden;
     }
 
+    section#careers-6ths{
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+    }
+
     .view-all{
         margin-top: 20px;
     }
+
+    #careers-6ths .careers-6th-buttonss {
+        /* display: grid; */
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax());
+        height: 140%;
+    }
+
+    #careers-6ths .careers-6th-buttonss {
+        position: absolute;
+        top: 50px;
+        /* right: -45%; */
+        left: 18%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+        font-family: 'agrandir';
+        font-weight: 800;
+        /* width: 600px; */
+        text-align: center;
+    }
+
+    #careers-6ths .careers-6th-titles {
+        position: absolute;
+        top: 20px;
+        /* right: -295px; */
+        /* width: 600px; */
+        left: 8%;
+        z-index: 2;
+        color: rgb(0, 0, 0);
+        font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
+        font-family: 'Agrandir', sans-serif;
+        font-weight: 800;
+    }
+
 
     #careers-6th .careers-6th-buttons {
         /* position: absolute;
@@ -907,6 +1024,134 @@ img {
         gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax());
         height: 140%;
+    }
+
+    #careers-6ths .careers-6th-buttonss button {
+        font-family: 'nunitobold';
+        padding: 10px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: #ed0000;
+        border: solid;
+        border-width: 2px;
+        color: white;
+        cursor: pointer;
+        margin: 10px auto;
+        font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    }
+
+    #careers-6ths .careers-6th-buttonss div a {
+        font-family: 'nunitobold';
+        font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 20px;
+        background-color: #37A5CC;
+        border: none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #careers-7ths div .titles {
+        position: absolute;
+        font-family: 'nunitobold';
+        /* top: 20%; */
+        left: 20%;
+        width: 250px;
+        display: block;
+        margin-top: 20px;
+    }
+
+    #careers-7ths div .contents {
+        position: absolute;
+        /* top: 160%; */
+        right: 8%;
+        height: 100%;
+        /* width: 105%; */
+        font-family: 'nunitobold';
+        z-index: 2;
+        color: white;
+        font-size: 15px;
+        display: block;
+        margin-top: 58%;
+    }
+
+    #careers-7th{
+        display: none;
+    }
+
+    #careers-7ths{
+        display: block;
+    }
+
+    .scrollable-divs{
+        display: block;
+    }
+    .scrollable-div{
+        display: none;
+    }
+
+    /* for carrers7th */
+    .slider {
+        width: 100%; /* Full width */
+        overflow: hidden; /* Hide the overflowing slides */
+        position: relative;
+    }
+    
+    .slide-track {
+        display: flex;
+        width: calc(1000%);
+        animation: scroll 50s linear infinite;
+        transform: translateX(-100%); /* St
+    }
+    
+    .slide {
+        width: calc(100% / 12); /* Width of each slide */
+        flex-shrink: 0; /* Prevent shrinking */
+    }
+
+    .slide img {
+        height: 200px; /* Set a specific height */
+        width: auto;   /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the entire height while maintaining aspect ratio */
+    }
+    
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+    /* left sliders  */
+
+    .sliders {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slide-tracks {
+        display: flex;
+        width: calc(200%); /* Double the width to accommodate duplicated slides */
+        animation: scroll-right 10s linear infinite; /* Adjust duration for speed */
+        transform: translateX(-100%); /* St
+    }
+    
+    .slides {
+        width: calc(100% / 12); /* Adjust width based on the number of slides */
+        flex-shrink: 0;
+    }
+    
+    .slides img {
+        height: 200px; /* Adjust height as needed */
+        width: auto;
+        object-fit: cover;
+    }
+    
+    @keyframes scroll-right {
+        0% { transform: translateX(-100%); }
+        90% { transform: translateX(0); }
     }
 
 }
@@ -958,3 +1203,5 @@ img {
     }
 
 }
+
+
