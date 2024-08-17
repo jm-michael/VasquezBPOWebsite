@@ -79,6 +79,7 @@ section {
     overflow: hidden;
     position: relative;
     padding-top: 55%; /* Adjust this value to get the desired aspect ratio */
+    border-radius: 10px;
 }
 
 .grid-item img {
@@ -479,7 +480,7 @@ img {
         padding-top: 20px;
         padding-left: 50px;
         padding-right: 50px;
-        height: 220%;
+        height: 200%;
     }
 
     .v3nd-people {
@@ -490,15 +491,15 @@ img {
         position: absolute;
         background-position: -60%;
         z-index: 1;
-        left: -245px;
-        top: 190px;
+        left: -165px;
+        top: 140px;
     }
 
     .v3nd-context {
         font-size: 14px;
         width: 80%;
         left: 10%;
-        top: 10%;
+        top: 3%;
     }
 
     #vasquez-4nd{
@@ -535,6 +536,10 @@ img {
     .parents .acc a {
         right: 70px;
     }
+
+    .parents .tax a {
+        left: 45%;
+    }
     
     .parents .bop a {
         right: 15px;
@@ -555,7 +560,7 @@ img {
         background-position: 45%;
         display: block;
         width: 100%;
-        height: 200px;
+        height: 255px;
     }
     
     .parents .acc {
@@ -564,7 +569,7 @@ img {
         background-position: 45%;
         display: block;
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
     
     .parents .bop {
@@ -578,7 +583,7 @@ img {
 
     #vasquez-4nd-mobile{
         position: relative;
-        height: 60%;
+        height: 45%;
         overflow: hidden;
         display: block;
     }
@@ -593,7 +598,7 @@ img {
 
     #vasquez-4nd-mobileacc {
         position: relative;
-        height: 76%;
+        height: 45%;
         overflow: hidden;
         display: block;
 
@@ -601,7 +606,7 @@ img {
 
     #vasquez-4nd-mobilebop{
         position: relative;
-        height: 85%;
+        height: 67%;
         overflow: hidden;
         display: block;
 
@@ -617,15 +622,15 @@ img {
 
     #vasquez-5nd-mobile {
         background-image: url('../img/vasquez-life/page 5/page 5 bg.jpg');
-        width: 138%;
-        height: 50%;
+        width: 139%;
+        height: 40%;
         background-size: cover;
         position: relative;
         background-position: 100px;
         z-index: 1;
         display: block;
         background-repeat: no-repeat;
-        left: -120px;
+        left: -140px;
         bottom: 20px;
     }
 
@@ -727,7 +732,7 @@ img {
     }
     /* 3nd page */
     .vasquez-6nd{
-        height: 155%;
+        height: 120%;
     }
 
     .v4nd-titles {
@@ -741,4 +746,48 @@ img {
         display: block;
     }
 
+    .v2nd-title {
+        margin-left: 20%;
+    }
+
+    .grid-item {
+        border-radius: 10px;
+    }
+
+    #vasquez-3nd {
+        width: 100%;
+        height: 65%;
+        background-size: cover;
+        position: relative;
+    }
+
+    .parents .tax .v4nd-overlay {
+        height: 100%;
+    }
+
+    .parents .acc .v4nd-overlay {
+        height: 100%;
+    }
+
+    .parents .bop .v4nd-overlay {
+        height: 100%;
+    }
+
+    .parents .acc a {
+        left: 120px;
+    }
+
+    .parents .aud a {
+        left: 150px;
+    }
+
+    #vasquez-top .vasquez-title {
+        position: absolute;
+        top: 180px;
+        left: 20px;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+        font-family: 'nunitobold';
+    }
 }
