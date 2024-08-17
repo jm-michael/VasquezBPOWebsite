@@ -22,6 +22,10 @@ section {
     overflow: hidden;
 }
 
+#meet-mobile{
+    display: none;
+}
+
 #meet .meet-title {
     position: absolute;
     bottom: 50px;
@@ -209,4 +213,127 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #333;
+        width: 200px;
+        top: 90px;
+        right: 15px;
+        z-index: 1000;
+        padding-bottom: 20px !important;
+        border-radius: 10px;
+        padding-right: 27px !important;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-link {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    .line1, .line2, .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .change .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .line2 {
+        opacity: 0;
+    }
+
+    .change .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar-link {
+        padding: 15px;
+        text-align: center;
+        font-size: small;
+    }
+
+    .container__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    
+    .container__footer {
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .footer-links {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .footer-contact {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .footer-img {
+        width: 120px;
+    }
+    
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #meet .meet-bg-left div {
+    display: none;
+    }
+
+    #meet .meet-title {
+        display: none;
+    }
+
+    #meet .meet-bg-right {
+        display: none;
+    }
+
+    #meet .meet-bg-left {
+        display: none;
+    }
+
+    #meet {
+        display: none;
+    }
 }

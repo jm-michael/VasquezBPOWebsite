@@ -362,47 +362,6 @@ section {
 
 /* Footer css ============================================================================= */
 
-.container__footer {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.footer-details {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.container__footer {
-    padding: 80px 30px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.footer-details {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.footer-links {
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.footer-contact {
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.footer-img {
-    width: 120px;
-}
-
-.footer-copyright {
-    margin-top: 10px;
-    font-size: 12px;
-}
 
 /* for navbar mobile view ======================================================================= */
 
@@ -417,6 +376,49 @@ section {
         text-align: center;
         font-size: small;
     }
+
+    .container__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .container__footer {
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .footer-links {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .footer-contact {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .footer-img {
+        width: 120px;
+    }
+    
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
 }
 
 img {
@@ -727,4 +729,16 @@ img {
     .vasquez-6nd{
         height: 155%;
     }
+
+    .v4nd-titles {
+        font-size: clamp(2.125rem, -0.2188rem + 7.5vw, 4rem);
+        font-family: 'nunitobold';
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+
 }
