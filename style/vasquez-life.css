@@ -452,9 +452,22 @@ img {
     display: none;
 }
 
+
+.leader{
+    display: none;
+}
+
+#leader-mobiless{
+    display: none;
+}
+
+
 /* For mobile view  ======================================================================= */
 
 @media screen and (max-width: 480px){
+    #leader-mobiless{
+        display: block;
+    }
 
     #desktop {
         display: none;
@@ -477,10 +490,7 @@ img {
     }
     
     .vasquez-2nd {
-        padding-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-        height: 200%;
+       display: none;
     }
 
     .v3nd-people {
