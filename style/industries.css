@@ -2,6 +2,10 @@
   font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
 }
 
+.industrietitle{
+  display: none;
+}
+
 .navbar-container {
   max-width: 1100px;
 }
@@ -143,36 +147,48 @@ body {
 
 }
 
+
 @media screen and (max-width: 800px) {
 
-  .navbar-link {
+  .navbar-links {
       padding: 15px;
       text-align: center;
       font-size: small;
   }
+
+  section#industries-hero {
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 900px) {
+
+  .navbar-link {
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+  }
+
   .navbar-links {
       display: none;
       flex-direction: column;
       align-items: center;
       position: absolute;
       background-color: #333;
-      width: 200px;
+      width: 225px;
       top: 90px;
-      right: 15px;
+      right: 20px;
       z-index: 1000;
       padding-bottom: 20px !important;
       border-radius: 10px;
-      padding-right: 27px !important;
+      padding-right: 60px !important;
   }
 
   .navbar-links.active {
       display: flex;
   }
 
-  .navbar-link {
+  .navbar-links {
       padding: 20px;
       text-align: center;
   }
@@ -202,5 +218,13 @@ body {
 
   .change .line3 {
       transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media screen and (max-width: 480) {
+  .industrietitle{
+    font-size: 34px;
+    color: #c21616;
+    display: block;
   }
 }

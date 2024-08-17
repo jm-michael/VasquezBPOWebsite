@@ -539,6 +539,12 @@ img {
 
     .parents .tax a {
         left: 45%;
+        border-style: solid;
+        width: 100%;
+        padding-left: 20px;
+        background-color: rgb(163, 48, 48);
+        border-radius: 10px;
+        font-size: 20px;
     }
     
     /* .parents .bop a {
@@ -613,11 +619,23 @@ img {
     }
 
     .parents .bop a {
-        right: 65px;
+        left: 40%;
+        border-style: solid;
+        width: 100%;
+        padding-left: 20px;
+        background-color: rgb(163, 48, 48);
+        border-radius: 10px;
+        font-size: 20px;
     }
 
     .parents .acc a {
-        right: 95px;
+        left: 45%;
+        border-style: solid;
+        width: 100%;
+        padding-left: 20px;
+        background-color: rgb(163, 48, 48);
+        border-radius: 10px;
+        font-size: 20px;
     }
 
     #vasquez-5nd-mobile {
@@ -640,9 +658,9 @@ img {
 
     .v5nd-1 {
         position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 100%;
+        top: 5px;
+        left: 30px;
+        width: 90%;
         z-index: 3;
     }
 
@@ -672,8 +690,8 @@ img {
     .v5nd-2 {
         position: absolute;
         top: 300px;
-        left: 10px;
-        width: 100%;
+        left: 30px;
+        width: 90%;
         z-index: 3;
     }
 
@@ -703,8 +721,8 @@ img {
     .v5nd-3 {
         position: absolute;
         top: 570px;
-        left: 10px;
-        width: 100%;
+        left: 30px;
+        width: 90%;
         z-index: 3;
     }
 
@@ -747,7 +765,16 @@ img {
     }
 
     .v2nd-title {
-        margin-left: 20%;
+        /* margin-left: 36%; */
+        font-size: clamp(2.125rem, -0.2188rem + 7.5vw, 4rem);
+        font-family: Monospace ;
+        font-weight: bold;
+        color: #414f55;
+        font-size: 20px;
+        margin-bottom: 25px;
+        border-style: solid;
+        text-align: center;
+        background-color:  #99c6d4;
     }
 
     .grid-item {
@@ -773,12 +800,19 @@ img {
         height: 100%;
     }
 
-    .parents .acc a {
+    /* .parents .acc a {
         left: 120px;
-    }
+    } */
 
     .parents .aud a {
-        left: 150px;
+        /* left: 150px; */
+        left: 45%;
+        border-style: solid;
+        width: 100%;
+        padding-left: 20px;
+        background-color: rgb(163, 48, 48);
+        border-radius: 10px;
+        font-size: 20px;
     }
 
     #vasquez-top .vasquez-title {
@@ -789,5 +823,35 @@ img {
         color: white;
         font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
         font-family: 'nunitobold';
+    }
+
+    .leader {
+        top: -30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        padding: 20px;
+        /* background-color: #f4f4f4; */
+        grid-template-rows: 125px 125px 125px;
+        height: 60%;
+    }
+
+    .box {
+        background-color: #99c6d4;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .grid-item img {
+        position: absolute;
+        top: -35%;
+        left: 50%;
+        width: 150%;
+        height: auto;
+        transform: translateX(-50%);
+        object-fit: cover;
     }
 }
