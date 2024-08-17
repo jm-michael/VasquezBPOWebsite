@@ -2,10 +2,6 @@
   font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
 }
 
-.industrietitle{
-  display: none;
-}
-
 .navbar-container {
   max-width: 1100px;
 }
@@ -155,10 +151,6 @@ body {
       text-align: center;
       font-size: small;
   }
-
-  section#industries-hero {
-    height: 60%;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -221,10 +213,8 @@ body {
   }
 }
 
-@media screen and (max-width: 480) {
-  .industrietitle{
-    font-size: 34px;
-    color: #c21616;
-    display: block;
+@media screen and (max-width: 480px) {
+  section#industries-hero {
+    height: 60%;
   }
 }
