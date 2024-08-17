@@ -541,10 +541,10 @@ img {
         left: 45%;
     }
     
-    .parents .bop a {
+    /* .parents .bop a {
         right: 15px;
     }
-    
+     */
     .parents .tax {
         background-image: url('../img/vasquez-life/page 4/Tax.jpg');
         background-size: cover;
@@ -613,7 +613,7 @@ img {
     }
 
     .parents .bop a {
-        right: 45px;
+        right: 65px;
     }
 
     .parents .acc a {
