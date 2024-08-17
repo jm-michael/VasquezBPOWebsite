@@ -1,4 +1,6 @@
-
+.navbar-container {
+    max-width: 1100px;
+}
 .tab-content-header {
     font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
 }

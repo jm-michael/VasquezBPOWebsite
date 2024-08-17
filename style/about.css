@@ -1,3 +1,31 @@
+.navbar-container {
+    max-width: 1100px;
+}
+
+.container__whoweare {
+    padding: 150px 30px;
+    min-height: 700px;
+}
+
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: block;    
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.whoweare-header {
+    font-size: 30px;
+    margin-top: 90px;
+}
+
 @media screen and (max-width: 900px) {
     .absolute_background {
         width: 100%; /* Adjust the width to fill the entire screen */
@@ -143,7 +171,7 @@
 
     .whoweare-header {
         font-size: 14px;
-        margin-top: 650px;
+        margin-top: 450px;
     }
 
     .whoweare-text {
@@ -272,7 +300,27 @@ body {
     background: #000621 !important;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;    
+    }
+
+    section#who-we-are {
+        position: relative;
+        background-color: #658fb3;
+        height: 120%;
+    }
+
+    .container__whoweare {
+        padding: 150px 30px;
+        min-height: 1080px;
+    }
+
     .absolute_background {
         background-image: url('../img/02_About Us/AboutUsWhoWeAre.png');
         height: 100%;
@@ -286,15 +334,33 @@ body {
         max-width: 100%;
     }
 
-    
+    .container__whoweare {
+        padding: 50px 30px;
+        min-height: 10px;
+        top: -80px;
+    }
+
+    .whoweare-header {
+        font-size: 14px;
+        margin-top: 5px;
+        color: #070707;
+    }
+
+    .whoweare-text {
+        font-size: 12px;
+        width: 105%;
+        margin-top: 15px;
+        color: #000;
+        line-height: 15px;
+    }
 
 }
 
 @media screen and (max-width: 900px) {
-    .container__whoweare {
+    /* .container__whoweare {
         padding: 150px 30px;
         min-height: 1080px;
-    }
+    } */
 
     .absolute_background {
         width: 70%;

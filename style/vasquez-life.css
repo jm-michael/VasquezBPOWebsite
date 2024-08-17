@@ -244,6 +244,18 @@ section {
     z-index: 1;
 }
 
+#vasquez-5nd{
+    display: block;
+}
+
+#vasquez-5nd-mobile{
+    display: none;
+}
+
+#mobile{
+    display: none;
+}
+
 .v5nd-overlay {
     position: absolute;
     height: 100%;
@@ -345,4 +357,374 @@ section {
     font-size: 20px;
     border-radius: 30px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), #37A5CC);
+}
+
+
+/* Footer css ============================================================================= */
+
+.container__footer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-details {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container__footer {
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-links {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-contact {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-img {
+    width: 120px;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* for navbar mobile view ======================================================================= */
+
+.navbar-container {
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 800px) {
+  
+    .navbar-link {
+        padding: 15px;
+        text-align: center;
+        font-size: small;
+    }
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+.vasquez_top_bg {
+    display: block;
+}
+
+#vasquez-4nd{
+    display: block;
+}
+
+#vasquez-4nd-mobile{
+    display: none;
+}
+#vasquez-4nd-mobileaud{
+    display: none;
+}
+#vasquez-4nd-mobileacc{
+    display: none;
+}
+#vasquez-4nd-mobilebop{
+    display: none;
+}
+
+/* For mobile view  ======================================================================= */
+
+@media screen and (max-width: 480px){
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .vasquez_top_bg {
+        display: none;
+    }
+
+    .vasquez_top_overlay{
+        display: none;
+    }
+
+    #vasquez-top {
+        height: 40%;
+    }
+    
+    .vasquez-2nd {
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 220%;
+    }
+
+    .v3nd-people {
+        width: 180%;
+        height: 70%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: -60%;
+        z-index: 1;
+        left: -245px;
+        top: 190px;
+    }
+
+    .v3nd-context {
+        font-size: 14px;
+        width: 80%;
+        left: 10%;
+        top: 10%;
+    }
+
+    #vasquez-4nd{
+        display: none;
+    }
+
+    .parents {
+        display: flex;
+        gap: 0px;
+        margin-top: 20px;
+    
+    }
+    
+    .parents div {
+        height: 500px;
+        width: 100%;
+        /* clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%); */
+        /* border: 1px solid gray; */
+        /* clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%); */
+        position: relative;
+        z-index: 1;
+    }
+    
+    .parents div a {
+        position: absolute;
+        bottom: 20px;
+        right: 140px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        z-index: 4;
+    }
+    
+    .parents .acc a {
+        right: 70px;
+    }
+    
+    .parents .bop a {
+        right: 15px;
+    }
+    
+    .parents .tax {
+        background-image: url('../img/vasquez-life/page 4/Tax.jpg');
+        background-size: cover;
+        background-position: 45%;
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+
+    .parents .aud {
+        background-image: url('../img/vasquez-life/page 4/Audit.jpg');
+        background-size: cover;
+        background-position: 45%;
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .parents .acc {
+        background-image: url('../img/vasquez-life/page 4/Accounting.jpg');
+        background-size: cover;
+        background-position: 45%;
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .parents .bop {
+        background-image: url('../img/vasquez-life/page 4/Business Operations.jpg');
+        background-size: cover;
+        background-position: 45%;
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+
+    #vasquez-4nd-mobile{
+        position: relative;
+        height: 60%;
+        overflow: hidden;
+        display: block;
+    }
+
+    #vasquez-4nd-mobileaud{
+        position: relative;
+        height: 40%;
+        overflow: hidden;
+        display: block;
+
+    }
+
+    #vasquez-4nd-mobileacc {
+        position: relative;
+        height: 76%;
+        overflow: hidden;
+        display: block;
+
+    }
+
+    #vasquez-4nd-mobilebop{
+        position: relative;
+        height: 85%;
+        overflow: hidden;
+        display: block;
+
+    }
+
+    .parents .bop a {
+        right: 45px;
+    }
+
+    .parents .acc a {
+        right: 95px;
+    }
+
+    #vasquez-5nd-mobile {
+        background-image: url('../img/vasquez-life/page 5/page 5 bg.jpg');
+        width: 138%;
+        height: 50%;
+        background-size: cover;
+        position: relative;
+        background-position: 100px;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        left: -120px;
+        bottom: 20px;
+    }
+
+    #vasquez-5nd{
+        display: none;
+    }
+
+    .v5nd-1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .v5nd-1 .context {
+        position: absolute;
+        top: 49px;
+        right: 10px;
+        padding: 40px;
+        color: black;
+        font-size: 20px;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #37A5CC);
+    }
+
+    .v5nd-1 .title {
+        width: 70%;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #37A5CC;
+        color: white;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .v5nd-2 {
+        position: absolute;
+        top: 300px;
+        left: 10px;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .v5nd-2 .context {
+        position: absolute;
+        top: 49px;
+        right: 10px;
+        padding: 40px;
+        color: black;
+        font-size: 20px;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #37A5CC);
+    }
+
+    .v5nd-2 .title {
+        width: 90%;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #37A5CC;
+        color: white;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .v5nd-3 {
+        position: absolute;
+        top: 570px;
+        left: 10px;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .v5nd-3 .context {
+        position: absolute;
+        top: 49px;
+        right: 10px;
+        padding: 40px;
+        color: black;
+        font-size: 20px;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #37A5CC);
+    }
+
+    .v5nd-3 .title {
+        width: 90%;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #37A5CC;
+        color: white;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+    }
+    /* 3nd page */
+    .vasquez-6nd{
+        height: 155%;
+    }
 }

@@ -4,6 +4,10 @@ section#careers-top {
     overflow: hidden;
 }
 
+.navbar-container {
+    max-width: 1100px;
+}
+
 .careers_top_bg {
     background-image: url('../img/careers/Careers HP5.jpg');
     width: 100%;
@@ -837,13 +841,13 @@ img {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   
-    .navbar-link {
+    /* .navbar-link {
         padding: 15px;
         text-align: center;
         font-size: small;
-    }
+    } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {

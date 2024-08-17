@@ -3,7 +3,7 @@
 #careers-job-search {
     position: relative;
     margin-top: 150px;
-    height: 20%;
+    height: 30%;
     overflow: hidden;
     /* top: 100px; */
     /* transition: top 0.8s; */
@@ -491,6 +491,48 @@ body {
         text-align: center;
         font-size: small;
     }
+
+    .container__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    .container__footer {
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .footer-links {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .footer-img {
+        width: 120px;
+    }
+
+    .footer-copyright {
+        margin-top: 10px;
+        font-size: 12px;
+    }
   }
   
   @media screen and (max-width: 900px) {
@@ -545,3 +587,267 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
   }
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+
+    #careers-job-search .desktop {
+        display: none;
+    }
+
+    #careers-job-search .mobile {
+        display: block;
+    }
+
+    #careers-job-search div input {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 60%;
+        border-radius: 3px;
+        border: 1px solid gray;
+        /* margin-right: 5px; */
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    #careers-job-search #select{
+        display: block;
+        margin-left: 70px;
+       
+    }
+
+    #careers-job-search div {
+       
+    }
+
+    select {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        -webkit-appearance: menulist;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    #careers-job-search {
+        position: relative;
+        margin-top: 150px;
+        height: 30%;
+        overflow: hidden;
+        /* top: 100px; */
+        /* transition: top 0.8s; */
+        z-index: 10;
+        /* left: 35px; */
+    }
+
+
+    #careers-job-data .right {
+        /* border: 1px solid #000; */
+        /* height: 100%; */
+        width: 100%;
+        padding: 50px;
+        /* display: flex; */
+        justify-content: center;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255);
+        padding-top: 0;
+    }
+    
+    #careers-job-data {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .position, .company-address, .job-details p, .QnR p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .company-address div {
+        display: none;
+    }
+
+    .applyRightCard, .btn-apply-now button, .btn-submit-app {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .fields {
+        margin-bottom: 10px;
+    }
+
+    .fields input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .shiftandSched {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shiftandSched p {
+        font-size: 13px;
+    }
+
+
+
+
+
+
+  }
+
+  @media screen and (min-width: 478px){
+        
+    #careers-job-search div {
+        display: flex;
+    }
+
+    #careers-job-search #mobile {
+        display: none;
+    }
+
+    
+    #careers-job-search #select{
+      
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Basic Styles */
+#careers-job-data {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+#careers-job-data .left,
+#careers-job-data .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #careers-job-data {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #careers-job-data .left,
+    #careers-job-data .right {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card .position,
+    .card .company-address,
+    .card .job-details,
+    .card .QnR,
+    .fields {
+        font-size: 14px;
+    }
+
+    .btn-submit-app {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .applyRightCard {
+        font-size: 14px;
+    }
+
+    .applynow {
+        margin-top: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #careers-job-data {
+        flex-direction: row;
+    }
+
+    #careers-job-data .left,
+    #careers-job-data .right {
+        width: 48%;
+    }
+
+    .card .position,
+    .card .company-address,
+    .card .job-details,
+    .card .QnR,
+    .fields {
+        font-size: 16px;
+    }
+
+    .btn-submit-app {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .applyRightCard {
+        font-size: 16px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    #careers-job-data {
+        flex-direction: row;
+    }
+
+    #careers-job-data .left,
+    #careers-job-data .right {
+        width: 45%;
+    }
+
+    .card .position,
+    .card .company-address,
+    .card .job-details,
+    .card .QnR,
+    .fields {
+        font-size: 18px;
+    }
+
+    .btn-submit-app {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .applyRightCard {
+        font-size: 18px;
+    }
+}

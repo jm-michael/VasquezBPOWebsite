@@ -38,12 +38,17 @@
     <!-- end for animate only -->
 
     <section id="careers-job-search">
-        <div>
+        <div class="desktop" id="desktop">
             <input type="text" id="search" placeholder="Search..." name="search"><br><br>
             <button  onclick="onClickSearch()">Search</button>
         </div>
 
-        <div class="category">
+        <div class="mobile" id="mobile">
+            <input type="text" id="search" placeholder="Search..." name="search">
+            <button  onclick="onClickSearch()">Search</button>
+        </div><br>
+
+        <div class="category " id="select">
             <div>
                 <select name="position" id="position" onchange="displayMessage()">
                     <option selected value="All">All</option>
@@ -65,6 +70,7 @@
                 </select>
             </div>
         </div>
+
     </section>
 
     <section id="careers-job-data">
@@ -283,6 +289,8 @@
         </div>
     </section>
 
+    
+
     <!-- Footer -->
     <footer> 
         <div class="container container__footer">
@@ -318,7 +326,7 @@
             </div>
         </div>
     </footer>
-    <div id="contact_modal-overlay"></div>
+    <!-- <div id="contact_modal-overlay"></div> -->
     <img src="img/Icons/top.svg" class="gototop-image" onclick="topFunction()" alt="" srcset="">
     <script src="script/aos.js"></script>
     <!-- <script src="E:\Vasquez BPO project\Website\script\global.js"></script> -->
