@@ -185,7 +185,7 @@ video {
 }
 
 /* Page 3 */
-.container {
+/* .container {
     position: relative;
     width: 320px;
     margin-top: 300px;
@@ -274,4 +274,166 @@ span {
         transform: rotateY(-360deg);
     }
 }
-  
+   */
+
+/* page 3 */
+#advantage-p3 {
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr repeat(8, 30px) 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#advantage-p3 input {
+    z-index: 1;
+}
+
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 11;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 4;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+}
+
+div.item {
+    border: 2px solid white;
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-700px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item {
+    background-size: cover;
+    background-position: 0% 100%;
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+    background-image: url('../img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.JPG');
+}
+
+div.item:nth-of-type(2) {
+    --offset: 2;
+    background-image: url('../img/vasquez-advantage/page 3/By prioritizing employee wellbeing.jpg');
+}
+
+div.item:nth-of-type(3) {
+    --offset: 3;
+    background-image: url('../img/vasquez-advantage/page 3/By providing opportunities to work in the United States.png');
+}
+
+div.item:nth-of-type(4) {
+    --offset: 4;
+    background-image: url('../img/vasquez-advantage/page 3/Through compassionate and mindful leadership.jpg');
+}
+
+input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+div.item {
+    filter: blur(2px);
+}
+
+input:nth-of-type(1):checked~main#carousel {
+    --position: 1;
+}
+
+input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(2):checked~main#carousel {
+    --position: 2;
+}
+
+input:nth-of-type(3) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(3):checked~main#carousel {
+    --position: 3;
+}
+
+input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+input:nth-of-type(4):checked~main#carousel {
+    --position: 4;
+}
+
+input:nth-of-type(1):checked~main#carousel div.item:nth-of-type(1) {
+    filter: none;
+}
+
+input:nth-of-type(2):checked~main#carousel div.item:nth-of-type(2) {
+    filter: none;
+}
+
+input:nth-of-type(3):checked~main#carousel div.item:nth-of-type(3) {
+    filter: none;
+}
+
+input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
+    filter: none;
+}
+
+#advantage-p3 h1 {
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    color: #3DA5CA;
+}
+
+.btn-prev-next {
+    position: absolute;
+    bottom: 15px;
+    justify-items: center;
+    width: 200px;
+    /* background-color: #ccc; */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-right: 110px;
+}
+
+.btn-prev-next button {
+    background-color: #3DA5CA;
+}
+
+#advantage-p3 #play {
+    position: absolute;
+    bottom: 25%;
+    cursor: pointer;
+    border: 1px solid gray;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(206, 204, 210, 0.779);
+    color: rgb(74, 72, 72)
+}

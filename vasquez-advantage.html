@@ -45,7 +45,7 @@
 
     <section id="advantage-p2">
         <div class="grid-container">
-            <div class="grid-item image-item" onclick="isVideo(true,true,'img/vasquez-advantage/page 2/This is Life at Vasquez (2nd page).mp4')">
+            <div class="grid-item image-item" onclick="isVideo(true,true,0)">
                 <img src="img/vasquez-advantage/page 2/1O3B6652.jpg" alt="Life at Vasquez">
                 <div class="overlay">
                     <p>This is Life at Vasquez</p>
@@ -57,7 +57,7 @@
             <div class="grid-item text-item">
                 <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text WHat makes Vasquez an Advantage</p>
             </div>
-            <div class="grid-item image-item" onclick="isVideo(true,false,'img/vasquez-advantage/page 2/What makes Vasquez an advantage (2nd page).mp4')">
+            <div class="grid-item image-item" onclick="isVideo(true,false,1)">
                 <img src="img/vasquez-advantage/page 2/_SM17048.jpg" alt="Vasquez Advantage">
                 <div class="overlay">
                     <p>What makes Vasquez an Advantage?</p>
@@ -67,21 +67,26 @@
     </section>
 
     <section id="advantage-p3">
-
-        <div class="container">
+        <div class="advantage_top_overlay"></div>
         <h1>How does Vasquez empower its people?</h1>
-            <div class="carousel">
-              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.mp4')"><span></span></div>
-              <div class="carousel__face"><span></span></div>
-              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By prioritizing employee wellbeing.mp4')"><span></span></div>
-              <div class="carousel__face"><span></span></div>
-              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/By providing opportunities to work in the United States.mp4')"><span></span></div>
-              <div class="carousel__face"><span></span></div>
-              <div class="carousel__face" onclick="isVideo(true,false,'img/vasquez-advantage/page 3/Through compassionate and mindful leadership.mp4')"><span></span></div>
-              <div class="carousel__face"><span></span></div>
-              <div class="carousel__face"><span></span></div>
-            </div>
-          </div>
+        
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" checked/>
+        <input type="radio" name="position" />
+        <main id="carousel">
+            <div class="item"></i></div>
+            <div class="item"></i></div>
+            <div class="item"></i></div>
+            <div class="item"></i></div>
+        </main>
+
+        <div class="btn-prev-next">
+            <button class="icon-btn" id="leftBtn"  title="Prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="icon-btn" id="rightBtn" title="Next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <i id="play" onclick="playVideo()" class="fas fas fa-play"></i>
 
     </section>
 
