@@ -175,7 +175,7 @@ section#careers-top {
     height: 100%;
     width: 100%;
     /* background-color: #6FA3C6; */
-    background-color: rgba(29, 179, 206, 0.8);
+    background-color: #6FA3C6;
     color: white;
 }
 
@@ -186,11 +186,19 @@ section#careers-top {
     text-align: center;
 }
 
+#careers-4th .titles {
+    font-family: 'nunitobold';
+    /* font-size: clamp(3rem, 0.0625rem + 3vw, 1.75rem); */
+    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
+    text-align: center;
+    margin-top: -30px;
+}
+
 #careers-4th .left .content,
 #careers-4th .right .content {
     font-family: 'nunito';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
-    text-align: justify;
+    text-align: left;
     padding-top: 20px;
 }
 
