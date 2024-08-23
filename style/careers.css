@@ -251,7 +251,7 @@ section#careers-top {
 #careers-5th .right .content {
     font-family: 'nunito';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
-    text-align: justify;
+    text-align: left;
     padding-top: 20px;
 }
 
