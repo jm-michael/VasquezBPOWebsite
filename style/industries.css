@@ -220,3 +220,7 @@ body {
     height: 60%;
   }
 }
+
+.navbar-container{
+  max-width: 1230px;
+}

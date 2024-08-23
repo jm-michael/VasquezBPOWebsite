@@ -1,5 +1,5 @@
 .navbar-container {
-    max-width: 1100px;
+    max-width: 1230px;
 }
 .tab-content-header {
     font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
@@ -137,6 +137,7 @@
         display: flex;
         justify-content: center; /* Center the content horizontally */
         align-items: start; /* Center the content vertically */
+        margin-left: 130px;
     }
 
     .services_hero-header {
