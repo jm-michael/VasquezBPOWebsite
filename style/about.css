@@ -24,6 +24,7 @@ img{
 .whoweare-header {
     font-size: 30px;
     margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {

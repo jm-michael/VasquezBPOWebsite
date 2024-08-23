@@ -985,6 +985,7 @@ section#who-we-are {
     font-family: 'nunitoregular';
     /* height: 100%; */
     min-height: 800px;
+    left: -70px;
 }
 
 .whoweare-header {
@@ -1117,7 +1118,8 @@ section#mission_vision {
     display:flex;
     height: 100%;
     position: relative;
-    left: -50px;
+    left: 30px;
+    width: 90%;
 }
 
 .why_not-group_text-content {
@@ -2804,6 +2806,7 @@ footer {
     .whoweare-text {
         font-size: 16px;
         width: 40%;
+        margin-bottom: 20px;
     }
 
     /* .container__mission_vision {
