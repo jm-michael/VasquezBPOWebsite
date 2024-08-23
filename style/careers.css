@@ -180,14 +180,14 @@ section#careers-top {
 }
 
 #careers-4th .title {
-    font-family: 'nunitobold';
+    font-family: 'Gotham';
     /* font-size: clamp(3rem, 0.0625rem + 3vw, 1.75rem); */
     font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
     text-align: center;
 }
 
 #careers-4th .titles {
-    font-family: 'nunitobold';
+    font-family: 'Gotham';
     /* font-size: clamp(3rem, 0.0625rem + 3vw, 1.75rem); */
     font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
     text-align: center;
@@ -196,7 +196,7 @@ section#careers-top {
 
 #careers-4th .left .content,
 #careers-4th .right .content {
-    font-family: 'nunito';
+    font-family: 'Gotham';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
     text-align: left;
     padding-top: 20px;
@@ -210,7 +210,7 @@ section#careers-top {
     align-items: center;
     /* Center items vertically */
     position: relative;
-    height: 70%;
+    height: 60%;
 }
 
 #careers-5th .left,
@@ -221,7 +221,7 @@ section#careers-top {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    padding-top: 75px;
+    padding-top: 45px;
 }
 
 #careers-5th .left {
@@ -232,7 +232,7 @@ section#careers-top {
 }
 
 #careers-5th .left .title {
-    font-family: 'nunitobold';
+    font-family: 'Gotham';
     font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
     text-align: center;
     margin-bottom: 10px;
@@ -240,7 +240,7 @@ section#careers-top {
 }
 
 #careers-5th .right .title {
-    font-family: 'nunitobold';
+    font-family: 'Gotham';
     font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
     text-align: center;
     margin-bottom: 10px;
@@ -249,7 +249,7 @@ section#careers-top {
 
 #careers-5th .left .content,
 #careers-5th .right .content {
-    font-family: 'nunito';
+    font-family: 'Gotham';
     font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
     text-align: left;
     padding-top: 20px;
