@@ -998,7 +998,6 @@ section#who-we-are {
 .whoweare-text {
     z-index: 2;
     width: 55%;
-    margin-top: 100px;
     color: #fff;
 }
 
@@ -2247,7 +2246,6 @@ footer {
     .whoweare-text {
         font-size: 17px;
         width: 53%;
-        margin-top: 75px;
     }
 
     .container__mission_vision {
@@ -2805,7 +2803,6 @@ footer {
     .whoweare-text {
         font-size: 16px;
         width: 40%;
-        margin-top: 60px;
     }
 
     /* .container__mission_vision {

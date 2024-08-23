@@ -37,8 +37,9 @@ section#careers-top {
     left: 150px;
     z-index: 2;
     color: white;
-    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
-    font-family: 'nunitobold';
+    font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+    font-family: Roboto,sans-serif;
+    font-weight: bolder;
 }
 
 /* Menu */

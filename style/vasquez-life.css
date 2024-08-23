@@ -23,7 +23,7 @@ section {
 
 .vasquez_top_bg {
     background-image: url('../img/vasquez-life/1st page.jpg');
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-size: cover;
     background-position: 0% 50%;
@@ -34,7 +34,7 @@ section {
 }
 
 .vasquez_top_overlay {
-    background-image: url('../img/vasquez-life/svg/1st page.svg');
+    background-image: url('../img/vasquez-life/svg/1st page.png');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -49,8 +49,9 @@ section {
     right: 150px;
     z-index: 2;
     color: white;
-    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
-    font-family: 'nunitobold';
+    font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+    font-family: Roboto,sans-serif;
+    font-weight: bolder;
 }
 
 /* 2nd page */
@@ -156,23 +157,23 @@ section {
     font-family: 'nunitobold';
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .v4nd-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.482);
+    background-color: rgb(0 0 0 / 48%);
     z-index: 2;
 }
 
 .tax .v4nd-overlay {
-    background-color: rgba(37, 86, 190, 0.482);
+    background-color: rgb(0 189 255 / 43%);
 }
 
 .acc .v4nd-overlay {
-    background-color: rgba(37, 86, 190, 0.482);
+    background-color: rgb(0 189 255 / 43%);
 }
 
 .parent {
@@ -194,8 +195,8 @@ section {
 
 .parent div a {
     position: absolute;
-    bottom: 20px;
-    right: 120px;
+    bottom: 200px;
+    right: 180px;
     color: white;
     font-weight: bold;
     font-size: 24px;
@@ -203,11 +204,11 @@ section {
 }
 
 .parent .acc a {
-    right: 70px;
+    right: 130px;
 }
 
 .parent .bop a {
-    right: 15px;
+    right: 90px;
 }
 
 .parent .tax {
@@ -261,7 +262,7 @@ section {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.482);
+    background-color: rgb(0 0 0 / 48%);
     z-index: 2;
 }
 

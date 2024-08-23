@@ -22,7 +22,9 @@
 }
 
 .services_hero-header {
-    font-size: clamp(0.9375rem, 0.4203rem + 2.5862vw, 1.875rem) !important;
+    font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+    font-family: Roboto,sans-serif;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 767px) {

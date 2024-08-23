@@ -1,5 +1,7 @@
 .industries_hero-header {
-  font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
+  font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+  font-family: Roboto,sans-serif;
+  font-weight: bolder;
 }
 
 .navbar-container {
