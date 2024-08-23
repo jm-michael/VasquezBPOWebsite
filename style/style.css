@@ -3742,3 +3742,42 @@ footer {
         height: auto;
     }
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.5); /* 80% transparency */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 150%;
+    font-family: 'attractive';
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-link {
+    position: relative;
+}
