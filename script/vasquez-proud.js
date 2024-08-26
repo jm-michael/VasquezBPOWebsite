@@ -7,12 +7,14 @@ const videoSource = document.getElementById('videoSource');
 const iframee = document.getElementById('iframee');
 
 const videos = [
-    "img/vasquez-advantage/page 2/This is Life at Vasquez (2nd page).mp4",
-    "img/vasquez-advantage/page 2/What makes Vasquez an advantage (2nd page).mp4",
-    "img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.mp4",
-    "img/vasquez-advantage/page 3/By prioritizing employee wellbeing.mp4",
-    "img/vasquez-advantage/page 3/By providing opportunities to work in the United States.mp4",
-    "img/vasquez-advantage/page 3/Through compassionate and mindful leadership.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud- Tere.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud- Lori.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud - Jerick.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud - Aryana.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud - Kenneth.mp4",
+    "img/vasquez-proud/videos/Vasquez  Proud- Jud.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud - Caitlin.mp4",
+    "img/vasquez-proud/videos/Vasquez Proud - Paul.mp4",
 ]
 
 const pictures = [
@@ -68,6 +70,7 @@ function isVideo(show,iframe,indx){
 }
 
 function changeVideo(videoPath) {
+    console.log(videoPath)
     videoSource.src = videoPath;
     videoPlayer.load(); // Reload the video with the new source
     videoPlayer.play(); // Optionally start playing the new video automatically
@@ -76,7 +79,7 @@ function changeVideo(videoPath) {
 const radios = document.querySelectorAll('input[name="position"]');
 const leftBtn = document.getElementById('leftBtn');
 const rightBtn = document.getElementById('rightBtn');
-var p3Index = 1;
+var p3Index = 3;
 
 // Function to find the currently checked radio button
 function getCheckedRadioIndex() {
@@ -109,6 +112,6 @@ rightBtn.addEventListener('click', function() {
 });
 
 function playVideo(){
-    console.log(p3Index+2)
-    isVideo(true,false,(p3Index+2))
+    console.log(p3Index)
+    isVideo(true,false,p3Index)
 }

@@ -104,7 +104,7 @@ section {
 }
 
 #proud-p2 input {
-    margin-top: 100px;
+    margin-top: 50px;
     z-index: 1;
 }
 
@@ -123,7 +123,7 @@ main#carousel {
     --middle: 4;
     --position: 1;
     pointer-events: none;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 div.item {
@@ -378,6 +378,101 @@ input:nth-of-type(8):checked~main#carousel div.item:nth-of-type(8) {
     border-radius: 3px;
     background-color: rgba(135, 207, 235, 0.687);
 }
+
+.btn-prev-next {
+    position: absolute;
+    justify-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.btn-prev-next button {
+    padding: 15px;
+    background-color: #d9dddf;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-prev-next button:hover {
+    background-color: #0a6c8f;
+}
+
+#play {
+    position: absolute;
+    bottom: 25%;
+    cursor: pointer;
+    border: 1px solid gray;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(206, 204, 210, 0.779);
+    color: rgb(74, 72, 72)
+}
+
+/* Video Player */
+/* video Player */
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Set width as desired */
+    max-width: 700px; /* Optional: Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #000; /* Optional: Video player background */
+}
+
+.control-buttons {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+
+.icon-btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.icon-btn i {
+    font-size: 1em;
+    color: #333;
+}
+
+.icon-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Optional: Hide the video container when closed */
+.hidden {
+    display: none;
+}
+
+.p3-context {
+    padding-top: 30px;
+}
+
 /* 
 .p3-context .p3 {
     padding: 5px;

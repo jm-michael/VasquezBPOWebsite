@@ -118,7 +118,7 @@ section {
     padding: 20px;
     background-color: #fff;
     color: #333;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 /* Responsive Design for Mobile View */
@@ -184,101 +184,9 @@ video {
     display: none;
 }
 
-/* Page 3 */
-/* .container {
-    position: relative;
-    width: 320px;
-    margin-top: 300px;
-    perspective: 1000px;
-}
-
-.carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    animation: rotate360 60s infinite forwards linear;
-}
-
-.carousel__face {
-    position: absolute;
-    width: 300px;
-    height: 187px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    display: flex;
-}
-
-span {
-    margin: auto;
-    font-size: 2rem;
-}
-
-
-.carousel__face:nth-child(1) {
-    background-image: url("../img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.JPG");
-    transform: rotateY(0deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(2) {
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(40deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(3) {
-    background-image: url("../img/vasquez-advantage/page 3/By prioritizing employee wellbeing.jpg");
-    transform: rotateY(80deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(4) {
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(120deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(5) {
-    background-image: url("../img/vasquez-advantage/page 3/By providing opportunities to work in the United States.png");
-    transform: rotateY(160deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(6) {
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(200deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(7) {
-    background-image: url("../img/vasquez-advantage/page 3/Through compassionate and mindful leadership.jpg");
-    transform: rotateY(240deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(8) {
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(280deg) translateZ(430px);
-}
-
-.carousel__face:nth-child(9) {
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(320deg) translateZ(430px);
-}
-
-
-
-@keyframes rotate360 {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(-360deg);
-    }
-}
-   */
-
 /* page 3 */
 #advantage-p3 {
-    padding-top: 20px;
+    padding-top: 25px;
     display: grid;
     grid-template-rows: 500px 100px;
     grid-template-columns: 1fr repeat(8, 30px) 1fr;
@@ -305,6 +213,29 @@ main#carousel {
     --middle: 3;
     --position: 1;
     pointer-events: none;
+    margin-top: 50px;
+}
+
+#carousel .item h2 {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    bottom: 50%;
+}
+
+#carousel .item div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: #5faabbb6;
+}
+
+#carousel:hover .item div {
+    background-color: #5faabb00;
 }
 
 div.item {
@@ -402,25 +333,33 @@ input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
 
 #advantage-p3 h1 {
     position: absolute;
+    font-size: 32px;
     top: 10px;
-    left: 30%;
+    width: 450px;
+    text-align: center;
     color: #3DA5CA;
 }
 
 .btn-prev-next {
     position: absolute;
-    bottom: 15px;
     justify-items: center;
-    width: 200px;
-    /* background-color: #ccc; */
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin-right: 110px;
+    padding: 20px;
 }
 
 .btn-prev-next button {
-    background-color: #3DA5CA;
+    padding: 15px;
+    background-color: #d9dddf;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-prev-next button:hover {
+    background-color: #0a6c8f;
 }
 
 #advantage-p3 #play {
