@@ -273,8 +273,8 @@ section {
 
 .v5nd-1 {
     position: absolute;
-    top: 40px;
-    left: 150px;
+    top: 120px;
+    left: 15%;
     width: 40%;
     z-index: 3;
 }
@@ -305,8 +305,8 @@ section {
 
 .v5nd-2 {
     position: absolute;
-    top: 210px;
-    left: 360px;
+    top: 320px;
+    left: 35%;
     width: 40%;
     z-index: 3;
 }
@@ -337,8 +337,8 @@ section {
 
 .v5nd-3 {
     position: absolute;
-    top: 380px;
-    left: 570px;
+    top: 520px;
+    left: 55%;
     width: 40%;
     z-index: 3;
 }

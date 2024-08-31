@@ -213,7 +213,7 @@ main#carousel {
     --middle: 3;
     --position: 1;
     pointer-events: none;
-    margin-top: 50px;
+    margin-top: 250px;
 }
 
 #carousel .item h2 {
@@ -334,7 +334,7 @@ input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
 #advantage-p3 h1 {
     position: absolute;
     font-size: 32px;
-    top: 10px;
+    top: 100px;
     width: 450px;
     text-align: center;
     color: #3DA5CA;
