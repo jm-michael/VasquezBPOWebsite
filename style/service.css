@@ -1,5 +1,5 @@
 .navbar-container {
-    max-width: 1230px;
+    max-width: 1430px;
 }
 .tab-content-header {
     font-size: clamp(0.75rem, -0.0086rem + 3.7931vw, 2.125rem) !important;
@@ -272,6 +272,10 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
   }
+
+  .circles li {
+    /* background: #000621 !important; */
+}
 
 
 

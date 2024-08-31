@@ -4,9 +4,6 @@
   font-weight: bolder;
 }
 
-.navbar-container {
-  max-width: 1100px;
-}
 
 .new_container__industries {
   display: flex;
@@ -222,5 +219,5 @@ body {
 }
 
 .navbar-container{
-  max-width: 1230px;
+  max-width: 1430px;
 }

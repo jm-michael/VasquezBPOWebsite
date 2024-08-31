@@ -12,7 +12,7 @@
 <body> 
     <nav class="navbar">
         <div class="navbar-container">
-            <img class="navbar-logo" src="img/V_C Logo_White.png"></img>
+            <a href="index.html"><img class="navbar-logo" src="img/V_C Logo_White.png"></a>
             <ul class="navbar-links">
                 <li class="navbar-link"><a href="about.html">ABOUT US</a></li>
                 <li class="navbar-link"><a href="services.html">SERVICES</a></li>
@@ -28,8 +28,15 @@
                         <li><a href="vasquez-advantage.html">Vasquez Advantage</a></li>
                     </ul>
                 </li>
-                <li class="navbar-link"><a href="careers.html">CAREERS</a></li>
-                <!-- <button class="navbar-link navbar-link__round clickable" data-modal-target="#modal">WORK WITH US</li> -->
+                <li class="navbar-link dropdown">
+                    <a  class="dropdown-toggle">CAREERS</a>
+                    <ul class="dropdown-menus">
+                        <li><a href="meet-the-team.html">Careers</a></li>
+                        <li><a href="vasquez-proud.html">Current Openings</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="navbar-link"><a href="careers.html">CAREERS</a></li> -->
+                <button class="navbar-link navbar-link__round clickable" data-modal-target="#modal">JOIN OUR TEAM</li>
             </ul>
             <div class="burger" onclick="toggleNav(true)">
                 <div class="line1"></div>
@@ -284,44 +291,46 @@
             <div class="industries-background_right"></div>
         </div>
     </section>
-    
-    <footer> 
-        <div class="container container__footer">
-            <div class="footer-logo">
-                <img class="footer-img" src="img/V_C Logo_White.png"></img>
-                <div class="footer-copyright">
-                    <a href="https://vasquezcpa.com" target="_blank">© 2020 VASQUEZ CPA. ALL RIGHTS RESERVED.</a>
+    <section>
+        <footer> 
+            <div class="container container__footer">
+                <div class="footer-logo">
+                    <img class="footer-img" src="img/V_C Logo_White.png"></img>
+                    <div class="footer-copyright">
+                        <a href="https://vasquezcpa.com" target="_blank">© 2020 VASQUEZ CPA. ALL RIGHTS RESERVED.</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p class="footer_header">QUICK LINKS</p>
+                    <ul>
+                        <li class="footer-link"><a href="about.html">About Us</a></li>
+                        <li class="footer-link"><a href="services.html">Services</a></li>
+                        <li class="footer-link"><a href="industries.html">Industries</a></li>
+                        <li class="footer-link"><a href="team.html">Meet The Team</a></li>
+                        <li class="footer-link"><a href="careers.html">Careers</a></li>
+                        <li class="footer-link"><a href="https://vasquezcpa.com" target="_blank">Vasquez & Co. LLP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p class="footer_header">CONTACT US</p>
+                    <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
+                    <p class="footer-contact_info">
+                        (02) 7622 8779<br>
+                        +63 917 160 8779
+                    </p>
+                    <p class="footer-contact_header">Makati Office</p>
+                    <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/yXQvNGMWJbKS3jTP7" target="_blank">29th Floor Rufino Pacific Tower, Ayala Avenue, Makati City, Metro Manila, Philippines 1226</a></p>
+                    <p class="footer-contact_header">Ortigas Office</p>
+                    <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/fu1198a7JTGHwT1RA" target="_blank">28th Floor, Robinsons Cyberscape Gamma, Topaz Rd, Ortigas Center, Pasig City, Metro Manila, Philippines</a></p>
+                    <!-- <div class="footer-icons"> -->
+                        <!-- <a href=""><img src="img/Icons/Footer/Footer-Facebook.svg" alt="" class="footer-icon"></a> -->
+                        <!-- <a href=""><img src="img/Icons/Footer/Footer-LinkedIn.svg" alt="" class="footer-icon footer-icon__right"></a> -->
+                    <!-- </div> -->
                 </div>
             </div>
-            <div class="footer-links">
-                <p class="footer_header">QUICK LINKS</p>
-                <ul>
-                    <li class="footer-link"><a href="about.html">About Us</a></li>
-                    <li class="footer-link"><a href="services.html">Services</a></li>
-                    <li class="footer-link"><a href="industries.html">Industries</a></li>
-                    <li class="footer-link"><a href="team.html">Meet The Team</a></li>
-                    <li class="footer-link"><a href="careers.html">Careers</a></li>
-                    <li class="footer-link"><a href="https://vasquezcpa.com" target="_blank">Vasquez & Co. LLP</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <p class="footer_header">CONTACT US</p>
-                <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
-                <p class="footer-contact_info">
-                    (02) 7622 8779<br>
-                    +63 917 160 8779
-                </p>
-                <p class="footer-contact_header">Makati Office</p>
-                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/yXQvNGMWJbKS3jTP7" target="_blank">29th Floor Rufino Pacific Tower, Ayala Avenue, Makati City, Metro Manila, Philippines 1226</a></p>
-                <p class="footer-contact_header">Ortigas Office</p>
-                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://goo.gl/maps/fu1198a7JTGHwT1RA" target="_blank">28th Floor, Robinsons Cyberscape Gamma, Topaz Rd, Ortigas Center, Pasig City, Metro Manila, Philippines</a></p>
-                <!-- <div class="footer-icons"> -->
-                    <!-- <a href=""><img src="img/Icons/Footer/Footer-Facebook.svg" alt="" class="footer-icon"></a> -->
-                    <!-- <a href=""><img src="img/Icons/Footer/Footer-LinkedIn.svg" alt="" class="footer-icon footer-icon__right"></a> -->
-                <!-- </div> -->
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
+    
     <!-- <div class="contact_modal" id="modal">
         <div class="container contact_modal__container">
             <div class="contact_modal-subheader">Do what’s best for your company.</div>
