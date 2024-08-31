@@ -17,7 +17,7 @@ body {
 
 section {
     position: relative;
-    height: 100%;
+    height: calc(100% + 80px);
     overflow: hidden;
 }
 
@@ -45,8 +45,8 @@ section {
 
 #vasquez-top .vasquez-title {
     position: absolute;
-    top: 300px;
-    right: 150px;
+    top: 50%;
+    right: 2%;
     z-index: 2;
     color: white;
     font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
@@ -131,7 +131,7 @@ section {
     font-weight: 400;
     font-size: 20px;
     left: 10%;
-    top: 35%;
+    top: 15%;
     width: 30%;
     text-align: justify;
 }
@@ -139,6 +139,13 @@ section {
 .v3nd-context strong {
     color: #3DA5CA;
     font-size: 26px;
+}
+
+#vasquez-3nd p {
+    position: absolute;
+    bottom: 20%;    
+    left: 20%;
+    font-style: italic;
 }
 
 .v3nd-people {
@@ -191,29 +198,21 @@ section {
 .parent div {
     height: 500px;
     width: 100%;
-    /* clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%); */
-    /* border: 1px solid gray; */
     clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
     position: relative;
     z-index: 1;
 }
 
-.parent div a {
+ .parent div a {
     position: absolute;
     bottom: 200px;
-    right: 180px;
     color: white;
     font-weight: bold;
     font-size: 24px;
     z-index: 4;
-}
-
-.parent .acc a {
-    right: 130px;
-}
-
-.parent .bop a {
-    right: 90px;
+    width: 100%;
+    text-align: center;
+    align-self: center;
 }
 
 .parent .tax {
@@ -273,7 +272,7 @@ section {
 
 .v5nd-1 {
     position: absolute;
-    top: 120px;
+    top: 10%;
     left: 15%;
     width: 40%;
     z-index: 3;
@@ -305,7 +304,7 @@ section {
 
 .v5nd-2 {
     position: absolute;
-    top: 320px;
+    top: 40%;
     left: 35%;
     width: 40%;
     z-index: 3;
@@ -337,7 +336,7 @@ section {
 
 .v5nd-3 {
     position: absolute;
-    top: 520px;
+    top: 70%;
     left: 55%;
     width: 40%;
     z-index: 3;
