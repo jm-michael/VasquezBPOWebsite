@@ -172,7 +172,7 @@ body {
       z-index: 1000;
       padding-bottom: 20px !important;
       border-radius: 10px;
-      padding-right: 60px !important;
+      padding-right: 30px !important;
   }
 
   .navbar-links.active {
@@ -216,6 +216,26 @@ body {
   section#industries-hero {
     height: 60%;
   }
+
+  .industries_hero-header{
+        display: block;
+        position: absolute;
+        right: 6%;
+        bottom: 45%;
+        font-size: clamp(2rem, -1.5rem + 8vw, 3rem);
+        font-family: Roboto, sans-serif;
+        font-weight: bolder;
+        color: #191919;
+        z-index: -1;
+  }
+
+    .industries_hero-background {
+      height: 300px;
+      z-index: -3;
+      /* Adjust height for smaller screens */
+      background-position: center center;
+      /* Keeps the focus centered */
+    }
 }
 
 .navbar-container{

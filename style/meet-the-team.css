@@ -372,6 +372,7 @@ section {
 
     #meet-leaders .mobilecausel{
         display: block;
+        z-index: 1;
     }
    
     #meet-leaders .leader{

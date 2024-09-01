@@ -328,7 +328,7 @@ body {
     }
 
     .absolute_background {
-        background-image: url('../img/02_About Us/AboutUsWhoWeAre.png');
+        background-image: url('../img/02_About Us/WhoWeAre3.png');
         height: 100%;
         background-size: cover;
         background-position: 0% 50%;
@@ -348,16 +348,19 @@ body {
 
     .whoweare-header {
         font-size: 14px;
-        margin-top: 5px;
+        margin-top: -60px;
         color: #070707;
+        margin-bottom: 5px;
     }
+
 
     .whoweare-text {
         font-size: 12px;
         width: 105%;
-        margin-top: 15px;
+        margin-top: 0px;
         color: #000;
         line-height: 15px;
+        margin-bottom: 5px;
     }
 
 }
