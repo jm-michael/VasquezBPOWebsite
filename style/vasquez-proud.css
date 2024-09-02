@@ -507,12 +507,12 @@ video {
         text-align: center;
     }
 
-    .burger {
+    /* .burger {
         display: block;
         cursor: pointer;
         margin-left: auto;
         margin-top: 10px;
-    }
+    } */
 
     .line1, .line2, .line3 {
         width: 25px;
