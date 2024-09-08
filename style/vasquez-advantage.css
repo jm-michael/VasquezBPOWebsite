@@ -100,6 +100,7 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: -50px;
 }
 
 .overlay {
@@ -114,11 +115,16 @@ section {
     align-content: center;
 }
 
+.overlay p {
+    font-size: clamp(0.875rem, -0.0625rem + 3vw, 1.625rem);
+}
+
 .text-item {
     padding: 20px;
     background-color: #fff;
     color: #333;
-    font-size: 20px;
+    font-size: clamp(0.6875rem, 0.4063rem + 0.9vw, 1.25rem);
+    text-align: justify;
 }
 
 /* Responsive Design for Mobile View */
@@ -185,7 +191,7 @@ video {
 }
 
 /* page 3 */
-#advantage-p3 {
+/* #advantage-p3 {
     padding-top: 25px;
     display: grid;
     grid-template-rows: 500px 100px;
@@ -375,4 +381,92 @@ input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
     border-radius: 50%;
     background-color: rgba(206, 204, 210, 0.779);
     color: rgb(74, 72, 72)
-}
+} */
+
+
+
+
+/* new css */
+
+  .containers {
+    position: relative;
+    width: 320px;
+    margin: 10px auto 0 auto;
+    perspective: 1000px;
+  }
+
+  .containers h1 {
+    text-align: center;
+    color: #3DA5CA;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 400px;
+    height: 287px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px #5faabbb6;
+    display: flex;
+  }
+
+  .carousel__face:hover {
+    box-shadow:inset 0 0 0 2000px #0f1a1d3a;
+    color: white;
+  }
+  
+  span {
+    margin: auto;
+    font-size: clamp(0.75rem, 0.4375rem + 1vw, 1.375rem);
+    text-align: center;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("../img/vasquez-advantage/page 3/By fostering career advancement in a healthy working environment.JPG");
+    transform: rotateY(  0deg) translateZ(280px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("../img/vasquez-advantage/page 3/By prioritizing employee wellbeing.jpg");
+      transform: rotateY( 90deg) translateZ(280px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("../img/vasquez-advantage/page 3/By providing opportunities to work in the United States.png");
+    transform: rotateY( 180deg) translateZ(280px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("../img/vasquez-advantage/page 3/Through compassionate and mindful leadership.jpg");
+    transform: rotateY(270deg) translateZ(280px); }
+  /* .carousel__face:nth-child(5) { 
+    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(320deg) translateZ(430px); } */
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  

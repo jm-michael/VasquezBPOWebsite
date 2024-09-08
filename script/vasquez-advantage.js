@@ -47,6 +47,9 @@ restoreBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     videoContainer.classList.add('hidden');
+    videoPlayer.pause(); // Pause the video
+    videoPlayer.currentTime = 0; // Optional: Reset the video to the beginning  
+    document.getElementById("iframee").src = '';
 });
 
 function isVideo(show,iframe,indx){
@@ -60,6 +63,8 @@ function isVideo(show,iframe,indx){
     if(iframe){
         iframee.classList.remove('hidden');
         videoPlayer.classList.add('hidden');
+        document.getElementById("iframee").src = 'https://drive.google.com/file/d/1K3-cixQ9tCjw2BqT6qKqrbKDEm1g3pjr/preview';
+
     } 
     else {
         iframee.classList.add('hidden');
