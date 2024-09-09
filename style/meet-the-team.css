@@ -55,7 +55,7 @@ section {
 
 #meet .meet-bg-left {
     background-image: url('../img/vasquez-proud/page 1/left2.JPG');
-    width: 60%;
+    width: 57.1%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ section {
     background-position: 30%;
     position: absolute;
     margin-left: auto;
-    right: -30px;
+    right: 0px;
     z-index: 0;
 }
 
