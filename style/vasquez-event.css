@@ -86,6 +86,7 @@ section {
     font-size: 72px;
     font-weight:bolder;
     color: white;
+    font-family: 'roboto';
 }
 
 /* // card main */
@@ -277,7 +278,9 @@ section {
 }
 
 #event-p3 .card-bot .event-bot-img {
-    background-image: url('../img/vasquez-event/page 2/2023/Performance Feedback 2023.JPG');
+    /* background-image: url('../img/vasquez-event/page 2/2023/Performance Feedback 2023.JPG'); */
+    background-image: url('../img/vasquez-event/page 2/2023/Govt Training 2023.JPG');
+    
     width: 235px;
     height: 50%;
     border-radius: 15px;
@@ -333,7 +336,8 @@ section {
 } */
 
 #event-p4 .card-lt .event-lt-img {
-    background-image: url('../img/vasquez-event/page 2/2023/EBP 2023.JPG');
+    /* background-image: url('../img/vasquez-event/page 2/2023/EBP 2023.JPG'); */
+    background-image: url('../img/vasquez-event/page 2/2023/Performance Feedback 2023.JPG');
     width: 235px;
     height: 50%;
     border-radius: 15px;
@@ -345,7 +349,7 @@ section {
 
 
 #event-p4 .card-md .event-md-img {
-    background-image: url('../img/vasquez-event/page 2/2023/Govt Training 2023.JPG');
+    background-image: url('../img/vasquez-event/page 2/2023/EBP 2023.JPG');
     width: 235px;
     height: 50%;
     border-radius: 15px;
@@ -506,4 +510,11 @@ section {
     .change .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+  }
+
+  .card-contexts p {
+    color: white;
+    font-family: 'roboto';
+    font-size: 50px;
+    width: 80%;
   }
