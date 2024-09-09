@@ -49,6 +49,9 @@ restoreBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     videoContainer.classList.add('hidden');
+    videoPlayer.pause(); // Pause the video
+    videoPlayer.currentTime = 0; // Optional: Reset the video to the beginning  
+    document.getElementById("iframee").src = '';
 });
 
 function isVideo(show,iframe,indx){
@@ -91,27 +94,47 @@ function getCheckedRadioIndex() {
     return -1; // No radio button is checked
 }
 
-// Add event listener for the "Previous" button
-leftBtn.addEventListener('click', function() {
-    let currentIndex = getCheckedRadioIndex();
-    if (currentIndex > 0) {
-        radios[currentIndex].checked = false;
-        radios[currentIndex - 1].checked = true;
-        p3Index = currentIndex - 1
-    }
-});
+// // Add event listener for the "Previous" button
+// leftBtn.addEventListener('click', function() {
+//     let currentIndex = getCheckedRadioIndex();
+//     if (currentIndex > 0) {
+//         radios[currentIndex].checked = false;
+//         radios[currentIndex - 1].checked = true;
+//         p3Index = currentIndex - 1
+//     }
+// });
 
-// Add event listener for the "Next" button
-rightBtn.addEventListener('click', function() {
-    let currentIndex = getCheckedRadioIndex();
-    if (currentIndex < radios.length - 1) {
-        radios[currentIndex].checked = false;
-        radios[currentIndex + 1].checked = true;
-        p3Index = currentIndex + 1
-    }
-});
+// // Add event listener for the "Next" button
+// rightBtn.addEventListener('click', function() {
+//     let currentIndex = getCheckedRadioIndex();
+//     if (currentIndex < radios.length - 1) {
+//         radios[currentIndex].checked = false;
+//         radios[currentIndex + 1].checked = true;
+//         p3Index = currentIndex + 1
+//     }
+// });
 
 function playVideo(){
     console.log(p3Index)
     isVideo(true,false,p3Index)
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currentPosition = 4; // Start with the 4th item (checked by default)
+    const totalItems = 8; // Total number of carousel items
+
+    const updateCarouselPosition = (position) => {
+        document.querySelector(`#pos${position}`).checked = true;
+        document.documentElement.style.setProperty('--position', position);
+    };
+
+    document.getElementById("leftBtn").addEventListener("click", () => {
+        currentPosition = (currentPosition - 1 + totalItems) % totalItems || totalItems;
+        updateCarouselPosition(currentPosition);
+    });
+
+    document.getElementById("rightBtn").addEventListener("click", () => {
+        currentPosition = (currentPosition % totalItems) + 1;
+        updateCarouselPosition(currentPosition);
+    });
+});
