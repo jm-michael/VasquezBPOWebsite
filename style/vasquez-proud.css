@@ -373,7 +373,7 @@ input:nth-of-type(8):checked~main#carousel div.item:nth-of-type(8) {
 }
 
 .p3-context p strong {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-right: 10px;
     border-radius: 3px;
     background-color: rgba(135, 207, 235, 0.687);
