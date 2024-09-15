@@ -230,6 +230,8 @@ document.addEventListener("click", function(event) {
 });
 
 
+var clickCardId = 0;
+
 // Click Cards Function
 function clickCard(id) {
     var card = cards.find(x=>x.id == id)
@@ -288,6 +290,7 @@ function clickCard(id) {
 
     //Show Custom Fields
     customFields(id);
+    clickCardId = id;
 }
 
 function displayMessage() {
@@ -323,6 +326,7 @@ function onClickApplyNow(add){
     }else {
         btnApplyNow.classList.remove("hidden");
         QnR.classList.add("hidden");
+        loadDropdown(" .multiselect");
     }
 }
 
@@ -340,6 +344,206 @@ function customFields(id){
                 }
             }
         });
+        
+    });
+}
+
+// dropdown List
+var dropdownList = [
+    {class: "Audit", no: "aa", name: "Non-profit"},
+    {class: "Audit", no: "aa", name: "Government"},
+    {class: "Audit", no: "aa", name: "Employee Benefit Plan"},
+    {class: "Audit", no: "aa", name: "Financial Services"},
+    {class: "Audit", no: "aa", name: "Healthcare"},
+    {class: "Audit", no: "aa", name: "Manufacturing"},
+    {class: "Audit", no: "aa", name: "Consumer/Retail"},
+    {class: "Audit", no: "aa", name: "SEC/ Publicly Listed"},
+    {class: "Audit", no: "aa", name: "Real Estate"},
+    {class: "Audit", no: "aa", name: "Construction"},
+    {class: "Audit", no: "aa", name: "Hospitality"},
+    {class: "Audit", no: "aa", name: "Logistics"},
+    {class: "Audit", no: "aa", name: "Water"},
+    {class: "Audit", no: "aa", name: "Electricity"},
+    {class: "Audit", no: "aa", name: "Oil & Gas"},
+    {class: "Audit", no: "aa", name: "Mining"},
+    {class: "Audit", no: "aa", name: "Technology & Communications"},
+    {class: "Audit", no: "aa", name: "BPO"},
+    {class: "Audit", no: "aa", name: "Media & Entertainment"},
+    {class: "Audit", no: "aa", name: "Property Management"},
+    {class: "Audit", no: "aa", name: "Aviation"},
+    {class: "Audit", no: "aa", name: "Pharmaceutical"},
+    {class: "Audit", no: "aa", name: "Special Purpose Acquisition Company"},
+
+    {class: "Tax", no: "aa", name: "Experience with US Tax"},
+    {class: "Tax", no: "aa", name: "Preparation of 1040, 990, and 1120 Form"},
+    {class: "Tax", no: "aa", name: "Preparation of Personal Tax Returns for Business Owners"},
+    {class: "Tax", no: "aa", name: "Preparation of Business Tax Returns"},
+    {class: "Tax", no: "aa", name: "Experience with Philippine Tax"},
+
+    {class: "Accounting", no: "aa", name: "General end-to-end accounting"},
+    {class: "Accounting", no: "aa", name: "Month-end closing procedures"},
+    {class: "Accounting", no: "aa", name: "Billing and collections"},
+    {class: "Accounting", no: "aa", name: "Invoice Processing"},
+    {class: "Accounting", no: "aa", name: "Financial Statement Review and Preparation"},
+    {class: "Accounting", no: "aa", name: "Liquidation and Reimbursements"},
+    {class: "Accounting", no: "aa", name: "Financial Analysis and Reporting"},
+    {class: "Accounting", no: "aa", name: "None"},
+
+    {class: "Accounting", no: "bb", name: "Quickbooks"},
+    {class: "Accounting", no: "bb", name: "SAGE"},
+    {class: "Accounting", no: "bb", name: "NetSuite"},
+    {class: "Accounting", no: "bb", name: "Xero"},
+    {class: "Accounting", no: "bb", name: "SAP"},
+    {class: "Accounting", no: "bb", name: "Others"},
+    {class: "Accounting", no: "bb", name: "None"},
+
+    {class: "Human_Resource", no: "aa", name: "Recruitment- Sourcing"},
+    {class: "Human_Resource", no: "aa", name: "Recruitment- Screening"},
+    {class: "Human_Resource", no: "aa", name: "Recruitment- Interviewing"},
+    {class: "Human_Resource", no: "aa", name: "Recruitment- Assessment and Selection"},
+    {class: "Human_Resource", no: "aa", name: "Recruitment- Onboarding"},
+    {class: "Human_Resource", no: "aa", name: "Training and Development"},
+    {class: "Human_Resource", no: "aa", name: "Payroll Management"},
+    {class: "Human_Resource", no: "aa", name: "Compensation and Benefits"},
+    {class: "Human_Resource", no: "aa", name: "Employee Relations"},
+    {class: "Human_Resource", no: "aa", name: "Human Resources Information System"},
+    {class: "Human_Resource", no: "aa", name: "Talent Management"},
+    {class: "Human_Resource", no: "aa", name: "Learning & Development"},
+    {class: "Human_Resource", no: "aa", name: "Others"},
+
+    {class: "Information_Technology", no: "aa", name: "System Configuration"},
+    {class: "Information_Technology", no: "aa", name: "Hardware and Software Installation"},
+    {class: "Information_Technology", no: "aa", name: "Troubleshooting"},
+    {class: "Information_Technology", no: "aa", name: "Maintenance and Upgrades"},
+    {class: "Information_Technology", no: "aa", name: "Data Backup and Recovery"},
+    {class: "Information_Technology", no: "aa", name: "Security Management"},
+    {class: "Information_Technology", no: "aa", name: "User Support"},
+    {class: "Information_Technology", no: "aa", name: "Others"},
+
+    {class: "Information_Technology", no: "bb", name: "Familiarity with Major Cloud Providers"},
+    {class: "Information_Technology", no: "bb", name: "Virtualization and Containerization"},
+    {class: "Information_Technology", no: "bb", name: "Infrastructure as Code (IaC)"},
+    {class: "Information_Technology", no: "bb", name: "Cloud Security"},
+    {class: "Information_Technology", no: "bb", name: "Hybrid Cloud Experience"},
+    {class: "Information_Technology", no: "bb", name: "Cloud Migration"},
+    {class: "Information_Technology", no: "bb", name: "Cost Optimization"},
+    {class: "Information_Technology", no: "bb", name: "Disaster Recovery/Business Continuity (DR/BC)"},
+    {class: "Information_Technology", no: "bb", name: "DevOps and Cloud Native"},
+    {class: "Information_Technology", no: "bb", name: "None"},
+
+    {class: "Marketing", no: "aa", name: "SEO/Content Marketing"},
+    {class: "Marketing", no: "aa", name: "Social Media Marketing"},
+    {class: "Marketing", no: "aa", name: "Email Marketing"},
+    {class: "Marketing", no: "aa", name: "PPC/Advertising"},
+    {class: "Marketing", no: "aa", name: "Event Management"},
+    {class: "Marketing", no: "aa", name: "Graphic Design"},
+    {class: "Marketing", no: "aa", name: "Data Analysis"},
+    {class: "Marketing", no: "aa", name: "Others"},
+
+    {class: "Marketing", no: "bb", name: "Google Analytics"},
+    {class: "Marketing", no: "bb", name: "Google Ads"},
+    {class: "Marketing", no: "bb", name: "HubSpot or Similar CRM/Marketing Automation Platforms"},
+    {class: "Marketing", no: "bb", name: "Email Marketing Platforms (e.g., Mailchimp, Sendinblue)"},
+    {class: "Marketing", no: "bb", name: "SEO Tools (Ahrefs, SEMrush)"},
+    {class: "Marketing", no: "bb", name: "Project Management Tools (e.g., Trello, Asana)"},
+    {class: "Marketing", no: "bb", name: "Design Tools (e.g., Canva, Adobe Creative Suite)"},
+    {class: "Marketing", no: "bb", name: "Others"},
+
+    {class: "Accounting_Finance", no: "aa", name: "General end-to-end accounting"},
+    {class: "Accounting_Finance", no: "aa", name: "Month-end closing procedures"},
+    {class: "Accounting_Finance", no: "aa", name: "Billing and collections"},
+    {class: "Accounting_Finance", no: "aa", name: "Invoice Processing"},
+    {class: "Accounting_Finance", no: "aa", name: "Financial Statement Review and Preparation"},
+    {class: "Accounting_Finance", no: "aa", name: "Liquidation and Reimbursements"},
+    {class: "Accounting_Finance", no: "aa", name: "Financial Analysis and Reporting"},
+    {class: "Accounting_Finance", no: "aa", name: "Philippine Tax Compliance, Preparation and Filing"},
+    {class: "Accounting_Finance", no: "aa", name: "None"},
+
+    {class: "Accounting_Finance", no: "bb", name: "Quickbooks"},
+    {class: "Accounting_Finance", no: "bb", name: "SAGE"},
+    {class: "Accounting_Finance", no: "bb", name: "NetSuite"},
+    {class: "Accounting_Finance", no: "bb", name: "Xero"},
+    {class: "Accounting_Finance", no: "bb", name: "SAP"},
+    {class: "Accounting_Finance", no: "bb", name: "Others"},
+    {class: "Accounting_Finance", no: "bb", name: "None"},
+
+    {class: "IT_Audit", no: "aa", name: "Review of IT General Controls (e.g. User Access Management, Change Management, IT Operations)"},
+    {class: "IT_Audit", no: "aa", name: "Review of Information Security Processes (e.g. Vulnerability Assessment, Firewall)"},
+    {class: "IT_Audit", no: "aa", name: "Application Controls Testing"},
+    {class: "IT_Audit", no: "aa", name: "Preparation of SOC 1 Reports"},
+    {class: "IT_Audit", no: "aa", name: "Preparation of SOC 2 Reports"},
+    {class: "IT_Audit", no: "aa", name: "Experience with SOX Compliance"},
+    {class: "IT_Audit", no: "aa", name: "Experience with various US regulations (e.g. HIPAA)"},
+    
+    {class: "IT_Audit", no: "bb", name: "Caseware IDEA"},
+    {class: "IT_Audit", no: "bb", name: "Galvanize/ACL"},
+    {class: "IT_Audit", no: "bb", name: "Alteryx"},
+    {class: "IT_Audit", no: "bb", name: "AWS Athena"},
+    {class: "IT_Audit", no: "bb", name: "Python"},
+    {class: "IT_Audit", no: "bb", name: "Others"},
+    {class: "IT_Audit", no: "bb", name: "None"},
+
+    {class: "IT_Audit", no: "cc", name: "Quickbooks"},
+    {class: "IT_Audit", no: "cc", name: "SAP"},
+    {class: "IT_Audit", no: "cc", name: "Sage"},
+    {class: "IT_Audit", no: "cc", name: "MS Dynamics"},
+    {class: "IT_Audit", no: "cc", name: "Others"},
+    {class: "IT_Audit", no: "cc", name: "None"},
+];
+
+function loadDropdown(css) {
+    var card = cards.find(x=>x.id == clickCardId)
+    var drops = dropdownList.filter(x=>x.class == card.class)
+    var Nos = [...new Set(drops.map(item => item.no))];
+    Nos.forEach(no => {
+        var html = "";
+        var drop = drops.filter(x=>x.no == no)
+        var conn = `.${card.class}.${no}`;
+        const multi = document.querySelector(`${conn} ${css}`);
+        const div = document.createElement("div");
+        div.classList.add("select-btn");
+        div.innerHTML = `<span class="btn-text">Select options</span>
+                            <span class="arrow-dwn">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>`;
+        const ul = document.createElement("ul");
+        ul.classList.add("list-items");
+        drop.forEach(ops => {
+            html += `<li class="item">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="item-text">${ops.name}</span>
+                        </li>`;
+            
+        });
+        ul.innerHTML = html;
+        multi.appendChild(div);
+        multi.appendChild(ul);
+
+
+        // Triiggered
+        const selectBtn = document.querySelector(`${conn} .select-btn`),
+        items = document.querySelectorAll(`${conn} .item`);
+
+        selectBtn.addEventListener("click", () => {
+            selectBtn.classList.toggle("open");
+        });
+
+        items.forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("checked");
+
+                let checked = document.querySelectorAll(`${conn} .checked`),
+                    btnText = document.querySelector(`${conn} .btn-text`);
+
+                    if(checked && checked.length > 0){
+                        btnText.innerText = `${checked.length} Selected`;
+                    }else{
+                        btnText.innerText = "Select options";
+                    }
+            });
+        })
         
     });
 }

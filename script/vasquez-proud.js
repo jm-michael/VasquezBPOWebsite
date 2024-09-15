@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalItems = 8; // Total number of carousel items
 
     const updateCarouselPosition = (position) => {
+        p3Index = (position-1);
         document.querySelector(`#pos${position}`).checked = true;
         document.documentElement.style.setProperty('--position', position);
     };

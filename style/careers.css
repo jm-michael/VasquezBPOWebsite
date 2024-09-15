@@ -2,6 +2,7 @@ section#careers-top {
     position: relative;
     height: 80%;
     overflow: hidden;
+    justify-content: center;
 }
 
 .navbar-container {
@@ -12,28 +13,29 @@ section#careers-top {
     background-image: url('../img/careers/Careers HP5.jpg');
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
     position: absolute;
-    margin-left: auto;
+    /* margin-left: auto; */
     right: 0;
     z-index: 0;
 }
 
 .careers_top_overlay {
-    background-image: url('../img/careers/SVG/Careers svg.png');
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: 0% 0%;
     position: absolute;
     left: 0;
     z-index: 1;
+    width: 60%;
+    height: 100%;
+    background: rgb(20,20,35);
+    background: linear-gradient(90deg, rgba(20,20,35,1) 0%, rgba(20,20,35,1) 69%, rgba(20,20,35,0) 100%);
 }
 
 #careers-top .careers-title {
     position: absolute;
-    top: 200px;
+    top: 50%; /* Vertical centering */
+    transform: translateY(-50%); /* Corrects positioning for vertical centering */
     left: 70px;
     z-index: 2;
     color: white;
@@ -102,28 +104,26 @@ section#careers-top {
     overflow: hidden;
 }
 
-
 .careers_3rd_overlay {
-    background-image: url('../img/careers/SVG/Careers 3rd svg.png');
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 0% 0%;
     position: absolute;
+    width: 60%;
+    height: 100%;
     left: 0;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.487);
+    clip-path: polygon(0 0, 100% 0, 71% 100%, 0% 100%);
 }
 
 #careers-3rd .careers-3rd-title {
     position: absolute;
-    top: 200px;
+    top: 50%; /* Vertical centering */
+    transform: translateY(-50%); /* Corrects positioning for vertical centering */
     left: 90px;
     z-index: 2;
     color: black;
     font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
     font-family: 'nunitobold';
     width: 500px;
-    margin-top: 200px;
 }
 
 #careers-3rd .careers-4rd-title {
@@ -166,31 +166,25 @@ section#careers-top {
 #careers-4th .right {
     height: 120%;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-top: 75px;
+    padding: 50px 30px 30px 30px;
 }
 
 #careers-4th .right {
     height: 100%;
     width: 100%;
-    /* background-color: #6FA3C6; */
     background-color: #6FA3C6;
     color: white;
 }
 
 #careers-4th .title {
     font-family: 'Gotham';
-    /* font-size: clamp(3rem, 0.0625rem + 3vw, 1.75rem); */
-    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
+    font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
 }
 
 #careers-4th .titles {
     font-family: 'Gotham';
-    /* font-size: clamp(3rem, 0.0625rem + 3vw, 1.75rem); */
-    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
+    font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
     margin-top: -30px;
 }
@@ -198,8 +192,8 @@ section#careers-top {
 #careers-4th .left .content,
 #careers-4th .right .content {
     font-family: 'Gotham';
-    font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
-    text-align: left;
+    font-size: clamp(0.6875rem, 0.0938rem + 1.9vw, 1.875rem);
+    text-align: justify;
     padding-top: 20px;
 }
 
@@ -218,11 +212,7 @@ section#careers-top {
 #careers-5th .right {
     height: 100%;
     width: 100%;
-    padding-top: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-top: 45px;
+    padding: 20px 30px 30px 30px;
 }
 
 #careers-5th .left {
@@ -234,7 +224,7 @@ section#careers-top {
 
 #careers-5th .left .title {
     font-family: 'Gotham';
-    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
+    font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
     margin-bottom: 10px;
     line-height: 38px;
@@ -242,17 +232,17 @@ section#careers-top {
 
 #careers-5th .right .title {
     font-family: 'Gotham';
-    font-size: clamp(1.625rem, 0.0625rem + 5vw, 2.875rem);
+    font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
     margin-bottom: 10px;
-    line-height: 38px;
+    line-height: 31px;
 }
 
 #careers-5th .left .content,
 #careers-5th .right .content {
     font-family: 'Gotham';
-    font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
-    text-align: left;
+    font-size: clamp(0.6875rem, 0.0938rem + 1.9vw, 1.875rem);
+    text-align: justify;
     padding-top: 20px;
 }
 
@@ -285,13 +275,14 @@ section#careers-6th {
 
 #careers-6th .careers-6th-title {
     position: absolute;
-    top: 250px;
+    top: 50%; /* Vertical centering */
+    transform: translateY(-50%); /* Corrects positioning for vertical centering */
     right: 10px;
-    width: 600px;
+    width: 40%;
     z-index: 2;
     color: white;
-    font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
-    font-family: 'Agrandir', sans-serif;
+    font-size: clamp(0.6875rem, -0.8438rem + 4.9vw, 3.75rem);
+    font-family: Roboto,sans-serif;
     font-weight: 800;
 }
 
@@ -303,7 +294,7 @@ section#careers-6th {
     z-index: 2;
     color: rgb(0, 0, 0);
     font-size: clamp(1rem, -0.7188rem + 5.5vw, 2.375rem);
-    font-family: 'Agrandir', sans-serif;
+    font-family: Roboto,sans-serif;
     font-weight: 800;
 }
 
@@ -332,14 +323,15 @@ section#careers-6th {
 
 #careers-6th .careers-6th-buttons {
     position: absolute;
-    top: 340px;
-    right: 5%;
+    top: 80%; /* Vertical centering */
+    transform: translateY(-50%); /* Corrects positioning for vertical centering */
+    right: 10px;
+    width: 50%;
     z-index: 2;
     color: white;
     font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
     font-family: 'Gotham';
     font-weight: 800;
-    width: 600px;
     text-align: center;
 }
 
@@ -358,16 +350,16 @@ section#careers-6th {
 
 #careers-6th .careers-6th-buttons button {
     font-family: 'nunitobold';
-    padding: 10px;
-    width: 250px;
+    padding: 8px;
+    /* width: 220px; */
+    width: clamp(6.25rem, 1.5625rem + 15vw, 15.625rem);
     border-radius: 5px;
     background-color: #ed0000;
     border: solid;
     border-width: 2px;
     color: white;
     cursor: pointer;
-    margin: 10px auto;
-    font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    font-size: clamp(0.875rem, 0.6875rem + 0.6vw, 1.25rem);
 }
 
 #careers-6ths .careers-6th-buttonss button {
@@ -408,7 +400,7 @@ section#careers-6th {
 
 #careers-6th .careers-6th-buttons div a {
     font-family: 'nunitobold';
-    font-size: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.4375rem + 1vw, 1.375rem);
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
@@ -432,6 +424,7 @@ section#careers-6th {
     position: relative;
     /* padding: 20px; */
     margin-top: 30px;
+
 }
 
 #careers-7th div .blue {
@@ -452,21 +445,23 @@ section#careers-6th {
     position: absolute;
     font-family: 'nunitobold';
     font-size: clamp(2rem, 0.0938rem + 2.5vw, 1.5rem);
-    top: 30%;
-    left: 3%;
+    top: 15%;
+    left: 10px;
     width: 500px;
 }
 
 #careers-7th div .content {
+    cursor: pointer;
     position: absolute;
-    top: 12%;
-    right: 20%;
+    padding-top: 20px;
+    top: 10%;
+    right: 15%;
     height: 100%;
-    width: 15%;
+    width: 23%;
     font-family: 'nunitobold';
     z-index: 2;
     color: white;
-    font-size: clamp(1.66rem, 0.0938rem + 2.5vw, 1.5rem);
+    font-size: clamp(1.5rem, 1.375rem + 0.4vw, 1.75rem);
 }
 
 #careers-7th div img {
@@ -779,7 +774,7 @@ img {
     }
 }
 
-#careers-3rd .careers-3rd-title,
+/* #careers-3rd .careers-3rd-title, */
 #careers-3rd .careers-4rd-title {
     position: absolute;
     left: 50px;
@@ -794,7 +789,7 @@ img {
 
 @media screen and (max-width: 1320px) {
 
-    #careers-3rd .careers-3rd-title,
+    /* #careers-3rd .careers-3rd-title, */
     #careers-3rd .careers-4rd-title {
         position: absolute;
         left: 20px;
@@ -809,7 +804,7 @@ img {
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
 
-    #careers-3rd .careers-3rd-title,
+    /* #careers-3rd .careers-3rd-title, */
     #careers-3rd .careers-4rd-title {
         position: absolute;
         left: 20px;
@@ -946,7 +941,7 @@ img {
         height: 110%;
     }
 
-    #careers-3rd .careers-3rd-title,
+    /* #careers-3rd .careers-3rd-title, */
     #careers-3rd .careers-4rd-title {
         position: absolute;
         left: 10px;
@@ -1220,7 +1215,7 @@ img {
         overflow: hidden;
     }
 
-    #careers-3rd .careers-3rd-title,
+    /* #careers-3rd .careers-3rd-title, */
     #careers-3rd .careers-4rd-title {
         position: absolute;
         left: 20px;
