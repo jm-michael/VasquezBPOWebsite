@@ -106,7 +106,8 @@ section {
     background-size: cover;
     width: 40%;
     height: 100%;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+    clip-path: polygon(35% 0%, 100% 0%, 65% 100%, 0% 100%);
 }
 
 .right-con {
@@ -115,7 +116,7 @@ section {
     height: 100%;
     top: 0;
     right: 10px;
-    padding-top: 120px;
+    padding-top: 140px;
 }
 
 .name {
@@ -123,7 +124,7 @@ section {
     font-size: 45px;
     font-weight: 900;
     align-items: center;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .position {
@@ -147,7 +148,8 @@ section {
     right: 0;
     width: 40%;
     height: 100%;
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    /* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%);
 }
 
 .left-con {
@@ -156,20 +158,22 @@ section {
     height: 100%;
     top: 0;
     left: 50px;
-    padding-top: 120px;
+    padding-top: 140px;
 }
 
 /* Page 4 */
 #meet-p4 .left-img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    /* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%);
 }
 
 #meet-p6 .left-img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    /* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%);
 }
 
 /* Page 7 */
