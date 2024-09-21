@@ -16,29 +16,42 @@ body {
 }
 
 .body {
-    padding: 150px;
+    padding: clamp(0.9375rem, -1.1719rem + 11.25vw, 9.375rem);
     padding-top: 10%;
     position: relative;
 }
 
 .head {
-    margin-top: 100px;
     color: #37A5CC;
     font-size: clamp(0.75rem, -2.2188rem + 9.5vw, 3.125rem);
 }
 
-.picture {
+/* .picture {
     margin-top: 10px;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: 0% 60%;
     height: 500px;
     width: 100%;
+    border: 1px solid black;
+} */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .context {
     margin-top: 10px;
     text-align: justify;
     margin-bottom: 10px;
-    font-size: clamp(0.5625rem, -1.0781rem + 5.25vw, 1.875rem);
+    /* font-size: clamp(1rem, 0.6875rem + 1vw, 1.625rem); */
+    font-size: clamp(0.75rem, 0.5313rem + 1.1667vw, 1.625rem);
+}
+
+.card {
+    margin-top: 100px;
+    background-color: rgb(223, 219, 219);
+    padding: 10px;
+    border-radius: 10px;
 }
