@@ -137,7 +137,7 @@ section {
 }
 
 .card-lt .event-lt-img {
-    background-image: url('../img/vasquez-event/page 2/2024/Leadership Training 2024.png');
+    background-image: url('../img/vasquez-event/page 2/2024/goverment.JPG');
     width: 235px;
     height: 50%;
     border-radius: 15px;
@@ -186,6 +186,17 @@ section {
     margin-right: 10px;
 }
 
+
+.card-md .event-top-img {
+    background-image: url('../img/vasquez-event/page 2/2024/EBP 2024.JPG');
+    width: 235px;
+    height: 50%;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 10px;
+}
 
 
 /* // card left bot */
