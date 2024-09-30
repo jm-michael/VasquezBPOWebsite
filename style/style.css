@@ -170,7 +170,9 @@ section#hero {
     height: 100%;
     position: relative;
     background-size: cover;
-    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    background-position: 200px 80%;
+    z-index: 1;
 }
 
 .overlay {
