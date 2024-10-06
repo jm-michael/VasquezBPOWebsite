@@ -122,8 +122,9 @@ section#careers-top {
     z-index: 2;
     color: black;
     font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
-    font-family: 'nunitobold';
+    font-family: 'Gotham', sans-serif;
     width: 500px;
+    font-weight: bolder;
 }
 
 #careers-3rd .careers-4rd-title {
@@ -180,6 +181,8 @@ section#careers-top {
     font-family: 'Gotham', sans-serif;
     font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
 }
 
 #careers-4th .titles {
@@ -187,12 +190,14 @@ section#careers-top {
     font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
     margin-top: -30px;
+    padding-top: 50px;
+    font-weight: bold;
 }
 
 #careers-4th .left .content,
 #careers-4th .right .content {
     font-family: 'Gotham', sans-serif;
-    font-size: clamp(0.6875rem, 0.0938rem + 1.9vw, 1.875rem);
+    font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
     text-align: justify;
     padding-top: 20px;
 }
@@ -228,6 +233,8 @@ section#careers-top {
     text-align: center;
     margin-bottom: 10px;
     line-height: 38px;
+    padding-top: 50px;
+    font-weight: bold;
 }
 
 #careers-5th .right .title {
@@ -235,7 +242,9 @@ section#careers-top {
     font-size: clamp(0.6875rem, -0.5313rem + 3.9vw, 3.125rem);
     text-align: center;
     margin-bottom: 10px;
-    line-height: 31px;
+    /* line-height: 31px; */
+    padding-top: 20px;
+    font-weight: bold;
 }
 
 #careers-5th .left .content,
@@ -446,7 +455,7 @@ section#careers-6th {
     font-family: 'nunitobold';
     font-size: clamp(2rem, 0.0938rem + 2.5vw, 1.5rem);
     top: 15%;
-    left: 10px;
+    left: 100px;
     width: 500px;
 }
 
