@@ -371,9 +371,9 @@ section {
 
 /* for navbar mobile view ======================================================================= */
 
-.navbar-container {
+/* .navbar-container {
     max-width: 1430px;
-}
+} */
 
 @media screen and (max-width: 800px) {
   

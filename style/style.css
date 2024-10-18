@@ -93,7 +93,7 @@ a:hover {
 }
 
 .navbar-container {
-    padding: 40px 30px;
+    padding: 10px 100px;
     display: flex;
     /* max-width: 1200px;  */
     flex-direction: row;
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .navbar-logo {
-    height: 65px;
+    height: 150px;
     transition: 0.4s;
 }
 
@@ -165,13 +165,12 @@ a:hover {
 }
 
 section#hero {
-    background-image: url('../img/02_About Us/LandingPagever3.png');
+    background-image: url('../img/02_About Us/Landing Page Final v2.svg');
     width: 100% ;
     height: 100%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 200px 80%;
     z-index: 1;
 }
 
@@ -195,7 +194,8 @@ section#hero {
 
 .container {
     max-width: 1300px;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 100px;
     padding: 0px 30px;
     display: flex;
     flex-direction: column;
@@ -1191,12 +1191,12 @@ section#services-hero {
 }
 
 .services_hero-background {
-    background-image: url('../img/services/Services- 4.JPG');    
+    background-image: url('../img/Overlays/Services Final v4.svg');    
     width: 100% ;
     height: 500px;
     position: absolute;
     background-size: cover;
-    background-position: 100px 50%;
+    background-position: 0px 20%;
     z-index: 0;
 }
 
@@ -2024,7 +2024,7 @@ footer {
     }
 
     .navbar-logo {
-        height: 60px;
+        height: 100px;
     }
 
     .navbar-logo__shrinked {
@@ -2581,7 +2581,7 @@ footer {
     } */
 
     .navbar-logo {
-        height: 58px;
+        height: 200px;
         /* margin-right: 17%; */
     }
 
@@ -3180,7 +3180,7 @@ footer {
     } */
 
     .navbar-logo {
-        height: 55px;
+        height: 200px;
         /* margin-right: 15%; */
     }
 

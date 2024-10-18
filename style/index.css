@@ -10,7 +10,7 @@
     z-index: 2;
     clip-path: polygon(0 0, 45% 0, 100% 100%, 0% 100%);
     background: rgb(20,20,35);
-    background: linear-gradient(90deg, rgba(20,20,35,1) 0%, rgba(20,20,35,1) 23%, rgba(20,20,35,0) 100%);
+    background: linear-gradient(90deg, rgba(20, 20, 35, 1) 50%, rgba(20, 20, 35, 1) 23%, rgba(20, 20, 35, 0) 100%);
 }
 
 
