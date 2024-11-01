@@ -93,7 +93,7 @@ a:hover {
 }
 
 .navbar-container {
-    padding: 10px 100px;
+    padding: 10px 10px;
     display: flex;
     /* max-width: 1200px;  */
     flex-direction: row;
@@ -195,7 +195,7 @@ section#hero {
 .container {
     max-width: 1300px;
     /* margin: auto; */
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding: 0px 30px;
     display: flex;
     flex-direction: column;
@@ -1227,7 +1227,10 @@ section#services {
 }
 
 .container__services {
+    max-width: 100% !important;
     height: 100%;
+    margin-left: clamp(0rem, -1.3514rem + 6.7568vw, 6.25rem);
+    margin-right: clamp(0rem, -1.3514rem + 6.7568vw, 6.25rem);
 }
 
 .services-tab {
@@ -2581,7 +2584,7 @@ footer {
     } */
 
     .navbar-logo {
-        height: 200px;
+        height: 100px !important;
         /* margin-right: 17%; */
     }
 
@@ -3748,7 +3751,7 @@ footer {
     }
         
     .footer-img {
-        width: 165px;
+        width: 200px;
     }
 
     .footer-copyright {
