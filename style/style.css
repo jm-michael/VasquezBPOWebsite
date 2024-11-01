@@ -193,7 +193,7 @@ section#hero {
 }
 
 .container {
-    max-width: 1300px;
+    /* max-width: 1300px; */
     /* margin: auto; */
     /* margin-left: 100px; */
     padding: 0px 30px;
@@ -1397,7 +1397,7 @@ ul.panel-list > li {
 }
   
 section#industries-hero {
-    height: 100%;
+    height: clamp(25rem, 23.6486rem + 6.7568vw, 31.25rem) !important;
 }
 
 .industries_hero-background {
@@ -1424,8 +1424,8 @@ section#industries-hero {
 .industries_hero-header {
     /* font-size: 34px; */
     position: absolute;
-    right: 12%;
-    bottom: 45%;
+    /* right: 12%; */
+    top: 35%;
     font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
     font-family: Roboto,sans-serif;
     font-weight: bolder;
@@ -1434,12 +1434,13 @@ section#industries-hero {
 }
 
 .overlay__industries_hero {
-    height: 525px;
+    height: 61.5% !important;
     width: 100%;
     /* background-color: rgba(27, 27, 31, 0.9); */
     z-index: -2;
     position: absolute;
-    top: 325px;
+    /* top: 45px; */
+    /* display: none; */
 }
 
 .container__industries {
@@ -2414,8 +2415,8 @@ footer {
     } */
 
     .overlay__industries_hero {
-        height: 450px;
-        top: 275px;
+        height: 52% !important;
+        /* top: 275px; */
     }
 
     .container__industries {
@@ -2984,6 +2985,7 @@ footer {
     .container__industries_hero {
         /* padding: 100px 30px; */
         height: 400px;
+        align-items: center !important;
     }
     
     /* .industries_hero-header {
@@ -2991,8 +2993,8 @@ footer {
     } */
 
     .overlay__industries_hero {
-        height: 400px;
-        top: 255px;
+        height: 46% !important;
+        /* top: 8px !important; */
     }
 
     .container__industries {
@@ -3576,6 +3578,7 @@ footer {
     .container__industries_hero {
         /* padding: 100px 30px; */
         height: 400px;
+        align-items: center !important;
     }
     
     /* .industries_hero-header {
@@ -3583,8 +3586,8 @@ footer {
     } */
 
     .overlay__industries_hero {
-        height: 400px;
-        top: 225px;
+        /* height: 36.8% !important; */
+        /* top: 225px; */
     }
 
     .container__industries {
@@ -4010,5 +4013,11 @@ footer {
     .footer-logo {
         grid-column: span 2;
         text-align: center;
+    }
+}
+
+@media (max-width: 766px) {
+    section#industries-hero {
+        height: 50% !important;
     }
 }

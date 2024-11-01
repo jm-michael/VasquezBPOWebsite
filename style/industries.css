@@ -1,5 +1,5 @@
 .industries_hero-header {
-  font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+  font-size: clamp(1.25rem, 0.1689rem + 5.4054vw, 6.25rem) !important;
   font-family: Roboto,sans-serif;
   font-weight: bolder;
 }
@@ -13,7 +13,7 @@
   flex: 1;
   /* border: 1px solid #c3c3c3; */
   padding: 5%;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .card-content {
@@ -220,8 +220,8 @@ body {
   .industries_hero-header{
         display: block;
         position: absolute;
-        right: 6%;
-        bottom: 45%;
+        /* right: 6%; */
+        top: 45%;
         font-size: clamp(2rem, -1.5rem + 8vw, 3rem);
         font-family: Roboto, sans-serif;
         font-weight: bolder;
@@ -238,6 +238,36 @@ body {
     }
 }
 
+.container__industries_hero{
+  align-items: center !important;
+}
+
 /* .navbar-container{
   max-width: 1430px;
 } */
+
+.element.style {
+  opacity: 1 !important;
+}
+
+.hero-diagonal{
+  opacity: 1 !important;
+}
+
+
+
+@media (min-width: 490px) and (max-width: 499px ) {
+  .overlay__industries_hero {
+      height: 46% !important;
+      /* top: 225px; */
+      display: block ;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .overlay__industries_hero {
+      height: 46% !important;
+      /* top: 225px; */
+      display: none !important;
+  }
+}
