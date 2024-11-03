@@ -24,24 +24,32 @@ section {
 
 #proud .quotes {
     position: absolute;
-    bottom: 190px;
+    bottom: 30%;
     left: 50px;
-    font-size: 200px;
+    /* font-size: 200px; */
+    font-size: clamp(1.5rem, -1.5541rem + 15.2703vw, 15.625rem);
     font-weight: bold;
     color: white;
     z-index: 3;
 }
 
+#proud img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+}
+
 #proud .proud-title {
     position: absolute;
-    bottom: 110px;
+    bottom: 20%;
     left: 50px;
-    font-size: 46px;
+    /* font-size: 46px; */
+    font-size: clamp(0.75rem, -0.0878rem + 4.1892vw, 4.625rem);
     font-weight: bold;
     color: white;
     z-index: 3;
     width: 150px;
-    font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
     font-family: Roboto, sans-serif;
     font-weight: bolder;
 }
@@ -313,9 +321,11 @@ input:nth-of-type(8):checked~main#carousel div.item:nth-of-type(8) {
 
 #proud-p3 .p3-title {
     position: absolute;
-    height: 100px;
+    /* height: 100px; */
+    height: clamp(2.5rem, 1.4189rem + 5.4054vw, 7.5rem);
     left: 0;
-    font-size: 62px;
+    /* font-size: 62px; */
+    font-size: clamp(1rem, 0.2162rem + 3.9189vw, 4.625rem);
     background-color: #37A5CC;
     text-align: center;
     align-items: center;
@@ -357,10 +367,11 @@ input:nth-of-type(8):checked~main#carousel div.item:nth-of-type(8) {
     right: 15px;
     height: 65%;
     width: 70%;
+    font-size: clamp(0.875rem, 0.7399rem + 0.6757vw, 1.5rem);
 }
 
 .p3-context p {
-    font-size: larger;
+    /* font-size: larger; */
     text-align: justify;
 }
 
@@ -543,4 +554,49 @@ video {
         text-align: center;
         font-size: small;
     }
+
+
 }
+
+@media screen and (max-width: 1000px) {
+    #proud {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .p3-context {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .p3-context {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 741px) {
+    .p3-context {
+        width: 45%;
+    }
+
+    .p3-card {
+        position: absolute;
+        margin: 10%;
+        width: 40%;
+        height: 300px;
+        top: 10px;
+    }
+
+    .p3-context {
+        position: absolute;
+        top: unset;
+        right: unset;
+        height: unset;
+        width: 100%;
+        padding: 10px;
+        bottom: 10px;
+    }
+}
+
