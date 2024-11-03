@@ -25,14 +25,21 @@ section {
 #advantage .advantage-title {
     position: absolute;
     bottom: 50px;
-    left: 50px;
-    font-size: 66px;
+    left: clamp(0.625rem, 0.0845rem + 2.7027vw, 3.125rem);
+    /* font-size: 66px; */
+    font-size: clamp(1rem, 0.2162rem + 3.9189vw, 4.625rem);
     color: white;
     z-index: 3;
-    width: 500px;
-    font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
+    width: clamp(6.25rem, 0.8446rem + 27.027vw, 31.25rem);
     font-family: Roboto, sans-serif;
     font-weight: bolder;
+}
+
+#advantage img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
 }
 
 
@@ -477,6 +484,12 @@ input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
     }
     to {
       transform: rotateY(-360deg);
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #advantage {
+        height: auto;
     }
   }
   
