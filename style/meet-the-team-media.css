@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px){
+    .right-con, .left-con {
+        height: unset;
+        top: unset;
+        bottom: 15px;
+    }
+
+    #meet {
+        height: auto;
+    }
+
+  
+}
+
+@media screen and (max-width: 786px){
+    .left-card, .right-card , .rights-card, .lefts-card {
+        position: unset;
+        left: unset;
+        right: unset;
+        width: 100%;
+    }
+
+    .left-card, .rights-card {
+        height: auto;
+    }
+
+    .right-card, .lefts-card {
+        height: 65%;
+    }
+
+   
+}
+
+@media screen and (max-width: 500px){
+    .item {
+        background-position: top;
+
+    }
+
+    .right-card, .lefts-card {
+        height: 200%;
+    }
+}
