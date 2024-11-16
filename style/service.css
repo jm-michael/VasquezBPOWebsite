@@ -355,8 +355,8 @@ body {
         position: absolute;
         background-color: #333;
         width: 200px;
-        top: 90px;
-        right: 15px;
+        top: 60px;
+        right: 85px;
         z-index: 1000;
         padding-bottom: 20px !important;
         border-radius: 10px;
