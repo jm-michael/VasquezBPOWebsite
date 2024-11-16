@@ -3886,10 +3886,12 @@ footer {
     .burger {
         display: block;
         cursor: pointer;
-        margin-left: auto;
-        margin-top: 10px;
+        /* margin-left: auto; */
+        /* margin-top: 10px; */
+        position: absolute;
+        left: 74%;
     }
-  
+
     .line1, .line2, .line3 {
         width: 25px;
         height: 3px;

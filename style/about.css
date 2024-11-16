@@ -6,6 +6,7 @@
     padding: 150px 30px;
     min-height: 700px;
     left: -20px;
+    max-width: 1300px;
 }
 
 
@@ -47,7 +48,7 @@ img{
 
     .whoweare-header {
         font-size: 16px;
-        margin-top: 400px;
+        /* margin-top: 400px; */
         font-weight: 600;
     }
 
