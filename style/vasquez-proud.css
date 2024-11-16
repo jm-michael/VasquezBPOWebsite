@@ -37,7 +37,7 @@ section {
     width: 100%;
     height: auto;
     max-height: 100%;
-    display: block;
+    display: none;
 }
 
 #proud .proud-title {
@@ -561,6 +561,14 @@ video {
 @media screen and (max-width: 1000px) {
     #proud {
         height: auto;
+    }
+
+    #proud img {
+        display: block;
+    }
+
+    .proud-bg-left, .proud-bg-right {
+        display: none;
     }
 }
 

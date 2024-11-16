@@ -65,24 +65,28 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
     }
-}
+} */
 
 /* For mobile view  ======================================================================= */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 362px){
     #leader-mobiless{
         display: block;
     }
-
+} */
+@media screen and (max-width: 480px){
+    /* #leader-mobiless{
+        display: block;
+    } */
     #desktop {
         display: none;
     }
 
-    #mobile {
+    #mobile {   
         display: block;
     }
 
@@ -98,9 +102,9 @@
         height: 40%;
     }
      */
-    .vasquez-2nd {
+    /* .vasquez-2nd {
        display: none;
-    }
+    } */
 
     .v3nd-people {
         width: 180%;
@@ -114,12 +118,12 @@
         top: 140px;
     }
 
-    .v3nd-context {
+    /* .v3nd-context {
         font-size: 14px;
-        width: 80%;
-        left: 10%;
+        width: 90%;
+        left: 5%;
         top: 3%;
-    }
+    } */
 
     #vasquez-4nd{
         display: none;
@@ -383,8 +387,7 @@
         display: block;
     }
 
-    .v2nd-title {
-        /* margin-left: 36%; */
+    /* .v2nd-title {
         font-size: clamp(2.125rem, -0.2188rem + 7.5vw, 4rem);
         font-family: Monospace ;
         font-weight: bold;
@@ -394,7 +397,7 @@
         border-style: solid;
         text-align: center;
         background-color:  #99c6d4;
-    }
+    } */
 
     .grid-item {
         border-radius: 10px;
@@ -479,5 +482,76 @@
 @media screen and (max-width: 1000px) {
     #vasquez-top {
         height: auto;
+    }
+
+    #vasquez-top img {
+        display: block;
+    }
+
+    .vasquez_top_bg {
+        display: none;
+    }
+
+    .vasquez-2nd {
+        height: auto;
+        padding-bottom: 5%;
+    }
+
+    .v3nd-people {
+        display: none;
+        height: auto;
+    }
+
+    .parent div {
+        clip-path: unset;
+    }
+
+    .parent div a {
+        font-size: 16px;
+    }
+
+    .parent {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1546px) {
+    .v3nd-people {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        height:70%;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    #vasquez-5nd .title {
+        font-size: 14px;
+    }
+
+    #vasquez-5nd .context {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .v5nd-1, .v5nd-2, .v5nd-3 {
+        width: 60%;
+    }
+
+    .v5nd-1 {
+        left: 10%;
+    }
+    .v5nd-2 {
+        left: 25%;
+    }
+    .v5nd-3 {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .v3nd-context {
+        width: clamp(6.25rem, -21.722rem + 139.8601vw, 31.25rem);
     }
 }

@@ -59,7 +59,7 @@ section {
     width: 100%;
     height: auto;
     max-height: 100%;
-    display: block;
+    display: none;
 }
 
 /* 2nd page */
@@ -114,10 +114,13 @@ section {
 .v3nd-context {
     position: absolute;
     font-weight: 400;
-    font-size: 20px;
-    left: 10%;
+    /* font-size: 20px; */
+    font-size: clamp(0.875rem, 0.7264rem + 0.7432vw, 1.5625rem);
+    /* left: 10%; */
+    left: clamp(0.625rem, -1.6723rem + 11.4865vw, 11.25rem);
     top: 15%;
-    width: 30%;
+    /* width: 30%; */
+    width: 540px;
     text-align: justify;
 }
 
@@ -157,6 +160,7 @@ section {
     position: absolute;
     height: 100%;
     width: 100%;
+    min-width: 200px;
     background-color: rgb(0 0 0 / 48%);
     z-index: 2;
 }

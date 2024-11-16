@@ -39,7 +39,7 @@ section {
     width: 100%;
     height: auto;
     max-height: 100%;
-    display: block;
+    display: none;
 }
 
 
@@ -487,9 +487,43 @@ input:nth-of-type(4):checked~main#carousel div.item:nth-of-type(4) {
     }
   }
 
+  @media screen and (max-width: 960px) {
+    .image-item img {
+        margin-top: unset;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /* .overlay {
+        height: 85%;
+        bottom: unset;
+        top: 0;
+    } */
+  }
+
   @media screen and (max-width: 1000px) {
     #advantage {
         height: auto;
     }
+
+    #advantage img {
+        display: block;
+    }
+
+    #advantage .advantage-bg-left, #advantage .advantage-bg-right {
+        display: none;
+    }
   }
+
+  @media screen and (max-width: 1200px) {
+    #advantage-p2 {
+        height: auto;
+    }
+
+    .grid-container {
+        height: auto;
+    }
+  }
+
+
   
