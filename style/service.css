@@ -403,3 +403,11 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+@media screen and (max-width: 1181px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 74%;
+    }
+}
