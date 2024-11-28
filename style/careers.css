@@ -31,7 +31,8 @@ section#careers-top {
     left: 5%;
     z-index: 2;
     color: white;
-    font-size: clamp(0.75rem, 0.2905rem + 2.2973vw, 2.875rem);
+    /* font-size: clamp(0.75rem, 0.2905rem + 2.2973vw, 2.875rem); */
+    font-size: clamp(1.25rem, 0.1689rem + 5.4054vw, 6.25rem) !important;
     font-family: Roboto,sans-serif;
     font-weight: bolder;
 }
@@ -108,7 +109,7 @@ section#careers-top {
     width: 100%;
     height: auto;
     max-height: 100%;
-    display: block;
+    display: none;
 }
 
 
