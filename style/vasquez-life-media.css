@@ -518,7 +518,7 @@
 @media screen and (max-width: 1546px) {
     .v3nd-people {
         position: absolute;
-        right: 10px;
+        left: 20%;
         bottom: 0px;
         height:70%;
     }
