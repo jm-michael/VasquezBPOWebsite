@@ -45,11 +45,13 @@ section#careers-top {
     position: relative;
     min-height: auto;
     height: 20%;
-    gap: 7%
+    gap: 10%;
+    /* margin-top: 10px; */
 }
 
 #careers_menu div {
-    width: clamp(1.875rem, 1.4696rem + 2.027vw, 3.75rem);
+    /* width: clamp(1.875rem, 1.4696rem + 2.027vw, 3.75rem); */
+    width: 85px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -265,7 +267,7 @@ section#careers-6th {
     position: absolute;
     top: clamp(10.625rem, 4.9493rem + 28.3784vw, 36.875rem);
     transform: translateY(-50%); /* Corrects positioning for vertical centering */
-    right: 10px;
+    right: 6.5%;
     width: 40%;
     z-index: 2;
     color: white;
