@@ -1401,7 +1401,7 @@ section#industries-hero {
 }
 
 .industries_hero-background {
-    background-image: url('../img/04_Industries/Industries5.JPG');    
+    background-image: url('../img/04_Industries/2.png');    
     width: 100% ;
     height: 500px;
     position: absolute;
@@ -1425,7 +1425,7 @@ section#industries-hero {
     /* font-size: 34px; */
     position: absolute;
     /* right: 12%; */
-    top: 35%;
+    top: 50%;
     font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
     font-family: Roboto,sans-serif;
     font-weight: bolder;
@@ -1434,7 +1434,7 @@ section#industries-hero {
 }
 
 .overlay__industries_hero {
-    height: 61.5% !important;
+    height: 55% !important;
     width: 100%;
     /* background-color: rgba(27, 27, 31, 0.9); */
     z-index: -2;
@@ -2979,7 +2979,7 @@ footer {
     }
     
     .industries_hero-background {
-        height: 375px;
+        /* height: 375px; */
     }
     
     .container__industries_hero {
@@ -2993,7 +2993,7 @@ footer {
     } */
 
     .overlay__industries_hero {
-        height: 46% !important;
+        height: 71% !important;
         /* top: 8px !important; */
     }
 
@@ -3572,7 +3572,7 @@ footer {
     }
     
     .industries_hero-background {
-        height: 375px;
+        /* height: 375px; */
     }
     
     .container__industries_hero {
