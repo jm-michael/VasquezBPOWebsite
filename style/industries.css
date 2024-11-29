@@ -230,7 +230,7 @@ body {
   }
 
     .industries_hero-background {
-      height: 300px;
+      height: 100%;
       z-index: -3;
       /* Adjust height for smaller screens */
       background-position: center center;

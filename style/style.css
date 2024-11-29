@@ -1397,21 +1397,21 @@ ul.panel-list > li {
 }
   
 section#industries-hero {
-    height: clamp(25rem, 23.6486rem + 6.7568vw, 31.25rem) !important;
+    height: 100% !important;
 }
 
 .industries_hero-background {
     background-image: url('../img/04_Industries/2.png');    
     width: 100% ;
-    height: 500px;
+    height: 100%;
     position: absolute;
     background-size: cover;
     background-position: 50% 50%;
     z-index: -3;
     display: block;
 }
-
-/* .container__industries_hero {
+/* 
+.container__industries_hero {
     border: 1px solid #000;
     padding: 100px 30px;
     height: 500px;
@@ -1434,7 +1434,7 @@ section#industries-hero {
 }
 
 .overlay__industries_hero {
-    height: 55% !important;
+    height: 100% !important;
     width: 100%;
     /* background-color: rgba(27, 27, 31, 0.9); */
     z-index: -2;
@@ -2402,7 +2402,7 @@ footer {
     }
     
     .industries_hero-background {
-        height: 425px;
+        height: 100%;
     }
     
     .container__industries_hero {
@@ -2984,7 +2984,7 @@ footer {
     
     .container__industries_hero {
         /* padding: 100px 30px; */
-        height: 400px;
+        height: 100%;
         align-items: center !important;
     }
     
@@ -3577,7 +3577,7 @@ footer {
     
     .container__industries_hero {
         /* padding: 100px 30px; */
-        height: 400px;
+        height: 100%;
         align-items: center !important;
     }
     
