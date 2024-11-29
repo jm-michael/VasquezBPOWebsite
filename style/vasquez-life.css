@@ -118,11 +118,11 @@ section {
     font-size: clamp(0.875rem, 0.7264rem + 0.7432vw, 1.5625rem);
     /* left: 10%; */
     /* left: clamp(0.625rem, -1.6723rem + 11.4865vw, 11.25rem); */
-    left: 10%;
+    left: 5%;
     top: 15%;
     /* width: 30%; */
     /* width: 540px; */
-    width: 30%;
+    width: 43%;
     text-align: justify;
 }
 
@@ -407,6 +407,8 @@ img {
 #leader-mobiless{
     display: none;
 }
+
+
 
 
 

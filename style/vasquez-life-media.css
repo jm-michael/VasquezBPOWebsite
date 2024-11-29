@@ -498,7 +498,7 @@
     }
 
     .v3nd-people {
-        display: none;
+        display: block;
         height: auto;
     }
 
@@ -553,5 +553,18 @@
 @media screen and (max-width: 604px) {
     .v3nd-context {
         width: clamp(6.25rem, -21.722rem + 139.8601vw, 31.25rem);
+    }
+}
+
+@media screen and (max-width: 888px){
+    .v3nd-context {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .v3nd-people {
+        display: none;
+        height: auto;
     }
 }
