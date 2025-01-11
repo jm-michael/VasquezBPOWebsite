@@ -88,13 +88,13 @@ section {
 .grid-item {
     overflow: hidden;
     position: relative;
-    padding-top: 55%; /* Adjust this value to get the desired aspect ratio */
+    padding-top: 40%; /* Adjust this value to get the desired aspect ratio */
     border-radius: 5px;
 }
 
 .grid-item img {
     position: absolute;
-    top: -45%; /* Adjust this value to cut more or less from the top */
+    top: -65%; /* Adjust this value to cut more or less from the top */
     left: 50%;
     width: 100%;
     height: auto;
@@ -115,14 +115,14 @@ section {
     position: absolute;
     font-weight: 400;
     /* font-size: 20px; */
-    font-size: clamp(0.875rem, 0.7264rem + 0.7432vw, 1.5625rem);
+    font-size: 120%;
     /* left: 10%; */
     /* left: clamp(0.625rem, -1.6723rem + 11.4865vw, 11.25rem); */
-    left: 5%;
+    left: 10%;
     top: 15%;
     /* width: 30%; */
     /* width: 540px; */
-    width: 43%;
+    width: 30%;
     text-align: justify;
 }
 
@@ -407,8 +407,6 @@ img {
 #leader-mobiless{
     display: none;
 }
-
-
 
 
 

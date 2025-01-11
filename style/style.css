@@ -1425,7 +1425,7 @@ section#industries-hero {
     /* font-size: 34px; */
     position: absolute;
     /* right: 12%; */
-    top: 50%;
+    top: 70%;
     font-size: clamp(4rem, -1.5rem + 8vw, 3rem);
     font-family: Roboto,sans-serif;
     font-weight: bolder;
