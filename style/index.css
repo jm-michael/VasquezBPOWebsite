@@ -3,6 +3,14 @@
     display: none;
 }
 
+
+.onweb{
+    display: block;
+}
+.onmobile{
+    display: none;
+}
+
 .overlays {
     position: absolute;
     height: 100%;
@@ -155,4 +163,215 @@ body {
         text-align: center;
         font-size: small;
     }
+}
+
+@media only screen and (max-width: 932px) {
+
+    .overlays {
+        position: absolute !important;
+        height: 100% !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background: rgb(20,20,35) !important;
+    }
+
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between buttons */
+        align-items: start; /* Center buttons horizontally */
+    }
+
+    .button__outline {
+        position: relative;
+        margin-left: 0px !important;
+    }
+
+    .button {
+        width: 50%; /* Full width with some margin */
+        max-width: 300px; /* Optional: limit the width */
+        height: 100%;
+        padding: 20px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+
+    .navbar-container {
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        margin: auto;
+        transition: 0.4s;
+    }
+
+    .container__solutions {
+        align-items: center;
+        min-height: 800px;
+        z-index: 2;
+        position: relative;
+        padding-top: 50px;
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .solutions-subheader {
+        font-family: 'nunitolight';
+        color: #5d666b;
+        font-size: 18px;
+        letter-spacing: 1px;
+        z-index: 2;
+        margin-right: 261px;
+        margin-bottom: 10px;
+    }
+
+    .hero-header {
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-top: 100px;
+    }
+
+    .solutions-header {
+        font-size: 30px;
+        margin-right: 140px;
+    }
+
+    .solutions-grid_container {
+        margin-top: 30px;
+        display: flex
+    ;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .container__why_us {
+        padding: 50px 30px 80px 30px;
+        min-height: 700px;
+    }
+
+    .button__why_us {
+        padding: 20px 70px;
+        font-size: 16px;
+    }
+
+    .why_us-group_icon {
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .glide-controls_right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -5px;
+    }
+
+    .solutions-grid_item {
+        font-size: 16px;
+        margin: 20px 10px;
+        padding: 35px 20px;
+        width: 100%;
+    }
+
+    .world_class_team-background_container {
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .world_class_team-background_left {
+        flex: 1;
+        background-size: contain;
+        margin-top: -100px;
+    }
+
+    .world_class_team-background_right {
+        flex: 1;
+        background-color: #424457;
+        display: flex
+    ;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+    .button__world_class_team {
+        padding: 20px 45px;
+        font-size: 16px;
+    }
+
+    .industries-grid_container {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 180px);
+        grid-gap: 40px 40px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .industries-header {
+        font-family: 'nunitoregular';
+        color: #fff;
+        font-weight: normal;
+        font-size: 34px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .industries-container {
+        padding: 0px 0px 0px 0px;
+        height: 20vh;
+        min-height: 600px;
+    }
+
+    .onweb{
+        display: none;
+    }
+    .onmobile{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+
+    .world_class_team-background_left {
+        flex: 1;
+        background-size: contain;
+        margin-top: -100px;
+        padding-top:450px;
+    }
+
+    .world_class_team-background_container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: 100% !important;
+    }
+
+    .world_class_team-background_right {
+        flex: 1;
+        background-color: #424457;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 90px;
+        padding-top: 50px;
+    }
+
+    .world_class_team-background_left {
+        flex: 1;
+        background-size: contain;
+        margin-top: -100px;
+        padding-top: 450px;
+    }
+
 }
