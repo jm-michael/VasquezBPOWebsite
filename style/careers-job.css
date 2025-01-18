@@ -123,7 +123,7 @@ select {
 
 
 
-#careers-job-data .left .card {
+#careers-job-data .left .cards {
     border: 1px solid gray;
     height: 60%;
     width: 100%;
@@ -146,77 +146,77 @@ select {
     box-shadow: 5px 5px 10px gray;
 }
 
-#careers-job-data .left .card .urgent {
+#careers-job-data .left .cards .urgent {
     font-family: 'nunitobold';
     font-size: 12px;
     color: blueviolet;
     margin-bottom: 5px;
 }
 
-#careers-job-data .left .card .position {
+#careers-job-data .left .cards .position {
     font-family: 'nunitobold';
     font-size: 30px;
     margin-bottom: 5px;
 }
 
-#careers-job-data .left .card .company {
+#careers-job-data .left .cards .company {
     font-family: 'nunitobold';
     font-size: 20px;
 }
 
-#careers-job-data .left .card .address {
+#careers-job-data .left .cards .address {
     font-family: 'nunito';
     font-size: 18px;
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
 }
 
-#careers-job-data .left .card .work {
+#careers-job-data .left .cards .work {
     display: flex;
     margin-bottom: 15px;
 }
 
-#careers-job-data .left .card .work div {
+#careers-job-data .left .cards .work div {
     border-radius: 3px;
     background-color: lightgray;
     padding: 5px;
 }
 
-#careers-job-data .left .card .work div p {
+#careers-job-data .left .cards .work div p {
     font-size: 10px;
     font-family: 'nunito';
     color: black;
 }
 
 
-#careers-job-data .left .card .work div:nth-child(1){
+#careers-job-data .left .cards .work div:nth-child(1){
     margin-right: 5px;
 }
 
-#careers-job-data .left .card .easyapply {
+#careers-job-data .left .cards .easyapply {
     font-family: 'nunitobold';
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-#careers-job-data .left .card .context {
+#careers-job-data .left .cards .context {
     font-family: 'nunito';
     font-size: 14px;
 }
 
-/* #careers-job-data .left .card .footers {
+/* #careers-job-data .left .cards .footers {
    margin-top: 50px;
    display: flex;
    justify-content: space-between;
 }
 
-#careers-job-data .left .card .footers .active {
+#careers-job-data .left .cards .footers .active {
     font-family: 'nunito';
     font-size: 12px;
     color: gray;
  } */
 
- #careers-job-data .left .card button {
+ #careers-job-data .left .cards button {
     font-family: 'nunitobold';
     font-size: 15px;
     width: 150px;
@@ -235,32 +235,32 @@ select {
     margin-left: 180px;
  }
 
- #careers-job-data .right .card {
+ .card {
     padding: 15px;
  }
 
- #careers-job-data .right .card .position {
+ .card .position {
     font-family: 'nunitobold';
     font-size: 30px;
     margin-bottom: 10px;
  }
 
- #careers-job-data .right .card .company-address {
+ .card .company-address {
     display: flex;
     font-family: 'nunito';
     font-size: 14px;
     color: gray;
  }
 
- #careers-job-data .right .card .company-address .company {
+ .card .company-address .company {
     margin-right: 5px;
  }
 
- #careers-job-data .right .card .company-address .address {
+ .card .company-address .address {
     margin-left: 5px;
  }
 
- #careers-job-data .right .card button {
+ .card button {
     font-family: 'nunitobold';
     font-size: 18px;
     width: 180px;
@@ -275,34 +275,34 @@ select {
     margin-bottom: 20px;
  }
 
- /* #careers-job-data .right .card .job-details {
+ /* .card .job-details {
 
  } */
 
- #careers-job-data .right .card .job-details .detail {
+ .card .job-details .detail {
     font-family: 'nunitobold';
     font-size: 18px;
     margin-bottom: 20px;
  }
 
- #careers-job-data .right .card .job-details .jtype {
+ .card .job-details .jtype {
     font-family: 'nunitobold';
     font-size: 14px;
  }
 
- #careers-job-data .right .card .job-details .type {
+ .card .job-details .type {
     font-family: 'nunitobold';
     font-size: 12px;
     color: gray;
     margin-bottom: 20px;
  }
 
- #careers-job-data .right .card .job-details .jsched {
+ .card .job-details .jsched {
     font-family: 'nunitobold';
     font-size: 14px;
  }
 
- #careers-job-data .right .card .job-details .shiftandSched {
+ .card .job-details .shiftandSched {
     display: flex;
     width: 70%;
     justify-content: space-between;
@@ -315,51 +315,51 @@ select {
     color: gray;
  }
 
- #careers-job-data .right .card .job-details .loc-title {
+ .card .job-details .loc-title {
     font-family: 'nunitobold';
     font-size: 14px;
  }
 
- #careers-job-data .right .card .job-details .location {
+ .card .job-details .location {
     font-family: 'nunitobold';
     font-size: 12px;
     color: gray;
     margin-bottom: 20px;
  }
 
- #careers-job-data .right .card .job-details .full-job {
+ .card .job-details .full-job {
     font-family: 'nunitobold';
     font-size: 18px;
     margin-bottom: 20px;
  }
 
- #careers-job-data .right .card .job-details .postion {
+ .card .job-details .postion {
     font-family: 'nunitobold';
     font-size: 18px;
  }
 
 
- #careers-job-data .right .card .job-details .description {
+ .card .job-details .description {
     font-family: 'nunito';
     font-size: 14px;
     margin-bottom: 10px;
 }
 
 /* Apply Now */
-#careers-job-data .right .applynow {
+.applynow {
     overflow: auto;
     scrollbar-width: thin; /* "auto" or "thin" */
     scrollbar-color: rgb(95, 95, 97) rgb(255, 255, 255); /* scroll thumb and track */
 }
 
-#careers-job-data .right .applynow .Qualif {
+.applynow .Qualif {
     font-family: 'nunitobold';
     font-size: 22px;
     margin-bottom: 10px;
     margin-top: 5%;
 }
 
-#careers-job-data .right .applynow .Qualif-card {
+.applynow .Qualif-card {
     font-family: 'nunitobold';
     font-size: 20px;
     margin-bottom: 10px;
@@ -368,14 +368,14 @@ select {
     border-radius: 5px;
 }
 
-#careers-job-data .right .applynow .Respo {
+.applynow .Respo {
     font-family: 'nunitobold';
     font-size: 22px;
     margin-bottom: 10px;
     margin-top: 5%;
 }
 
-#careers-job-data .right .applynow .Respo-card {
+.applynow .Respo-card {
     font-family: 'nunitobold';
     font-size: 20px;
     margin-bottom: 40px;
@@ -384,32 +384,32 @@ select {
     border-radius: 5px;
 }
 
-#careers-job-data .right .applynow .title {
+.applynow .title {
     font-family: 'nunitobold';
     font-size: 14px;
     margin-bottom: 10px;
     color: rgb(213, 34, 34);
 }
 
-#careers-job-data .right .applynow .fields-card {
+.applynow .fields-card {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     column-gap: 5px;
 }
 
-#careers-job-data .right .applynow .fields-card .fields {
+.applynow .fields-card .fields {
     font-family: 'nunitobold';
     font-size: 25px;
 }
 
-/* #careers-job-data .right .applynow .fields-card .fields input {
+/* .applynow .fields-card .fields input {
     font-family: 'nunito';
     font-size: 10px;
     padding: 3px;
 } */
 
-#careers-job-data .right .applynow .fields {
+.applynow .fields {
     font-family: 'nunitobold';
     font-size: 14px;
     width: 100%;
@@ -419,7 +419,7 @@ select {
     margin-top: 15px;
 }
 
-#careers-job-data .right .applynow .fields p {
+.applynow .fields p {
     word-wrap: break-word;
     flex: 1;
     font-size: 25px;
@@ -427,7 +427,7 @@ select {
     /* border: 1px solid gray; */
 }
 
-#careers-job-data .right .applynow .fields input {
+.applynow .fields input {
     font-family: 'nunitobold';
     width: 250px;
     padding: 8px;
@@ -435,7 +435,7 @@ select {
 }
 
 
-#careers-job-data .right .applynow .fields select {
+.applynow .fields select {
     font-family: 'nunitobold';
     max-width: 250px !important;
     height: 35px;
@@ -448,7 +448,7 @@ select {
 }
 
 
-#careers-job-data .right .applynow .btn-submit-app {
+.applynow .btn-submit-app {
     font-family: 'nunitobold';
     font-size: 17px;
     width: 240px;
@@ -464,21 +464,21 @@ select {
     padding: 0px;
 }
 
-#careers-job-data .right .applynow .btn-apply-now {
+.applynow .btn-apply-now {
     display: flex;
     justify-content: flex-end;
 }
 
-#careers-job-data .right .applynow .btn-apply-now button {
+.applynow .btn-apply-now button {
     margin: 0px;
 }
 
-#careers-job-data .right .applynow .Qualif-card ul li {
+.applynow .Qualif-card ul li {
     display: flex;
     gap: 10px;
 }
 
-#careers-job-data .right .applynow .Respo-card ul li {
+.applynow .Respo-card ul li {
     display: flex;
     gap: 10px;
 }
@@ -612,12 +612,71 @@ body {
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
 
+    #careers-job-data .left .cards {
+        height: 100px;
+        width: 60%;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #careers-job-data .left .cards .position {
+        font-size: 16px;
+    }
+
+    #careers-job-data .left .cards .company {
+        font-size: 14px;
+    }
+
+    #careers-job-data .left .cards .address {
+        font-size: 12px;
+    }
+
+    #careers-job-data .left, #careers-job-data .right {
+        padding: 10px;
+    }
+
+    #careers-job-data .left .cards button {
+        font-family: 'nunitobold';
+        font-size: 15px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: #37A5CC;
+        border: none;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        height: 33px;
+        position: absolute;
+        top: 34px;
+        right: -130px;
+        margin-top: initial;
+        margin-left: initial;
+     }
+
+     .card .position {
+        font-size: 20px !important;
+     }
+
+     .applynow .Qualif {
+        font-size: 18px;
+     }
+
+     .applynow .Respo {
+        font-size: 18px;
+     }
+
+     #careers-job-data .right {
+        display: none;
+     }
+
     #careers-job-search .desktop {
         display: none;
     }
 
     #careers-job-search .mobile {
-        display: block;
+        display: flex;
     }
 
     #careers-job-search div input {
@@ -633,10 +692,30 @@ body {
         margin-left: 10px;
     }
 
+    .applynow .fields-card .fields p {
+        font-size: 16px;
+    }
+
+    .applynow .fields input, .multiselect {
+        width: 100% !important;
+    }
+
+    .applynow .fields-card .fields{
+        font-size: initial;
+    }
+
+    .fields {
+        margin-bottom: initial !important;
+    }
+
+    .applynow .fields {
+        display: block;
+        margin-top: initial;
+    }
+
     #careers-job-search #select{
         display: block;
-        margin-left: 70px;
-       
+        justify-items: center;       
     }
 
     #careers-job-search div {
@@ -660,7 +739,7 @@ body {
     #careers-job-search {
         position: relative;
         margin-top: 150px;
-        height: 30%;
+        height: 20%;
         overflow: hidden;
         /* top: 100px; */
         /* transition: top 0.8s; */

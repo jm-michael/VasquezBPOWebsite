@@ -1,5 +1,5 @@
 
-    // { id: 4, list: []},
+
 const qualifications  = [
     { id: 1,  list: [ "Requires CPA certification", "Holds a minimum of 9 years of extensive audit experience in global audit firms", "Has proven working experience as an Audit Manager, managing and leading audit teams", "Has outstanding project management, communication, leadership, coaching, and  supervisory skills", "Displays effective interpersonal, risk management, facilitation, and presentation skills", "Has the ability to develop and maintain client relationships", ]},
     { id: 2,  list: [ "Requires CPA certification", "Holds a minimum of 7 years of extensive audit experience in global audit firms", "Has in-depth knowledge of audit procedures and principles", "Displays excellent attention to detail, problem-solving, and analytical capabilities", "Can manage multiple engagements and meet deadlines", "Possesses outstanding written and verbal communication, client service, project management, and leadership skills", ]},
@@ -34,7 +34,7 @@ const qualifications  = [
     
     
 ]
-    // { id: 4, list: []},
+
 const resposibilities = [
     { id: 1,  list: [ "Plan and oversee a portfolio of audit engagements", "Manage multiple audit teams", "Build and maintain relationships with key clients", "Provide guidance and advice on complex accounting and audit matters", "Collaborate with senior management to develop audit strategies and objectives", "Keep abreast of emerging trends and changes in auditing practices", "Review and finalize audit reports", "Ensure compliance with audit standards and regulatory requirements", ]},
     { id: 2,  list: [ "Oversee small to medium-sized audit engagements simultaneously", "Manage a team of Audit Associates and Senior Audit Associates", "Review work prepared by audit team members, and provide review comments as appropriate", "Identify areas for process improvements and implementing best practices", "Perform testing of complex audit areas as determined by the Audit Manager and Audit Partner/Director", "Review all audit documentation prepared by supervised personnel and initials on all audit documentation", "Ensure compliance with audit standards and regulatory requirements", "Maintain awareness and understanding of developments in the auditing field and in client industries", ]},
@@ -70,8 +70,6 @@ const resposibilities = [
     
 ]
 
-
-
 const cards = [
     { id: 1,  urgent: "", department:"Audit",                  positionLevel: "Manager",              position: "Manager - Audit",                          company: "Vasquez BPO, Inc", address: "Audit",                  class: "Audit",                 }, //works: ["Full-time", "Monday to Friday"], easyapply: "Easy Apply", context: "From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance." },
     { id: 2,  urgent: "", department:"Audit",                  positionLevel: "Associate Manager",    position: "Associate Manager - Audit",                company: "Vasquez BPO, Inc", address: "Audit",                  class: "Audit",                 }, //works: ["Full-time", "Monday to Friday"], easyapply: "Easy Apply", context: "From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance." },
@@ -103,263 +101,10 @@ const cards = [
     { id: 28, urgent: "", department:"Business Operations",    positionLevel: "Associate Manager",    position: "IT Support & Implementation Specialist",   company: "Vasquez BPO, Inc", address: "Information Technology", class: "Information_Technology",}, //works: ["Full-time", "Monday to Friday"], easyapply: "Easy Apply", context: "From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance." },
     { id: 29, urgent: "", department:"Business Operations",    positionLevel: "Associate",            position: "Marketing Assistant",                      company: "Vasquez BPO, Inc", address: "Marketing",              class: "Marketing",             }, //works: ["Full-time", "Monday to Friday"], easyapply: "Easy Apply", context: "From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance." },
     { id: 30, urgent: "", department:"Business Operations",    positionLevel: "Associate",            position: "Administrative Assistant",                 company: "Vasquez BPO, Inc", address: "Office Administration",  class: "Office_Administration", }, //works: ["Full-time", "Monday to Friday"], easyapply: "Easy Apply", context: "From customer-facing functions to back-end operations, a great company recognizes all roles matter. While we expect to excel in our core operations, behind the scene activities can be even more critical and should be given equal importance." },
-    ];
-
-// On Click Search Button
-
-function onClickSearch(add){
-    var search = document.getElementById("search").value;
-    var position = document.getElementById("position").value;
-    var department = document.getElementById("department").value;
-    // console.log(search,position,department)
-    reloadCards(position,department,search)
-}
-document.querySelector('button').addEventListener('click', function(event) {
-    var search = document.getElementById("search").value;
-    var position = document.getElementById("position").value;
-    var department = document.getElementById("department").value;
-    // console.log(search,position,department)
-    reloadCards(position,department,search)
-});
-
-// On Load
-const data = localStorage.getItem('data');
-displayMessage();
-reloadCards("All", (data == "" ? "All" : data),"");
-
-//Load Cards Function
-function reloadCards(positionLevel,department,search){
-    var newCards = cards.filter( x => 
-        x.positionLevel == (positionLevel == "All" ? x.positionLevel : positionLevel) && 
-        x.department == (department == "All" ? x.department : department) &&
-        x.position.toLocaleLowerCase().includes(search.toLocaleLowerCase())
-        )
-    const cardContainer = document.getElementById("cardContainer");
-    cardContainer.innerHTML = "";
-    clickCard(newCards[0]?.id)
-    newCards.forEach(card => {
-        const cardDiv = document.createElement("div");
-        cardDiv.classList.add("card");
-        cardDiv.addEventListener("click", function(event) {
-            var rightCard = document.querySelector("#careers-job-data .right .card");
-            var applynow = document.querySelector("#careers-job-data .right .applynow");
-            
-            if (!event.target.classList.contains("applyNowEvent")) {
-                // rightCard.classList.remove("hidden");
-                // applynow.classList.add("hidden");
-                applynow.classList.remove("hidden");
-            }
-            clickCard(card.id);
-        });
-    
-        const urgentPara = document.createElement("p");
-        urgentPara.classList.add("urgent");
-        urgentPara.textContent = card.urgent;
-        cardDiv.appendChild(urgentPara);
-    
-        const positionPara = document.createElement("p");
-        positionPara.classList.add("position");
-        positionPara.textContent = card.position;
-        cardDiv.appendChild(positionPara);
-    
-        const companyPara = document.createElement("p");
-        companyPara.classList.add("company");
-        companyPara.textContent = card.company;
-        cardDiv.appendChild(companyPara);
-    
-        const addressPara = document.createElement("p");
-        addressPara.classList.add("address");
-        addressPara.textContent = card.address;
-        cardDiv.appendChild(addressPara);
-    
-        // const worksDiv = document.createElement("div");
-        // worksDiv.classList.add("work");
-        // card.works.forEach(work => {
-        //     const worksDiv0 = document.createElement("div");
-        //     const workPara = document.createElement("p");
-        //     workPara.classList.add("full");
-        //     workPara.textContent = work;
-        //     worksDiv.appendChild(worksDiv0);
-        //     worksDiv0.appendChild(workPara);
-        // });
-        // cardDiv.appendChild(worksDiv);
-    
-        // const easyApplyPara = document.createElement("p");
-        // easyApplyPara.classList.add("easyapply");
-        // easyApplyPara.textContent = card.easyapply;
-        // cardDiv.appendChild(easyApplyPara);
-    
-        // const contextPara = document.createElement("p");
-        // contextPara.classList.add("context");
-        // contextPara.textContent = card.context;
-        // cardDiv.appendChild(contextPara);
-    
-        const applyButton = document.createElement("button");
-        applyButton.classList.add("applyNowEvent")
-        applyButton.textContent = "Apply Now";
-        cardDiv.appendChild(applyButton);
-        applyButton.addEventListener("click", function() {
-
-            var rightCard = document.querySelector("#careers-job-data .right .card");
-            var applynow = document.querySelector("#careers-job-data .right .applynow");
-
-            // comment temporary
-            // rightCard.classList.add("hidden");
-            // applynow.classList.remove("hidden");
-
-            // new added temporary
-            // rightCard.classList.remove("hidden");
-            // applynow.classList.add("hidden");
-
-            applynow.classList.remove("hidden");
-        });
-    
-        cardContainer.appendChild(cardDiv);
-    });
-}
-
-
-//click apply now event on right card
-document.addEventListener("click", function(event) {
-    if (event.target.classList.contains("applyRightCard")) {
-        var rightCard = document.querySelector("#careers-job-data .right .card");
-        var applynow = document.querySelector("#careers-job-data .right .applynow");
-        // rightCard.classList.add("hidden");
-        // applynow.classList.remove("hidden");
-    }
-});
-
-
-var clickCardId = 0;
-
-// Click Cards Function
-function clickCard(id) {
-    debugger
-    var card = cards.find(x=>x.id == id)
-    document.querySelector(".right .applynow .position").textContent = card.position
-    document.querySelector(".right .card .position").textContent = card.position
-    document.querySelector(".right .card .company-address .company").textContent = card.company
-    document.querySelector(".right .card .company-address .address").textContent = card.address
-    // document.querySelector(".right .card .job-details .type").textContent = card.works[0]
-    document.querySelector(".right .card .job-details .location").textContent = card.address
-    document.querySelector(".right .card .job-details .postion").textContent = card.postion
-    // document.querySelector(".right .card .job-details .description").textContent = card.context
-
-    //Setup Qualifications and Responsibilities
-    const cardQualifi = document.querySelector(".right .applynow .Qualif-card");
-    const cardRespons = document.querySelector(".right .applynow .Respo-card");
-    cardQualifi.innerHTML = "";
-    cardRespons.innerHTML = "";
-    
-    const ulq = document.createElement("ul");
-    const ulr = document.createElement("ul");
-    var qual = qualifications.find(q=>q.id == id)?.list
-    var resp = resposibilities.find(q=>q.id == id)?.list
-
-    //Qualifications
-    if (qual) {
-        qual.forEach(item => {
-            const li = document.createElement("li");
-            const p0 = document.createElement("p");
-            const p1 = document.createElement("p");
-            p0.textContent = "•"
-            p1.textContent = item
-            li.appendChild(p0)
-            li.appendChild(p1)
-            ulq.appendChild(li)
-        });
-        cardQualifi.appendChild(ulq)
-    }
-
-    //Responsibilities
-    if (resp) {
-        resp.forEach(item => {
-            const li = document.createElement("li");
-            const p0 = document.createElement("p");
-            const p1 = document.createElement("p");
-            p0.textContent = "•"
-            p1.textContent = item
-            li.appendChild(p0)
-            li.appendChild(p1)
-            ulr.appendChild(li)
-        });
-        cardRespons.appendChild(ulr)
-    }
-
-    //hide form again
-    onClickApplyNow(true);
-
-    
-    //Show Custom Fields
-    customFields(id);
-    clickCardId = id;
-}
-
-function displayMessage() {
-
-    var position = document.getElementById('position').value;
-    var department = document.getElementById('department').value;
-        
-
-    if (position === 'All') {
-        document.getElementById('position').options[0].text = 'POSITION LEVEL';
-    } else {
-        document.getElementById('position').options[0].text = 'All';
-    }
-
-    if (department === 'All') {
-        document.getElementById('department').options[0].text = 'DEPARTMENT';
-    } else {
-        document.getElementById('department').options[0].text = 'All';
-    }
-
-    var search = document.getElementById("search").value;
-
-    reloadCards(position,department,search)
-}
-
-// apply button on right card
-function onClickApplyNow(add){
-    debugger
-    const btnApplyNow = document.querySelector(".right .applynow .applynow");
-    const QnR = document.querySelector(".right .applynow .QnR");
-    if (add) {
-        btnApplyNow.classList.add("hidden");
-        QnR.classList.remove("hidden");
-    }else {
-        btnApplyNow.classList.remove("hidden");
-        QnR.classList.add("hidden");
-        loadDropdown(" .multiselect");
-    }
-}
-
-// show or hide custom fields per department
-function customFields(id){
-    var card = cards.find(x=>x.id == id)
-    cards.forEach(item => {
-        debugger
-        const div = document.querySelectorAll(".right .applynow .applynow  ."+item.class);
-        var element = document.querySelector("."+item.class);
-        var inputElement = element.querySelector("input");
-        div.forEach(custom => {
-            if (custom?.className) {
-                debugger
-                
-                if (item.class == card.class) {
-                    element.removeAttribute('hidden');
-                    custom.className = custom.className.replace(/\bhidden\b/g, 'fields').trim();
-                } else {
-                     element.setAttribute('hidden', 'true');
-                    custom.className = custom.className.replace(/\bfields\b/g, 'hidden').trim();
-                }
-            }
-        });
-        
-    });
-}
+];
 
 // dropdown List
-var dropdownList = [
+const dropdownList = [
     {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Non-profit"},
     {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Government"},
     {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Employee Benefit Plan"},
@@ -518,6 +263,277 @@ var dropdownList = [
     
 ];
 
+// Get the screen width and height
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+
+// On Click Search Button
+
+function onClickSearch(add){
+    var search = document.getElementById("search").value;
+    var position = document.getElementById("position").value;
+    var department = document.getElementById("department").value;
+    // console.log(search,position,department)
+    reloadCards(position,department,search)
+}
+document.querySelector('button').addEventListener('click', function(event) {
+    var search = document.getElementById("search").value;
+    var position = document.getElementById("position").value;
+    var department = document.getElementById("department").value;
+    // console.log(search,position,department)
+    reloadCards(position,department,search)
+});
+
+// On Load
+const data = localStorage.getItem('data');
+displayMessage();
+reloadCards("All", (data == "" ? "All" : data),"");
+
+//Load Cards Function
+function reloadCards(positionLevel,department,search){
+    var newCards = cards.filter( x => 
+        x.positionLevel == (positionLevel == "All" ? x.positionLevel : positionLevel) && 
+        x.department == (department == "All" ? x.department : department) &&
+        x.position.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+        )
+    const cardContainer = document.getElementById("cardContainer");
+    cardContainer.innerHTML = "";
+    clickCard(newCards[0]?.id)
+    newCards.forEach(card => {
+        const cardDiv = document.createElement("div");
+        const cardDiv2 = document.createElement("div");
+        cardDiv.classList.add("cards");
+        cardDiv2.classList.add("card-"+card.id);
+        cardDiv.addEventListener("click", function(event) {
+            // var rightCard = document.querySelector("#careers-job-data .right .card");
+            
+            if (!event.target.classList.contains("applyNowEvent")) {
+                // rightCard.classList.remove("hidden");
+                // applynow.classList.add("hidden");
+                applynow.classList.remove("hidden");
+            }
+            clickCard(card.id);
+            if (screenWidth >= 320 && screenWidth <= 479) {
+                newCards.forEach(re => {
+                    const sourceDiv = document.querySelector(".right .applynow");
+                    const clonedDiv = sourceDiv.cloneNode(true);
+                    const targetDiv = document.querySelector(".card-"+re.id);
+                    if (targetDiv.firstChild) {
+                        targetDiv.removeChild(targetDiv.firstChild);
+                    }
+                    if (card.id == re.id) {
+                        const targetDiv = document.querySelector(".card-"+card.id);
+                        targetDiv.appendChild(clonedDiv);
+                    }
+                });
+            }
+            
+        });
+    
+        const urgentPara = document.createElement("p");
+        urgentPara.classList.add("urgent");
+        urgentPara.textContent = card.urgent;
+        cardDiv.appendChild(urgentPara);
+    
+        const positionPara = document.createElement("p");
+        positionPara.classList.add("position");
+        positionPara.textContent = card.position;
+        cardDiv.appendChild(positionPara);
+    
+        const companyPara = document.createElement("p");
+        companyPara.classList.add("company");
+        companyPara.textContent = card.company;
+        cardDiv.appendChild(companyPara);
+    
+        const addressPara = document.createElement("p");
+        addressPara.classList.add("address");
+        addressPara.textContent = card.address;
+        cardDiv.appendChild(addressPara);
+    
+        // const worksDiv = document.createElement("div");
+        // worksDiv.classList.add("work");
+        // card.works.forEach(work => {
+        //     const worksDiv0 = document.createElement("div");
+        //     const workPara = document.createElement("p");
+        //     workPara.classList.add("full");
+        //     workPara.textContent = work;
+        //     worksDiv.appendChild(worksDiv0);
+        //     worksDiv0.appendChild(workPara);
+        // });
+        // cardDiv.appendChild(worksDiv);
+    
+        // const easyApplyPara = document.createElement("p");
+        // easyApplyPara.classList.add("easyapply");
+        // easyApplyPara.textContent = card.easyapply;
+        // cardDiv.appendChild(easyApplyPara);
+    
+        // const contextPara = document.createElement("p");
+        // contextPara.classList.add("context");
+        // contextPara.textContent = card.context;
+        // cardDiv.appendChild(contextPara);
+    
+        const applyButton = document.createElement("button");
+        applyButton.classList.add("applyNowEvent")
+        applyButton.textContent = "Apply Now";
+        cardDiv.appendChild(applyButton);
+        applyButton.addEventListener("click", function() {
+
+            // var rightCard = document.querySelector("#careers-job-data .right .card");
+            var applynow = document.querySelector("#careers-job-data .right .applynow");
+
+            // comment temporary
+            // rightCard.classList.add("hidden");
+            // applynow.classList.remove("hidden");
+
+            // new added temporary
+            // rightCard.classList.remove("hidden");
+            // applynow.classList.add("hidden");
+
+            applynow.classList.remove("hidden");
+        });
+    
+        cardContainer.appendChild(cardDiv);
+        cardContainer.appendChild(cardDiv2);
+    });
+}
+
+
+//click apply now event on right card
+// document.addEventListener("click", function(event) {
+//     if (event.target.classList.contains("applyRightCard")) {
+//         var rightCard = document.querySelector("#careers-job-data .right .card");
+//         var applynow = document.querySelector("#careers-job-data .right .applynow");
+//         // rightCard.classList.add("hidden");
+//         // applynow.classList.remove("hidden");
+//     }
+// });
+
+
+var clickCardId = 0;
+
+// Click Cards Function
+function clickCard(id) {
+    var card = cards.find(x=>x.id == id)
+    document.querySelector(".right .applynow .position").textContent = card.position
+    document.querySelector(".right .card .position").textContent = card.position
+    document.querySelector(".right .card .company-address .company").textContent = card.company
+    document.querySelector(".right .card .company-address .address").textContent = card.address
+    // document.querySelector(".right .card .job-details .type").textContent = card.works[0]
+    document.querySelector(".right .card .job-details .location").textContent = card.address
+    document.querySelector(".right .card .job-details .postion").textContent = card.postion
+    // document.querySelector(".right .card .job-details .description").textContent = card.context
+
+    //Setup Qualifications and Responsibilities
+    const cardQualifi = document.querySelector(".right .applynow .Qualif-card");
+    const cardRespons = document.querySelector(".right .applynow .Respo-card");
+    cardQualifi.innerHTML = "";
+    cardRespons.innerHTML = "";
+    
+    const ulq = document.createElement("ul");
+    const ulr = document.createElement("ul");
+    var qual = qualifications.find(q=>q.id == id)?.list
+    var resp = resposibilities.find(q=>q.id == id)?.list
+
+    //Qualifications
+    if (qual) {
+        qual.forEach(item => {
+            const li = document.createElement("li");
+            const p0 = document.createElement("p");
+            const p1 = document.createElement("p");
+            p0.textContent = "•"
+            p1.textContent = item
+            li.appendChild(p0)
+            li.appendChild(p1)
+            ulq.appendChild(li)
+        });
+        cardQualifi.appendChild(ulq)
+    }
+
+    //Responsibilities
+    if (resp) {
+        resp.forEach(item => {
+            const li = document.createElement("li");
+            const p0 = document.createElement("p");
+            const p1 = document.createElement("p");
+            p0.textContent = "•"
+            p1.textContent = item
+            li.appendChild(p0)
+            li.appendChild(p1)
+            ulr.appendChild(li)
+        });
+        cardRespons.appendChild(ulr)
+    }
+
+    //hide form again
+    onClickApplyNow(true);
+
+    
+    //Show Custom Fields
+    customFields(id);
+    clickCardId = id;
+}
+
+function displayMessage() {
+
+    var position = document.getElementById('position').value;
+    var department = document.getElementById('department').value;
+        
+
+    if (position === 'All') {
+        document.getElementById('position').options[0].text = 'POSITION LEVEL';
+    } else {
+        document.getElementById('position').options[0].text = 'All';
+    }
+
+    if (department === 'All') {
+        document.getElementById('department').options[0].text = 'DEPARTMENT';
+    } else {
+        document.getElementById('department').options[0].text = 'All';
+    }
+
+    var search = document.getElementById("search").value;
+
+    reloadCards(position,department,search)
+}
+
+// apply button on right card
+function onClickApplyNow(add){
+    const btnApplyNow = document.querySelector(".applynow .applynow");
+    const QnR = document.querySelector(".applynow .QnR");
+    if (add) {
+        btnApplyNow.classList.add("hidden");
+        QnR.classList.remove("hidden");
+    }else {
+        btnApplyNow.classList.remove("hidden");
+        QnR.classList.add("hidden");
+        loadDropdown(" .multiselect");
+    }
+}
+
+// show or hide custom fields per department
+function customFields(id){
+    var card = cards.find(x=>x.id == id)
+    cards.forEach(item => {
+        const div = document.querySelectorAll(".right .applynow .applynow  ."+item.class);
+        var element = document.querySelector("."+item.class);
+        var inputElement = element.querySelector("input");
+        div.forEach(custom => {
+            if (custom?.className) {
+                
+                if (item.class == card.class) {
+                    element.removeAttribute('hidden');
+                    custom.className = custom.className.replace(/\bhidden\b/g, 'fields').trim();
+                } else {
+                     element.setAttribute('hidden', 'true');
+                    custom.className = custom.className.replace(/\bfields\b/g, 'hidden').trim();
+                }
+            }
+        });
+        
+    });
+}
+
+
 function loadDropdown(css) {
     var card = cards.find(x => x.id == clickCardId);
     var drops = dropdownList.filter(x => x.class == card.class);
@@ -574,14 +590,12 @@ function loadDropdown(css) {
             items = document.querySelectorAll(`${conn} .item`);
 
         selectBtn.addEventListener("click", () => {
-            debugger
             selectBtn.classList.toggle("open");
         });
 
         items.forEach(item => {
             
             item.addEventListener("click", () => {
-                debugger
                 item.classList.toggle("checked");
 
                 let checked = document.querySelectorAll(`${conn} .checked`),
@@ -596,7 +610,6 @@ function loadDropdown(css) {
                 hiddenSelect.selectedValues = selectedValues;
 
                 if (checked && checked.length > 0) {
-                    debugger
                     btnText.innerText = `${checked.length} Selected`;
                 } else {
                     btnText.innerText = "Select options";
