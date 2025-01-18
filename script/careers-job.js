@@ -234,6 +234,7 @@ var clickCardId = 0;
 
 // Click Cards Function
 function clickCard(id) {
+    debugger
     var card = cards.find(x=>x.id == id)
     document.querySelector(".right .applynow .position").textContent = card.position
     document.querySelector(".right .card .position").textContent = card.position
@@ -288,6 +289,7 @@ function clickCard(id) {
     //hide form again
     onClickApplyNow(true);
 
+    
     //Show Custom Fields
     customFields(id);
     clickCardId = id;
@@ -318,6 +320,7 @@ function displayMessage() {
 
 // apply button on right card
 function onClickApplyNow(add){
+    debugger
     const btnApplyNow = document.querySelector(".right .applynow .applynow");
     const QnR = document.querySelector(".right .applynow .QnR");
     if (add) {
@@ -334,12 +337,19 @@ function onClickApplyNow(add){
 function customFields(id){
     var card = cards.find(x=>x.id == id)
     cards.forEach(item => {
-        const div = document.querySelectorAll(".right .applynow .applynow .fields-card ."+item.class);
+        debugger
+        const div = document.querySelectorAll(".right .applynow .applynow  ."+item.class);
+        var element = document.querySelector("."+item.class);
+        var inputElement = element.querySelector("input");
         div.forEach(custom => {
             if (custom?.className) {
+                debugger
+                
                 if (item.class == card.class) {
+                    element.removeAttribute('hidden');
                     custom.className = custom.className.replace(/\bhidden\b/g, 'fields').trim();
                 } else {
+                     element.setAttribute('hidden', 'true');
                     custom.className = custom.className.replace(/\bfields\b/g, 'hidden').trim();
                 }
             }
@@ -350,154 +360,171 @@ function customFields(id){
 
 // dropdown List
 var dropdownList = [
-    {class: "Audit", no: "aa", name: "Non-profit"},
-    {class: "Audit", no: "aa", name: "Government"},
-    {class: "Audit", no: "aa", name: "Employee Benefit Plan"},
-    {class: "Audit", no: "aa", name: "Financial Services"},
-    {class: "Audit", no: "aa", name: "Healthcare"},
-    {class: "Audit", no: "aa", name: "Manufacturing"},
-    {class: "Audit", no: "aa", name: "Consumer/Retail"},
-    {class: "Audit", no: "aa", name: "SEC/ Publicly Listed"},
-    {class: "Audit", no: "aa", name: "Real Estate"},
-    {class: "Audit", no: "aa", name: "Construction"},
-    {class: "Audit", no: "aa", name: "Hospitality"},
-    {class: "Audit", no: "aa", name: "Logistics"},
-    {class: "Audit", no: "aa", name: "Water"},
-    {class: "Audit", no: "aa", name: "Electricity"},
-    {class: "Audit", no: "aa", name: "Oil & Gas"},
-    {class: "Audit", no: "aa", name: "Mining"},
-    {class: "Audit", no: "aa", name: "Technology & Communications"},
-    {class: "Audit", no: "aa", name: "BPO"},
-    {class: "Audit", no: "aa", name: "Media & Entertainment"},
-    {class: "Audit", no: "aa", name: "Property Management"},
-    {class: "Audit", no: "aa", name: "Aviation"},
-    {class: "Audit", no: "aa", name: "Pharmaceutical"},
-    {class: "Audit", no: "aa", name: "Special Purpose Acquisition Company"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Non-profit"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Government"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Employee Benefit Plan"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Financial Services"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Healthcare"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Manufacturing"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Consumer/Retail"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "SEC/ Publicly Listed"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Real Estate"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Construction"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Hospitality"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Logistics"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Water"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Electricity"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Oil & Gas"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Mining"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Technology & Communications"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "BPO"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Media & Entertainment"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Property Management"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Aviation"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Pharmaceutical"},
+    {class: "Audit", no: "aa", question: "What industries have you handled?", name: "Special Purpose Acquisition Company"},
 
-    {class: "Tax", no: "aa", name: "Experience with US Tax"},
-    {class: "Tax", no: "aa", name: "Preparation of 1040, 990, and 1120 Form"},
-    {class: "Tax", no: "aa", name: "Preparation of Personal Tax Returns for Business Owners"},
-    {class: "Tax", no: "aa", name: "Preparation of Business Tax Returns"},
-    {class: "Tax", no: "aa", name: "Experience with Philippine Tax"},
+    {class: "Tax", no: "aa", question: "What prior work experience do you have in tax?", name: "Experience with US Tax"},
+    {class: "Tax", no: "aa", question: "What prior work experience do you have in tax?", name: "Preparation of 1040, 990, and 1120 Form"},
+    {class: "Tax", no: "aa", question: "What prior work experience do you have in tax?", name: "Preparation of Personal Tax Returns for Business Owners"},
+    {class: "Tax", no: "aa", question: "What prior work experience do you have in tax?", name: "Preparation of Business Tax Returns"},
+    {class: "Tax", no: "aa", question: "What prior work experience do you have in tax?", name: "Experience with Philippine Tax"},
 
-    {class: "Accounting", no: "aa", name: "General end-to-end accounting"},
-    {class: "Accounting", no: "aa", name: "Month-end closing procedures"},
-    {class: "Accounting", no: "aa", name: "Billing and collections"},
-    {class: "Accounting", no: "aa", name: "Invoice Processing"},
-    {class: "Accounting", no: "aa", name: "Financial Statement Review and Preparation"},
-    {class: "Accounting", no: "aa", name: "Liquidation and Reimbursements"},
-    {class: "Accounting", no: "aa", name: "Financial Analysis and Reporting"},
-    {class: "Accounting", no: "aa", name: "None"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "CCH Axcess Tax Software"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "CCH ProSystem fx Engagement"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "Sureprep"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "TaxCaddy"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "Salesforce"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "Quickbooks"},
+    {class: "Tax", no: "bb", question: "What prior work experience do you have in tax?", name: "Others"},
 
-    {class: "Accounting", no: "bb", name: "Quickbooks"},
-    {class: "Accounting", no: "bb", name: "SAGE"},
-    {class: "Accounting", no: "bb", name: "NetSuite"},
-    {class: "Accounting", no: "bb", name: "Xero"},
-    {class: "Accounting", no: "bb", name: "SAP"},
-    {class: "Accounting", no: "bb", name: "Others"},
-    {class: "Accounting", no: "bb", name: "None"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "General end-to-end accounting"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Month-end closing procedures"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Billing and collections"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Invoice Processing"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Financial Statement Review and Preparation"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Liquidation and Reimbursements"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "Financial Analysis and Reporting"},
+    {class: "Accounting", no: "aa", question: "What areas of accounting have you handled?", name: "None"},
 
-    {class: "Human_Resource", no: "aa", name: "Recruitment- Sourcing"},
-    {class: "Human_Resource", no: "aa", name: "Recruitment- Screening"},
-    {class: "Human_Resource", no: "aa", name: "Recruitment- Interviewing"},
-    {class: "Human_Resource", no: "aa", name: "Recruitment- Assessment and Selection"},
-    {class: "Human_Resource", no: "aa", name: "Recruitment- Onboarding"},
-    {class: "Human_Resource", no: "aa", name: "Training and Development"},
-    {class: "Human_Resource", no: "aa", name: "Payroll Management"},
-    {class: "Human_Resource", no: "aa", name: "Compensation and Benefits"},
-    {class: "Human_Resource", no: "aa", name: "Employee Relations"},
-    {class: "Human_Resource", no: "aa", name: "Human Resources Information System"},
-    {class: "Human_Resource", no: "aa", name: "Talent Management"},
-    {class: "Human_Resource", no: "aa", name: "Learning & Development"},
-    {class: "Human_Resource", no: "aa", name: "Others"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Quickbooks"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "SAGE"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "NetSuite"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Xero"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "SAP"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Others"},
+    {class: "Accounting", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "None"},
 
-    {class: "Information_Technology", no: "aa", name: "System Configuration"},
-    {class: "Information_Technology", no: "aa", name: "Hardware and Software Installation"},
-    {class: "Information_Technology", no: "aa", name: "Troubleshooting"},
-    {class: "Information_Technology", no: "aa", name: "Maintenance and Upgrades"},
-    {class: "Information_Technology", no: "aa", name: "Data Backup and Recovery"},
-    {class: "Information_Technology", no: "aa", name: "Security Management"},
-    {class: "Information_Technology", no: "aa", name: "User Support"},
-    {class: "Information_Technology", no: "aa", name: "Others"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Recruitment- Sourcing"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Recruitment- Screening"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Recruitment- Interviewing"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Recruitment- Assessment and Selection"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Recruitment- Onboarding"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Training and Development"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Payroll Management"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Compensation and Benefits"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Employee Relations"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Human Resources Information System"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Talent Management"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Learning & Development"},
+    {class: "Human_Resource", no: "aa", question: "What prior work experience do you have in Human Resources?", name: "Others"},
 
-    {class: "Information_Technology", no: "bb", name: "Familiarity with Major Cloud Providers"},
-    {class: "Information_Technology", no: "bb", name: "Virtualization and Containerization"},
-    {class: "Information_Technology", no: "bb", name: "Infrastructure as Code (IaC)"},
-    {class: "Information_Technology", no: "bb", name: "Cloud Security"},
-    {class: "Information_Technology", no: "bb", name: "Hybrid Cloud Experience"},
-    {class: "Information_Technology", no: "bb", name: "Cloud Migration"},
-    {class: "Information_Technology", no: "bb", name: "Cost Optimization"},
-    {class: "Information_Technology", no: "bb", name: "Disaster Recovery/Business Continuity (DR/BC)"},
-    {class: "Information_Technology", no: "bb", name: "DevOps and Cloud Native"},
-    {class: "Information_Technology", no: "bb", name: "None"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "System Configuration"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Hardware and Software Installation"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Troubleshooting"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Maintenance and Upgrades"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Data Backup and Recovery"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Security Management"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "User Support"},
+    {class: "Information_Technology", no: "aa", question: "What prior work experience do you have in IT Support?", name: "Others"},
 
-    {class: "Marketing", no: "aa", name: "SEO/Content Marketing"},
-    {class: "Marketing", no: "aa", name: "Social Media Marketing"},
-    {class: "Marketing", no: "aa", name: "Email Marketing"},
-    {class: "Marketing", no: "aa", name: "PPC/Advertising"},
-    {class: "Marketing", no: "aa", name: "Event Management"},
-    {class: "Marketing", no: "aa", name: "Graphic Design"},
-    {class: "Marketing", no: "aa", name: "Data Analysis"},
-    {class: "Marketing", no: "aa", name: "Others"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Familiarity with Major Cloud Providers"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Virtualization and Containerization"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Infrastructure as Code (IaC)"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Cloud Security"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Hybrid Cloud Experience"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Cloud Migration"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Cost Optimization"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "Disaster Recovery/Business Continuity (DR/BC)"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "DevOps and Cloud Native"},
+    {class: "Information_Technology", no: "bb", question: "What prior work experience do you have in cloud computing?", name: "None"},
 
-    {class: "Marketing", no: "bb", name: "Google Analytics"},
-    {class: "Marketing", no: "bb", name: "Google Ads"},
-    {class: "Marketing", no: "bb", name: "HubSpot or Similar CRM/Marketing Automation Platforms"},
-    {class: "Marketing", no: "bb", name: "Email Marketing Platforms (e.g., Mailchimp, Sendinblue)"},
-    {class: "Marketing", no: "bb", name: "SEO Tools (Ahrefs, SEMrush)"},
-    {class: "Marketing", no: "bb", name: "Project Management Tools (e.g., Trello, Asana)"},
-    {class: "Marketing", no: "bb", name: "Design Tools (e.g., Canva, Adobe Creative Suite)"},
-    {class: "Marketing", no: "bb", name: "Others"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "SEO/Content Marketing"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Social Media Marketing"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Email Marketing"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "PPC/Advertising"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Event Management"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Graphic Design"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Data Analysis"},
+    {class: "Marketing", no: "aa", question: "What prior work experience do you have in Marketing?", name: "Others"},
 
-    {class: "Accounting_Finance", no: "aa", name: "General end-to-end accounting"},
-    {class: "Accounting_Finance", no: "aa", name: "Month-end closing procedures"},
-    {class: "Accounting_Finance", no: "aa", name: "Billing and collections"},
-    {class: "Accounting_Finance", no: "aa", name: "Invoice Processing"},
-    {class: "Accounting_Finance", no: "aa", name: "Financial Statement Review and Preparation"},
-    {class: "Accounting_Finance", no: "aa", name: "Liquidation and Reimbursements"},
-    {class: "Accounting_Finance", no: "aa", name: "Financial Analysis and Reporting"},
-    {class: "Accounting_Finance", no: "aa", name: "Philippine Tax Compliance, Preparation and Filing"},
-    {class: "Accounting_Finance", no: "aa", name: "None"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Google Analytics"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Google Ads"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "HubSpot or Similar CRM/Marketing Automation Platforms"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Email Marketing Platforms (e.g., Mailchimp, Sendinblue)"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "SEO Tools (Ahrefs, SEMrush)"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Project Management Tools (e.g., Trello, Asana)"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Design Tools (e.g., Canva, Adobe Creative Suite)"},
+    {class: "Marketing", no: "bb", question: "What marketing platforms and tools are you proficient with?", name: "Others"},
 
-    {class: "Accounting_Finance", no: "bb", name: "Quickbooks"},
-    {class: "Accounting_Finance", no: "bb", name: "SAGE"},
-    {class: "Accounting_Finance", no: "bb", name: "NetSuite"},
-    {class: "Accounting_Finance", no: "bb", name: "Xero"},
-    {class: "Accounting_Finance", no: "bb", name: "SAP"},
-    {class: "Accounting_Finance", no: "bb", name: "Others"},
-    {class: "Accounting_Finance", no: "bb", name: "None"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "General end-to-end accounting"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Month-end closing procedures"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Billing and collections"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Invoice Processing"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Financial Statement Review and Preparation"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Liquidation and Reimbursements"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Financial Analysis and Reporting"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "Philippine Tax Compliance, Preparation and Filing"},
+    {class: "Accounting_Finance", no: "aa", question: "What prior work experience do you have in Corporate Accounting and Finance?", name: "None"},
 
-    {class: "IT_Audit", no: "aa", name: "Review of IT General Controls (e.g. User Access Management, Change Management, IT Operations)"},
-    {class: "IT_Audit", no: "aa", name: "Review of Information Security Processes (e.g. Vulnerability Assessment, Firewall)"},
-    {class: "IT_Audit", no: "aa", name: "Application Controls Testing"},
-    {class: "IT_Audit", no: "aa", name: "Preparation of SOC 1 Reports"},
-    {class: "IT_Audit", no: "aa", name: "Preparation of SOC 2 Reports"},
-    {class: "IT_Audit", no: "aa", name: "Experience with SOX Compliance"},
-    {class: "IT_Audit", no: "aa", name: "Experience with various US regulations (e.g. HIPAA)"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Quickbooks"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "SAGE"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "NetSuite"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Xero"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "SAP"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "Others"},
+    {class: "Accounting_Finance", no: "bb", question: "What accounting software applications do you have expertise in? Please select only those you have practical experience using.", name: "None"},
+
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Review of IT General Controls (e.g. User Access Management, Change Management, IT Operations)"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Review of Information Security Processes (e.g. Vulnerability Assessment, Firewall)"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Application Controls Testing"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Preparation of SOC 1 Reports"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Preparation of SOC 2 Reports"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Experience with SOX Compliance"},
+    {class: "IT_Audit", no: "aa", question: "What prior work experience do you have in IT Audit?", name: "Experience with various US regulations (e.g. HIPAA)"},
     
-    {class: "IT_Audit", no: "bb", name: "Caseware IDEA"},
-    {class: "IT_Audit", no: "bb", name: "Galvanize/ACL"},
-    {class: "IT_Audit", no: "bb", name: "Alteryx"},
-    {class: "IT_Audit", no: "bb", name: "AWS Athena"},
-    {class: "IT_Audit", no: "bb", name: "Python"},
-    {class: "IT_Audit", no: "bb", name: "Others"},
-    {class: "IT_Audit", no: "bb", name: "None"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "Caseware IDEA"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "Galvanize/ACL"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "Alteryx"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "AWS Athena"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "Python"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "Others"},
+    {class: "IT_Audit", no: "bb", question: "What data analytics tool do you have experience in?", name: "None"},
 
-    {class: "IT_Audit", no: "cc", name: "Quickbooks"},
-    {class: "IT_Audit", no: "cc", name: "SAP"},
-    {class: "IT_Audit", no: "cc", name: "Sage"},
-    {class: "IT_Audit", no: "cc", name: "MS Dynamics"},
-    {class: "IT_Audit", no: "cc", name: "Others"},
-    {class: "IT_Audit", no: "cc", name: "None"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "Quickbooks"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "SAP"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "Sage"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "MS Dynamics"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "Others"},
+    {class: "IT_Audit", no: "cc", question: "What financial applications do you have expertise in reviewing?", name: "None"},
+    
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Administrative Support"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Executive Assistant or Personal Assistant"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Receptionist or Front Desk"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Project Coordination"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Office Management"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "Event Management Support"},
+    {class: "Office_Administration", no: "aa", question: "What prior work experience do you have in Office Administration?", name: "None"},
+    
 ];
 
 function loadDropdown(css) {
-    var card = cards.find(x=>x.id == clickCardId)
-    var drops = dropdownList.filter(x=>x.class == card.class)
+    var card = cards.find(x => x.id == clickCardId);
+    var drops = dropdownList.filter(x => x.class == card.class);
     var Nos = [...new Set(drops.map(item => item.no))];
     Nos.forEach(no => {
         var html = "";
-        var drop = drops.filter(x=>x.no == no)
+        var drop = drops.filter(x => x.no == no);
         var conn = `.${card.class}.${no}`;
         const multi = document.querySelector(`${conn} ${css}`);
         const div = document.createElement("div");
@@ -508,44 +535,81 @@ function loadDropdown(css) {
                         </span>`;
         const ul = document.createElement("ul");
         ul.classList.add("list-items");
+        const hiddenInput = document.createElement("input");
+        const hiddenSelect = document.createElement("Select");
+        // Set the multiple attribute to allow multiple selections
+        hiddenSelect.setAttribute("multiple", "");
+        hiddenSelect.setAttribute("hidden", "");
+        hiddenSelect.type = "hidden";
+        hiddenSelect.name = `selected_${no}`;
+        drops.forEach(optionData => {
+            const option = document.createElement("option");
+            option.value = optionData.name;
+            option.textContent = optionData.name;
+            hiddenSelect.appendChild(option);  // Append the option to the select element
+        });
+
+        multi.appendChild(hiddenSelect);
+
+        hiddenInput.placeholder = dropdownList.find(item => item.no === no).question;
+        hiddenInput.name = dropdownList.find(item => item.no === no).question;
+        hiddenInput.setAttribute("hidden", "");
+        // hiddenInput.name = `selected_${no}`; // Set the name attribute for form submission
+        multi.appendChild(hiddenInput);
+
         drop.forEach(ops => {
-            html += `<li class="item">
+            html += `<li class="item" data-value="${ops.name}">
                             <span class="checkbox">
                                 <i class="fa-solid fa-check check-icon"></i>
                             </span>
                             <span class="item-text">${ops.name}</span>
                         </li>`;
-            
         });
         ul.innerHTML = html;
         multi.appendChild(div);
         multi.appendChild(ul);
 
-
-        // Triiggered
+        // Triggered
         const selectBtn = document.querySelector(`${conn} .select-btn`),
-        items = document.querySelectorAll(`${conn} .item`);
+            items = document.querySelectorAll(`${conn} .item`);
 
         selectBtn.addEventListener("click", () => {
+            debugger
             selectBtn.classList.toggle("open");
         });
 
         items.forEach(item => {
+            
             item.addEventListener("click", () => {
+                debugger
                 item.classList.toggle("checked");
 
                 let checked = document.querySelectorAll(`${conn} .checked`),
                     btnText = document.querySelector(`${conn} .btn-text`);
+                const selectedValues = Array.from(checked).map(checkedItem =>
+                    checkedItem.getAttribute("data-value")
+                );
 
-                    if(checked && checked.length > 0){
-                        btnText.innerText = `${checked.length} Selected`;
-                    }else{
-                        btnText.innerText = "Select options";
-                    }
+                // Update the hidden input with the selected values
+                hiddenInput.value = selectedValues.join(",");
+
+                hiddenSelect.selectedValues = selectedValues;
+
+                if (checked && checked.length > 0) {
+                    debugger
+                    btnText.innerText = `${checked.length} Selected`;
+                } else {
+                    btnText.innerText = "Select options";
+                }
+
+             
+
+
+
             });
-        })
-        
+        });
     });
 }
+
 
 
