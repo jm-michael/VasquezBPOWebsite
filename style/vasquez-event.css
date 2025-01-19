@@ -807,3 +807,14 @@ section {
 
   }
 
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    #event .event-title {
+        font-size: 32px !important;
+        bottom: 10px;
+    }
+    .event-title {
+        font-size: 32px !important;
+        width: 150px;
+    }
+  }
+
