@@ -608,3 +608,20 @@ video {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    #play {
+        bottom: initial;
+    }
+
+    #proud .proud-title {
+        bottom: 10%;
+        left: 15px;
+        font-size: 20px;
+    }
+
+    #proud .quotes {
+        bottom: 20%;
+        left: 15px;
+    }
+}
+
