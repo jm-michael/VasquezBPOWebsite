@@ -57,3 +57,34 @@
         height: 200%;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    #meet-p1, 
+    #meet-p2,
+    #meet-p3,
+    #meet-p4,
+    #meet-p5,
+    #meet-p6,
+    #meet-p7,
+    #meet-p8,
+    #meet-p9{
+        display: none !important;
+    }
+
+    .left-card, .rights-card {
+        padding: 10px !important;
+    }
+
+    .title {
+        font-size: 20px !important;
+    }
+
+    .context {
+        font-size: 16px !important;
+    }
+
+    .section {
+        background-color: initial !important;
+        height: initial !important;
+    }
+}
