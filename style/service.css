@@ -411,3 +411,28 @@ body {
         left: 74%;
     }
 }
+
+
+
+@media screen and (max-width: 812px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-left: 75px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    .tab-icon {
+        width: 90%;
+    }
+
+    .line1, .line2, .line3 {
+        width: 25px !important;
+        height: 3px !important;
+        background-color: #fff;
+        margin: 5px !important;
+        transition: all 0.3s ease;
+    }
+   
+}
