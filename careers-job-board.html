@@ -99,7 +99,7 @@
             <div class="card hidden">
                 <p class="position">Manager - Audit</p>
                 <div class="company-address">
-                    <p class="company">Vasquez BPO, Inc</p>
+                    <p class="company">The Vasquez Advantage</p>
                     <div>|</div>
                     <p class="address">Quezon City</p>
                 </div>
@@ -155,224 +155,219 @@
                     </div>
                 </div>
                 
-                <form class="form form__contact" method="POST" name="SubmitApplication" netlify><input type="hidden" name="form-name" value="SubmitApplication">
+                <div class="applynow hidden">
                     <div class="applynow hidden">
                         <p class="title">SUBMIT YOUR APPLICATION</p>
                         <p class="title">All fields are required.</p>
-                        <div class="fields-card">
-                            <div class="fields">
-                                <p>Resume/CV</p>
-                                <input type="file" id="Resume" placeholder="Resume" name="Resume" required>
-                                <br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Full Name</p>
-                                <input type="text" id="FullName" placeholder="Full Name" name="Full Name" required>
-                                <br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Email</p>
-                                <input type="text" id="Email" placeholder="Email" name="Email" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Phone No.</p>
-                                <input type="text" id="PhoneNo" placeholder="Phone No" name="Phone No" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Current location</p>
-                                <input type="text" id="Currentlocation" placeholder="Current location" name="Current location" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Current/Most recent company</p>
-                                <input type="text" id="CurrentMostrecentcompany" placeholder="Current-Most recent company"
-                                    name="Current-Most recent company" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Current/Most recent job title</p>
-                                <input type="text" id="CurrentMostrecentjobtitle" placeholder="Current/Most recent job title"
-                                    name="Current/Most recent job title" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>Expected salary</p>
-                                <input type="text" id="Expectedsalary" placeholder="Expected salary" name="Expected salary" required><br><br>
-                            </div>
-                            <div class="fields">
-                                <p>How many years of professional experience do you have?</p>
-                                <input type="text" id="experiencedoyouhave"
-                                    placeholder="How many years of professional experience do you have?"
-                                    name="How many years of professional experience do you have?" required><br><br>
-                            </div>
-                    
-                            <!-- Accounting -->
-                            <div class="Accounting aa hidden">
-                                <p>What areas of accounting have you handled?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What areas of accounting have you handled?" placeholder="What areas of accounting have you handled?">
-                                </div>
-                            </div>
-                    
-                            <div class="Accounting bb hidden">
-                                <p>What accounting software applications do you have expertise in? Please select only those you have practical experience using.</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What accounting software applications do you have expertise in? Please select only those you have practical experience using." placeholder="What accounting software applications do you have expertise in? Please select only those you have practical experience using.">
-                                </div>
-                            </div>
-                    
-                            <!-- Accounting & Finance -->
-                            <div class="Accounting_Finance aa hidden">
-                                <p>What prior work experience do you have in Corporate Accounting and Finance?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in Corporate Accounting and Finance?" placeholder="What prior work experience do you have in Corporate Accounting and Finance?">
-                                </div>
-                            </div>
-                    
-                            <div class="Accounting_Finance bb hidden">
-                                <p>What accounting software applications do you have expertise in? Please select only those you have practical experience using.</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What accounting software applications do you have expertise in? Please select only those you have practical experience using." placeholder="What accounting software applications do you have expertise in? Please select only those you have practical experience using.">
-                                
-                                </div>
-                            </div>
-                    
-                            <!-- Audit -->
-                            <div class="Audit hidden">
-                                <p>How many busy season experience do you have in public accounting? </p>
-                                <input type="text" id="publicaccounting" 
-                                placeholder="How many busy season experience do you have in public accounting?"
-                                    name="How many busy season experience do you have in public accounting?"><br><br>
-                            </div>
-                    
-                            <div class="Audit aa hidden">
-                                <p>What industries have you handled?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What industries have you handled?" placeholder="What industries have you handled?">
-                                </div>
-                            </div>
-                    
-                            <!-- Tax -->
-                            <div class="Tax aa hidden">
-                                <p>What prior work experience do you have in tax?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in tax?" placeholder="What prior work experience do you have in tax?">
-                                </div>
-                            </div>
-                    
-                            <div class="Tax bb hidden">
-                                <p>What tax software applications do you have expertise in? Please select only those you have practical
-                                    experience using.</p>
-                                
-                                    <div class="multiselect">
-                                        <input class="hidden" type="text" 
-                                        name="What tax software applications do you have expertise in? Please select only those you have practical experience using." 
-                                        placeholder="What tax software applications do you have expertise in? Please select only those you have practical experience using.">
+                        
+                        <form class="form form__contact Accounting" method="POST" name="Accounting_SubmitApplication" netlify><input type="hidden" name="form-name" value="Accounting_SubmitApplication">
+                            
+                                <div class="fields-card">
+                                    <div class="fields">
+                                        <p>Resume/CV</p>
+                                        <input type="file" id="Resume" placeholder="Resume" name="Resume" required>
+                                        <br><br>
                                     </div>
-                            </div>
-                    
-                            <!-- Human_Resource -->
-                            <div class="Human_Resource aa hidden">
-                                <p>What prior work experience do you have in Human Resources?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in Human Resources?" placeholder="What prior work experience do you have in Human Resources?">
+                                    <div class="fields">
+                                        <p>Full Name</p>
+                                        <input type="text" id="FullName" placeholder="Full Name" name="Full Name" required>
+                                        <br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Email</p>
+                                        <input type="text" id="Email" placeholder="Email" name="Email" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Phone No.</p>
+                                        <input type="text" id="PhoneNo" placeholder="Phone No" name="Phone No" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Current location</p>
+                                        <input type="text" id="Currentlocation" placeholder="Current location" name="Current location" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Current/Most recent company</p>
+                                        <input type="text" id="CurrentMostrecentcompany" placeholder="Current-Most recent company"
+                                            name="Current-Most recent company" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Current/Most recent job title</p>
+                                        <input type="text" id="CurrentMostrecentjobtitle" placeholder="Current/Most recent job title"
+                                            name="Current/Most recent job title" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>Expected salary</p>
+                                        <input type="text" id="Expectedsalary" placeholder="Expected salary" name="Expected salary" required><br><br>
+                                    </div>
+                                    <div class="fields">
+                                        <p>How many years of professional experience do you have?</p>
+                                        <input type="text" id="experiencedoyouhave"
+                                            placeholder="How many years of professional experience do you have?"
+                                            name="How many years of professional experience do you have?" required><br><br>
+                                    </div>
+                            
+                                    <!-- Accounting -->
+                                    <div class="Accounting aa hidden">
+                                        <p>What areas of accounting have you handled?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What areas of accounting have you handled?" placeholder="What areas of accounting have you handled?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Accounting bb hidden">
+                                        <p>What accounting software applications do you have expertise in? Please select only those you have practical experience using.</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What accounting software applications do you have expertise in? Please select only those you have practical experience using." placeholder="What accounting software applications do you have expertise in? Please select only those you have practical experience using.">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Accounting & Finance -->
+                                    <div class="Accounting_Finance aa hidden">
+                                        <p>What prior work experience do you have in Corporate Accounting and Finance?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in Corporate Accounting and Finance?" placeholder="What prior work experience do you have in Corporate Accounting and Finance?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Accounting_Finance bb hidden">
+                                        <p>What accounting software applications do you have expertise in? Please select only those you have practical experience using.</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What accounting software applications do you have expertise in? Please select only those you have practical experience using." placeholder="What accounting software applications do you have expertise in? Please select only those you have practical experience using.">
+                                        
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Audit -->
+                                    <div class="Audit hidden">
+                                        <p>How many busy season experience do you have in public accounting? </p>
+                                        <input type="text" id="publicaccounting" 
+                                        placeholder="How many busy season experience do you have in public accounting?"
+                                            name="How many busy season experience do you have in public accounting?"><br><br>
+                                    </div>
+                            
+                                    <div class="Audit aa hidden">
+                                        <p>What industries have you handled?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What industries have you handled?" placeholder="What industries have you handled?">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Tax -->
+                                    <div class="Tax aa hidden">
+                                        <p>What prior work experience do you have in tax?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in tax?" placeholder="What prior work experience do you have in tax?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Tax bb hidden">
+                                        <p>What tax software applications do you have expertise in? Please select only those you have practical
+                                            experience using.</p>
+                                        
+                                            <div class="multiselect">
+                                                <input class="hidden" type="text" 
+                                                name="What tax software applications do you have expertise in? Please select only those you have practical experience using." 
+                                                placeholder="What tax software applications do you have expertise in? Please select only those you have practical experience using.">
+                                            </div>
+                                    </div>
+                            
+                                    <!-- Human_Resource -->
+                                    <div class="Human_Resource aa hidden">
+                                        <p>What prior work experience do you have in Human Resources?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in Human Resources?" placeholder="What prior work experience do you have in Human Resources?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Human_Resource hidden">
+                                        <p>Please rate your proficiency in using MS Excel on a scale of 1-10</p>
+                                        <input class="Human_Resource hidden" type="text" id="rate" placeholder=""
+                                            name="Please rate your proficiency in using MS Excel on a scale of 1-10"><br><br>
+                                    </div>
+                            
+                                    <!-- IT_Audit -->
+                                    <div class="Information_Technology aa hidden">
+                                        <p>What prior work experience do you have in IT Support?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in IT Support?" placeholder="What prior work experience do you have in IT Support?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Information_Technology bb hidden">
+                                        <p>What prior work experience do you have in cloud computing?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in cloud computing?" placeholder="What prior work experience do you have in cloud computing?">
+                                        </div>
+                                    </div>
+            
+                                    <div class="IT_Audit aa hidden">
+                                        <p>What prior work experience do you have in IT Audit?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in IT Audit?" placeholder="What prior work experience do you have in IT Audit?">
+                                        </div>
+                                    </div>
+            
+                                    <div class="IT_Audit bb hidden">
+                                        <p>What data analytics tool do you have experience in?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What data analytics tool do you have experience in?" placeholder="What data analytics tool do you have experience in?">
+                                        </div>
+                                    </div>
+            
+                                    <div class="IT_Audit cc hidden">
+                                        <p>What financial applications do you have expertise in reviewing?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What financial applications do you have expertise in reviewing?" placeholder="What financial applications do you have expertise in reviewing?">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Marketing -->
+                                    <div class="Marketing aa hidden">
+                                        <p>What prior work experience do you have in Marketing?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in Marketing?" placeholder="What prior work experience do you have in Marketing?">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="Marketing bb hidden">
+                                        <p>What marketing platforms and tools are you proficient with?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What marketing platforms and tools are you proficient with?" placeholder="What marketing platforms and tools are you proficient with?">
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Office_Administration -->
+                                    <div class="Office_Administration hidden">
+                                        <p>Would you be open to reporting to the Makati office as part of a hybrid work setup? </p>
+                                        <select name="Would you be open to reporting to the Makati office as part of a hybrid work setup?" aria-placeholder="Would you be open to reporting to the Makati office as part of a hybrid work setup?"> 
+                                            <option value="">Select options</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="Office_Administration aa hidden">
+                                        <p>What prior work experience do you have in Office Administration?</p>
+                                        <div class="multiselect">
+                                            <input class="hidden" type="text" name="What prior work experience do you have in Office Administration?" placeholder="What prior work experience do you have in Office Administration?">
+                                        </div>
+        
+                                    </div>
+                            
+                                    <div class="fields">
+                                        <p>What is the earliest date you are available to start working?</p>
+                                        <input required type="text" id="earliestdate" placeholder=""
+                                            name="What is the earliest date you are available to start working?"><br><br>
+                                    </div>
+            
+                                    <button class="btn-submit-app">SUBMIT APPLICATION</button>
+                            
                                 </div>
-                            </div>
-                    
-                            <div class="Human_Resource hidden">
-                                <p>Please rate your proficiency in using MS Excel on a scale of 1-10</p>
-                                <input class="Human_Resource hidden" type="text" id="rate" placeholder=""
-                                    name="Please rate your proficiency in using MS Excel on a scale of 1-10"><br><br>
-                            </div>
-                    
-                            <!-- IT_Audit -->
-                            <div class="Information_Technology aa hidden">
-                                <p>What prior work experience do you have in IT Support?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in IT Support?" placeholder="What prior work experience do you have in IT Support?">
-                                </div>
-                            </div>
-                    
-                            <div class="Information_Technology bb hidden">
-                                <p>What prior work experience do you have in cloud computing?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in cloud computing?" placeholder="What prior work experience do you have in cloud computing?">
-                                </div>
-                            </div>
-    
-                            <div class="IT_Audit aa hidden">
-                                <p>What prior work experience do you have in IT Audit?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in IT Audit?" placeholder="What prior work experience do you have in IT Audit?">
-                                </div>
-                            </div>
-    
-                            <div class="IT_Audit bb hidden">
-                                <p>What data analytics tool do you have experience in?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What data analytics tool do you have experience in?" placeholder="What data analytics tool do you have experience in?">
-                                </div>
-                            </div>
-    
-                            <div class="IT_Audit cc hidden">
-                                <p>What financial applications do you have expertise in reviewing?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What financial applications do you have expertise in reviewing?" placeholder="What financial applications do you have expertise in reviewing?">
-                                </div>
-                            </div>
-                    
-                            <!-- Marketing -->
-                            <div class="Marketing aa hidden">
-                                <p>What prior work experience do you have in Marketing?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in Marketing?" placeholder="What prior work experience do you have in Marketing?">
-                                </div>
-                            </div>
-                    
-                            <div class="Marketing bb hidden">
-                                <p>What marketing platforms and tools are you proficient with?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What marketing platforms and tools are you proficient with?" placeholder="What marketing platforms and tools are you proficient with?">
-                                </div>
-                            </div>
-                    
-                            <!-- Office_Administration -->
-                            <div class="Office_Administration hidden">
-                                <p>Would you be open to reporting to the Makati office as part of a hybrid work setup? </p>
-                                <select name="Would you be open to reporting to the Makati office as part of a hybrid work setup?" aria-placeholder="Would you be open to reporting to the Makati office as part of a hybrid work setup?"> 
-                                    <option value="">Select options</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                    
-                            <div class="Office_Administration aa hidden">
-                                <p>What prior work experience do you have in Office Administration?</p>
-                                <div class="multiselect">
-                                    <input class="hidden" type="text" name="What prior work experience do you have in Office Administration?" placeholder="What prior work experience do you have in Office Administration?">
-                                </div>
-
-<!-- 
-                                <select name="What prior work experience do you have in Office Administration?"> 
-                                    <option value="">Select options</option>
-                                    <option value="Administrative Support">Administrative Support</option>
-                                    <option value="Executive Assistant or Personal">Executive Assistant or Personal Assistant</option>
-                                    <option value="Receptionist or Front Desk">Receptionist or Front Desk</option>
-                                    <option value="Project Coordination">Project Coordination</option>
-                                    <option value="Office Management">Office Management</option>
-                                    <option value="Event Management Support">Event Management Support</option>
-                                    <option value="None">None</option>
-                                </select> -->
-                            </div>
-                    
-                            <div class="fields">
-                                <p>What is the earliest date you are available to start working?</p>
-                                <input required type="text" id="earliestdate" placeholder=""
-                                    name="What is the earliest date you are available to start working?"><br><br>
-                            </div>
-    
-                            <button class="btn-submit-app">SUBMIT APPLICATION</button>
-                    
-                        </div>
+                        </form>
                     </div>
-                </form>
+
+                </div>
+                
                 
             </div>
         </div>
@@ -422,11 +417,12 @@
                 <p class="footer_header">CONTACT US</p>
                 <a href="mailto:contact-vbpo@vasquezcpa.com" class="footer-contact_info footer-contact_info__email">contact-vbpo@vasquezcpa.com</a>
                 <p class="footer-contact_info">
-                    (02) 7622 8779<br>
+                    +632 7622 8779<br>
                     +63 917 160 8779
                 </p>
                 <p class="footer-contact_header">Makati Office</p>
-                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://maps.app.goo.gl/pX4hPCCXmwZybDkS7" target="_blank">12/F KMC Armstrong Corporate Center, H.V. Dela Costa, Salcedo Village</a></p>
+                <p class="footer-contact_info footer-contact_info__marginless"><a href="https://maps.app.goo.gl/pX4hPCCXmwZybDkS7" target="_blank">12/F KMC Armstrong Corporate Center, </a></p>
+                <p class=""><a href="https://maps.app.goo.gl/pX4hPCCXmwZybDkS7" target="_blank"> H.V. Dela Costa, Salcedo Village</a></p>
                 <p class=""><a href="https://maps.app.goo.gl/pX4hPCCXmwZybDkS7" target="_blank"> Makati City, Metro Manila, Philippines 1226</a></p>
                 
             </div>
