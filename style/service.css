@@ -406,9 +406,9 @@ body {
 @media screen and (max-width: 1181px) {
     .burger {
         display: block;
-        cursor: pointer;
         position: absolute;
-        left: 74%;
+        left: initial !important;
+        right:20% !important;
     }
 }
 
