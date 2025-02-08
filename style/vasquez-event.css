@@ -818,3 +818,36 @@ section {
     }
   }
 
+  @media screen and (max-width: 390px) {
+    .burger {
+        display: block !important ;
+        cursor: pointer !important ;
+        margin-left: auto !important ;
+        margin-top: 40px !important ;
+        margin-right: 15px !important ;
+    }
+  
+    .line1, .line2, .line3 {
+        width: 25px !important ;
+        height: 3px !important ;
+        background-color: #fff !important ;
+        margin: 5px !important ;
+        transition: all 0.3s ease !important ;
+    }
+
+    .navbar-container {
+        padding: 30px 10px !important ;
+        display: flex !important ;
+        flex-direction: row !important ;
+        align-self: center !important ;
+        margin: auto !important ;
+        transition: 0.4s !important ;
+    }
+
+    #event .event-title {
+        font-size: 25px !important;
+        bottom: 10px;
+    }
+    
+}
+

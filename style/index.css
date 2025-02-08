@@ -471,3 +471,36 @@ body {
     
 
 }
+
+@media only screen and (max-width: 320px) {
+    .industries-header {
+        font-family: 'nunitoregular';
+        color: #fff;
+        font-weight: normal;
+        font-size: 34px;
+        width: 65% !important;
+        text-align: center;
+    }
+
+    .industries-grid_container {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 180px);
+        grid-gap: 40px 5px !important;
+        align-items: center;
+        justify-content: center;
+        width: 60% !important;
+        margin-left: 10px !important;
+    }
+
+    .industries-grid_item-text {
+        font-size: 13px;
+        width: 100px;
+        line-height: 20px;
+    }
+
+    .industries-grid_item-icon {
+        height: 35px;
+        margin-bottom: 15px;
+        /* padding-left: 15px; */
+    }
+}
