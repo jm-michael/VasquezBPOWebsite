@@ -654,3 +654,28 @@ function loadDropdown(css) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const submitButtons = document.querySelectorAll(".btn-submit-app");
+
+    submitButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            const form = this.closest("form"); // Get the parent form of the clicked button
+            let isValid = true;
+            const inputs = form.querySelectorAll("input[required]");
+
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.border = "2px solid red"; // Highlight empty field
+                } else {
+                    input.style.border = ""; // Remove highlight if valid
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault();
+                alert("Please fill in all required fields before submitting.");
+            }
+        });
+    });
+});
