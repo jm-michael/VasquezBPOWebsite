@@ -228,6 +228,54 @@
     } */
 }
 
+@media screen and (min-width: 480px) and (max-width : 580px) {
+
+    /* #careers-3rd .careers-3rd-title, */
+    #careers-3rd .careers-4rd-title {
+        position: absolute;
+        left: 20px;
+        z-index: 2;
+        color: black;
+        font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+        font-family: 'nunitobold';
+        width: 200px;
+        top: 180px;
+    }
+
+    #careers-3rd {
+        position: relative;
+        height: 60%;
+        overflow: hidden;
+    }
+
+}
+
+/* add 11-01-2024 */
+@media screen and (max-width: 1000px) {
+    #careers_menu p {
+        display: none;
+
+    }
+
+    #careers-3rd img {
+        display: block;
+    }
+    
+    .careers_3rd_bg {
+        display: none;
+    }
+
+    #careers_menu {
+        height: auto;
+        gap: clamp(0.3125rem, 0.1098rem + 1.0135vw, 1.25rem);        ;
+    }
+
+    section#careers-6th {
+        height: auto !important;
+    }
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
     .scrollable-div {
@@ -265,7 +313,7 @@
 
     #careers-3rd {
         position: relative;
-        height: 35%;
+        height: 45%;
         overflow: hidden;
     }
 
@@ -371,51 +419,4 @@
         }
     }
 
-}
-
-@media screen and (min-width: 480px) and (max-width : 580px) {
-
-    /* #careers-3rd .careers-3rd-title, */
-    #careers-3rd .careers-4rd-title {
-        position: absolute;
-        left: 20px;
-        z-index: 2;
-        color: black;
-        font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
-        font-family: 'nunitobold';
-        width: 200px;
-        top: 180px;
-    }
-
-    #careers-3rd {
-        position: relative;
-        height: 60%;
-        overflow: hidden;
-    }
-
-}
-
-/* add 11-01-2024 */
-@media screen and (max-width: 1000px) {
-    #careers_menu p {
-        display: none;
-
-    }
-
-    #careers-3rd img {
-        display: block;
-    }
-    
-    .careers_3rd_bg {
-        display: none;
-    }
-
-    #careers_menu {
-        height: auto;
-        gap: clamp(0.3125rem, 0.1098rem + 1.0135vw, 1.25rem);        ;
-    }
-
-    section#careers-6th {
-        height: auto !important;
-    }
 }

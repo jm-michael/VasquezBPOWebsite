@@ -94,7 +94,7 @@ a:hover {
 
 .navbar-container {
     padding: 10px 10px;
-    display: flex;
+    display: flex !important;
     /* max-width: 1200px;  */
     flex-direction: row;
     /* justify-content: space-between; */
@@ -625,7 +625,7 @@ section#why_us {
 }
 
 .industries-background_container {
-    display: flex;
+    display: contents;
     width: 100%;
 }
 
@@ -633,7 +633,7 @@ section#why_us {
     flex: 1;
     background-color: #6FA3C6;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .industries-background_right {

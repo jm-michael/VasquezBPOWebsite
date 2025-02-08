@@ -182,7 +182,9 @@ section {
 .h4-2 {
     display: none;
 }
-
+.card-context{
+    min-inline-size: fit-content;
+}
 .card-context h4 {
     color: #379CC1;
     /* font-size: 24px; */
@@ -505,6 +507,28 @@ section {
         text-align: center;
         font-size: small;
     }
+    .navbar-container {
+        /* padding: 30px 10px; */
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        margin: auto;
+        transition: 0.4s;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+
+    .card-context h4 {
+        color: #379CC1;
+        /* font-size: 24px; */
+        font-size: 1.2rem;
+        width: 60%;
+    }
   }
   
   @media screen and (max-width: 900px) {
@@ -621,7 +645,7 @@ section {
     }
 
     #event-p3 {
-        height: calc(100% + 300px) !important;
+        height: 150%;
     }
 
     /* 2023  2st*/

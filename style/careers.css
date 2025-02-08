@@ -272,7 +272,7 @@ section#careers-6th {
 
 #careers-6th .careers-6th-buttons {
     position: absolute;
-    top: clamp(10.625rem, 4.9493rem + 28.3784vw, 36.875rem);
+    top: clamp(10.625rem, 7rem + 28.3784vw, 36.875rem);
     transform: translateY(-50%); /* Corrects positioning for vertical centering */
     right: 6.5%;
     width: 40%;
@@ -520,7 +520,7 @@ img {
     margin-top: 200px;
 }
 
-@media only screen and (max-width: 932px) {
+@media only screen and (max-width: 832px) {
 
     .navbar-logo {
         display: none;
@@ -581,7 +581,7 @@ img {
 
     #careers-3rd .careers-3rd-title {
         position: absolute;
-        top: 65%;
+        /* top: 65%; */
         transform: translateY(-50%);
         left: 5%;
         z-index: 2;
@@ -778,6 +778,80 @@ img {
     }
 }
 
+@media only screen and (max-width: 930px) {
+
+    #careers-4th .left .content, #careers-4th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    #careers-5th .left .content, #careers-5th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    .head2 {
+        width: 150px;
+        font-size: 9px;
+        position: relative;
+        right: 25px;
+        top: 0px;
+        background-color: #cd3939;;
+        padding : 20px;
+        color: white;
+        clip-path: polygon(68% 0, 100% 47%, 73% 100%, 0 100%, 0 0);
+    }
+
+    #careers-6th .careers-6th-buttons {
+        position: absolute;
+        top: 72%;
+        transform: translateY(-50%);
+        right: 100px !important;
+        width: 35%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+        font-family: 'Gotham', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #careers-6th .careers-6th-title {
+        position: absolute;
+        top: 49% !important;
+        transform: translateY(-50%);
+        left: 51%;
+        width: 50%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(0.6875rem, -0.8438rem + 4.9vw, 3.75rem);
+        font-family: Roboto, sans-serif;
+        font-weight: 800;
+    }
+
+    .formargin{
+        margin-right: 2px !important;
+        margin-bottom: 3px;
+    }
+
+    .gridviewmobile {
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);
+        /* padding: 40px 20px 40px 50px; */
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 1px;
+    }
+  
+}
 
 @media only screen and (max-width: 812px) {
 
@@ -811,8 +885,8 @@ img {
         position: absolute;
         top: 72%;
         transform: translateY(-50%);
-        right: 10px !important;
-        width: 50%;
+        right: 100px !important;
+        width: 30%;
         z-index: 2;
         color: white;
         font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
@@ -855,9 +929,302 @@ img {
 }
 
 
+@media only screen and (max-width: 640px) {
+
+    #careers-4th .left .content, #careers-4th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    #careers-5th .left .content, #careers-5th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    .head2 {
+        width: 150px;
+        font-size: 9px;
+        position: relative;
+        right: 25px;
+        top: 0px;
+        background-color: #cd3939;;
+        padding : 20px;
+        color: white;
+        clip-path: polygon(68% 0, 100% 47%, 73% 100%, 0 100%, 0 0);
+    }
+
+    #careers-6th .careers-6th-buttons {
+        position: absolute;
+        top: 72%;
+        transform: translateY(-50%);
+        right: 100px !important;
+        width: 35%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+        font-family: 'Gotham', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #careers-6th .careers-6th-title {
+        position: absolute;
+        top: 49% !important;
+        transform: translateY(-50%);
+        left: 51%;
+        width: 50%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(0.6875rem, -0.8438rem + 4.9vw, 3.75rem);
+        font-family: Roboto, sans-serif;
+        font-weight: 800;
+    }
+
+    .formargin{
+        margin-right: 2px !important;
+        margin-bottom: 3px;
+    }
+
+    .gridviewmobile {
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);
+        /* padding: 40px 20px 40px 50px; */
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 1px;
+    }
+
+    #careers-7th div .title {
+        position: absolute;
+        font-family: 'nunitobold';
+        font-size: 100%;
+        top: 15%;
+        left: 100px;
+        width: 40%;
+    }
+
+    #careers-7th div .content {
+        cursor: pointer;
+        position: absolute;
+        /* padding-top: 30px; */
+        top: 20%;
+        right: 15%;
+        height: 100%;
+        width: 23%;
+        font-family: 'nunitobold';
+        z-index: 2;
+        color: white;
+        font-size: 100%;
+    }
+  
+}
 
 
 
+@media only screen and (max-width: 540px) {
+
+    #careers-4th .left .content, #careers-4th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    #careers-5th .left .content, #careers-5th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    .head2 {
+        width: 150px;
+        font-size: 9px;
+        position: relative;
+        right: 25px;
+        top: 0px;
+        background-color: #cd3939;;
+        padding : 20px;
+        color: white;
+        clip-path: polygon(68% 0, 100% 47%, 73% 100%, 0 100%, 0 0);
+    }
+
+    #careers-6th .careers-6th-buttons {
+        position: absolute;
+        top: 72%;
+        transform: translateY(-50%);
+        right: 60px !important;
+        width: 40%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+        font-family: 'Gotham', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #careers-6th .careers-6th-title {
+        position: absolute;
+        top: 49% !important;
+        transform: translateY(-50%);
+        left: 51%;
+        width: 50%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(0.6875rem, -0.8438rem + 4.9vw, 3.75rem);
+        font-family: Roboto, sans-serif;
+        font-weight: 800;
+    }
+
+    .formargin{
+        margin-right: 2px !important;
+        margin-bottom: 3px;
+    }
+
+    .gridviewmobile {
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);
+        /* padding: 40px 20px 40px 50px; */
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 1px;
+    }
+
+    #careers-7th div .title {
+        position: absolute;
+        font-family: 'nunitobold';
+        font-size: 100%;
+        top: 15%;
+        left: 100px;
+        width: 40%;
+    }
+
+    #careers-7th div .content {
+        cursor: pointer;
+        position: absolute;
+        /* padding-top: 30px; */
+        top: 20%;
+        right: 15%;
+        height: 100%;
+        width: 23%;
+        font-family: 'nunitobold';
+        z-index: 2;
+        color: white;
+        font-size: 100%;
+    }
+  
+}
+
+
+@media only screen and (max-width: 470px) {
+
+    #careers-4th .left .content, #careers-4th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    #careers-5th .left .content, #careers-5th .right .content {
+        font-family: 'Gotham', sans-serif;
+        font-size: clamp(0.4rem, 0.0938rem + 1.6vw, 1.875rem);
+        text-align: justify;
+        padding-top: 0px !important;
+    }
+
+    .head2 {
+        width: 150px;
+        font-size: 9px;
+        position: relative;
+        right: 25px;
+        top: 0px;
+        background-color: #cd3939;;
+        padding : 20px;
+        color: white;
+        clip-path: polygon(68% 0, 100% 47%, 73% 100%, 0 100%, 0 0);
+    }
+
+    #careers-6th .careers-6th-buttons {
+        position: absolute;
+        top: 72%;
+        transform: translateY(-50%);
+        right: 40px !important;
+        width: 50%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(1rem, -1.3438rem + 7.5vw, 2.875rem);
+        font-family: 'Gotham', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #careers-6th .careers-6th-title {
+        position: absolute;
+        top: 49% !important;
+        transform: translateY(-50%);
+        left: 51%;
+        width: 50%;
+        z-index: 2;
+        color: white;
+        font-size: clamp(0.6875rem, -0.8438rem + 4.9vw, 3.75rem);
+        font-family: Roboto, sans-serif;
+        font-weight: 800;
+    }
+
+    .formargin{
+        margin-right: 2px !important;
+        margin-bottom: 3px;
+    }
+
+    .gridviewmobile {
+        width: 100%;
+        /* height: 100%; */
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgb(255, 255, 255);
+        /* padding: 40px 20px 40px 50px; */
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 1px;
+    }
+
+    #careers-7th div .title {
+        position: absolute;
+        font-family: 'nunitobold';
+        font-size: 100%;
+        top: 15%;
+        left: 100px;
+        width: 40%;
+    }
+
+    #careers-7th div .content {
+        cursor: pointer;
+        position: absolute;
+        /* padding-top: 30px; */
+        top: 20%;
+        right: 15%;
+        height: 100%;
+        width: 23%;
+        font-family: 'nunitobold';
+        z-index: 2;
+        color: white;
+        font-size: 100%;
+    }
+  
+}
 
 
 

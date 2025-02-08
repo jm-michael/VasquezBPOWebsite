@@ -50,13 +50,22 @@
 @media screen and (max-width: 500px){
     .item {
         background-position: center -40px;
-
+        display: none;
     }
 
     .right-card, .lefts-card {
         height: 200%;
     }
+
+    .overlay {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
     #meet-p1, 

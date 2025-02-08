@@ -413,6 +413,7 @@ var clickCardId = 0;
 
 // Click Cards Function
 function clickCard(id) {
+    debugger
     var card = cards.find(x=>x.id == id)
     document.querySelector(".right .applynow .position").textContent = card.position
     document.querySelector(".right .card .position").textContent = card.position
@@ -511,12 +512,36 @@ function onClickApplyNow(add){
 }
 
 // show or hide custom fields per department
+// function customFields(id){
+//     var card = cards.find(x=>x.id == id)
+//     cards.forEach(item => {
+//         const div = document.querySelectorAll(".right .applynow .applynow  ."+item.class);
+//         const div = document.querySelectorAll(".right .applynow ."+item.class + ".applynow  ."+item.class);
+//         var element = document.querySelector("."+item.class);
+//         var inputElement = element.querySelector("input");
+//         div.forEach(custom => {
+//             if (custom?.className) {
+                
+//                 if (item.class == card.class) {
+//                     element.removeAttribute('hidden');
+//                     custom.className = custom.className.replace(/\bhidden\b/g, 'fields').trim();
+//                 } else {
+//                      element.setAttribute('hidden', 'true');
+//                     custom.className = custom.className.replace(/\bfields\b/g, 'hidden').trim();
+//                 }
+//             }
+//         });
+        
+//     });
+// }
+
+
 function customFields(id){
     var card = cards.find(x=>x.id == id)
     cards.forEach(item => {
-        const div = document.querySelectorAll(".right .applynow .applynow  ."+item.class);
+        const div = document.querySelectorAll(".right .applynow .applynow ."+item.class);
         var element = document.querySelector("."+item.class);
-        var inputElement = element.querySelector("input");
+        // var inputElement = element.querySelector("input");
         div.forEach(custom => {
             if (custom?.className) {
                 
@@ -533,13 +558,16 @@ function customFields(id){
     });
 }
 
-
 function loadDropdown(css) {
+    debugger
     var card = cards.find(x => x.id == clickCardId);
     var drops = dropdownList.filter(x => x.class == card.class);
+    var hiddenPosition = document.getElementById(card.class +"_Position")
+    hiddenPosition.value = "Applying for " + card.position + " Position"
     var Nos = [...new Set(drops.map(item => item.no))];
     Nos.forEach(no => {
         var html = "";
+        var hiddenInputElement = document.getElementById(card.class +" " + no)
         var drop = drops.filter(x => x.no == no);
         var conn = `.${card.class}.${no}`;
         const multi = document.querySelector(`${conn} ${css}`);
@@ -606,7 +634,7 @@ function loadDropdown(css) {
 
                 // Update the hidden input with the selected values
                 hiddenInput.value = selectedValues.join(",");
-
+                hiddenInputElement.value  = selectedValues.join(",");
                 hiddenSelect.selectedValues = selectedValues;
 
                 if (checked && checked.length > 0) {
