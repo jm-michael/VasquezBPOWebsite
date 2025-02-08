@@ -142,76 +142,6 @@ body {
 
 }
 
-
-@media screen and (max-width: 800px) {
-
-  .navbar-links {
-      padding: 15px;
-      text-align: center;
-      font-size: small;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-  .navbar-link {
-    padding: 15px;
-    text-align: center;
-    font-size: small;
-  }
-
-  .navbar-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      background-color: #333;
-      width: 225px;
-      top: 90px;
-      right: 20px;
-      z-index: 1000;
-      padding-bottom: 20px !important;
-      border-radius: 10px;
-      padding-right: 30px !important;
-  }
-
-  .navbar-links.active {
-      display: flex;
-  }
-
-  .navbar-links {
-      padding: 20px;
-      text-align: center;
-  }
-
-  .burger {
-      display: block;
-      cursor: pointer;
-      margin-left: auto;
-      margin-top: 10px;
-  }
-
-  .line1, .line2, .line3 {
-      width: 25px;
-      height: 3px;
-      background-color: #fff;
-      margin: 5px;
-      transition: all 0.3s ease;
-  }
-
-  .change .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .change .line2 {
-      opacity: 0;
-  }
-
-  .change .line3 {
-      transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
-
 @media screen and (max-width: 480px) {
   section#industries-hero {
     height: 60%;
@@ -241,10 +171,6 @@ body {
 .container__industries_hero{
   align-items: center !important;
 }
-
-/* .navbar-container{
-  max-width: 1430px;
-} */
 
 .element.style {
   opacity: 1 !important;

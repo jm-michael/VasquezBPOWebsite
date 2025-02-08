@@ -521,19 +521,6 @@ img {
 }
 
 @media only screen and (max-width: 832px) {
-
-    .navbar-logo {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
-        margin-top: 40px;
-        margin-right: 15px;
-    }
-
     #careers-top .careers-title {
         position: absolute;
         top: 50%;
